@@ -1,0 +1,33 @@
+Minutes of the Meeting
+04-June-2020
+
+16:00 Everyone agreed on chatbot, discussing the basing deliverable for the chatbot
+
+Have some sort of basic text query implementation rather than question and answer type chatbot.
+Basic deliverable would be have good ui, and set pre selected questions that is answered, based around covid situation
+
+Second deliverable: NLP based query answers
+
+16:18 focusing on the overall features of the chatbot
+Predefined questions being answered based on underlying data 
+Higher level implementation, NLP based query analysis for answering questions, and conversation style like in google.
+Higher level implementation: potentially adding features like volunteers addition for locality for help
+Map based representation in the background 
+Basic implementation- map is a separate interactable entity, which shows data, forecasts etc.
+Higher level implementation The map interacts with the query and shows relevant graphs etc.
+
+
+16:40 Members strengths discussion 
+Website should be available and running till september! Active apis etc.
+Backup of data in case API failures 
+
+
+
+
+Softwares: Web design visual Studio, Python: Google collab, React Js UI? 
+Visualisations tools: Vega Lite, plotly, tableau, power BI
+Project management tool: Jira
+	
+Architecture setup and provide evidence of your cloud environment for the project.
+
+REQUIREMENTS FOR TOMORROW: Primary and secondary role choices and tools and architecture to use
