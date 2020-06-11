@@ -18,3 +18,7 @@ Empirical tests to compare efficiency and reach of data.
 
 15:45: Apurva filled in on the details of the meeting findings and the final decisions made
 
+Role: 
+1.Testing, and evaluation of the chatbot results at a high level: (SUMIT, VISHAL, NRIPENDRA) (Actual User tests cases to test functionality, then compare against user results for checking success rates). 
+
+2. Working on Django which will be used for the chatbot.(SUMIT, VISHAL, NRIPENDRA)
