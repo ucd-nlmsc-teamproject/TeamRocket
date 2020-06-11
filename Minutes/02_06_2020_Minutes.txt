@@ -1,0 +1,34 @@
+Minutes of the Meeting
+02-June-2020
+Intro:
+The objective of the project?
+Covid-19 Topic was agreed upon, due to internships, no actual plan was discussed
+
+Mark: Need to get specific as possible, asap
+What is the vision? The topic is too broad, 
+What will the project look like? What is the problem we are trying to solve?
+Need to set an agreement straight before we can begin
+
+Good to have: 
+1 Page vision document containing the solution to the problem we are working on.
+Possible images for clearer vision
+Need to setup 1 week-long sprints, make sprint plans, with intermediate milestones
+Device a metric to check the progress of the project based on the deliverables.
+
+Have deadlines with presentations, build dates, each person needs to have a primary role.
+Each person should be responsible for the suggestion of what they are going to work on, need to be responsible for prioritisation.
+ 
+Need to talk on architecture, tech stack, data is the key, sort the data source asap. Need to identify the source of value that can be made acceptably presentable on next Tuesday.
+
+
+Vision:? Near term basic version that we can build asap to know if we are going ahead on the right track. 
+
+Team Management: Jira Board
+
+Communication: Set up daily sprint meetings.
+Later: use Slack, google collab etc.
+
+ToDO
+Few basic Ideas each to build on: an overall vision, and few key bullet points of key deliverables
+Need to discuss on Internships and progressions
+
