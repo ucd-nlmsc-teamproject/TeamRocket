@@ -1,0 +1,20 @@
+
+Minutes of the Meeting
+10-June-2020 (Meeting to flesh things out)
+
+13:00: Meeting started, talking about how to have a centralised testing platform to test code
+
+13:15: Gherkin for testing 
+13:30: Decide clearly what roles we want to do for the task
+Have clear outline 
+Clear domains for everyone
+14:20: Describe clear outline of the web app, its core features and the types of data it will deal with. The queries that it will answer will be tackled in depth at a later stage.
+
+15:00: Success of application based on user expectation, sumit, and vishal will work on user based test cases for thorough evaluation
+
+Empirical tests to compare efficiency and reach of data.
+
+15:30: Breakdown of the description of the app and further fleshing out of roles.
+
+15:45: Apurva filled in on the details of the meeting findings and the final decisions made
+
