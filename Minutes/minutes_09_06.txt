@@ -1,0 +1,66 @@
+Minutes of the Meeting
+09-June-2020 (Weekly meeting with simon)
+
+15:40: Simon: want to make sure we are keeping minutes, submit the minutes logged so far.
+
+Create a video format of the presentation, video will overlap most of the project plan.
+This what we are doing, this is what we plan to do, to help kickstart any quick feedbacks that may be given.
+
+Add the members to all the shared drives and github
+
+15:55: Rearrange project plan to accommodate the newcomers.
+Simon points: Objective is pretty clear: unexpected implementation good. 
+Answer queries that could be answered, at the moment its broad but we want to focus on the type of query.
+Articulate the queries that could be asked as user stories: alice is curious about x. Factual/news information
+Try and use alexa api to skip through first step. Already API’s to help use existing grammar based language processing. 
+Use of dialogue flow is okay
+
+16:05: Potentially 8 members: breakdown the problems and roles even further 
+Breakdown tasks even further within the project plan.
+Devise things that will happen within milestone
+Assign tasks to each member 
+Main editor of report
+Role for processing data 
+Conflict resolution
+Testing 
+Collecting data
+
+
+NLTK is not preferable for chatbot, good for training? 
+
+Dataplan is brief, data types, the criteria for what type of data will be chosen, (The language, categories, location, etc).
+The types of queries will affect the criteria of acceptance of data
+
+Single biggest risk: pinpoint of data sources: types of data. Structures and how to map different types of data to the query. 
+Way to tackle: find as many potential sources of data as possible and keep discussing. And who can process the data. 
+How to train the chatbot on this data.
+How to deal with CONTRADICTORY information.
+
+Within next week have a chatbot of someform: Simple fact checking related to covid.
+
+Make sure the github is being regularly updated. 
+
+Go through several versions of MVP not a one shot
+
+How to evaluate the entire project properly. Keep log of research. Links visited, development done, any research.
+Team evaluation: via jira and other managements tools, via sprints
+
+16:15 Development evaluations : what passes as a success for the application
+How do we demonstrate that the app meets the project criteria. 
+As well as as personal objective that we want our app to do.
+Ex: implement chatbot, everyone answers questions to demonstrate to the evaluators that the requirements have been met based on initial objectives.
+
+Empirical evidence to show that our way is better compare to other existing implementations. To show how well it works with hard numbers compared to other existing implementation.
+
+Continually check state of different section to ensure that each section is able to talk numbers and developments made.
+
+Make a live demo potentially every week to show progress
+Contingency plans for potential drops in the future.
+
+Weekly show and tell 5 min video.
+
+TODO: Fleshed out vision for the project at as grunal level as possible
+	Flesh out the roles and responsibilities 
+
+	Empirical evidence to show that our way is better compare to other existing implementations. To show how well it works with hard numbers compared to other existing implementation.
+	
