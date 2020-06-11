@@ -25,3 +25,9 @@ Role:
 
 3.Presentations and 5 min videos.( Minaz, Apurva)
 4. The front end, web development and integration.( Minaz, Aditya)
+
+5. (Apurva, Nripendra, Vishal)
+   -Data Collection from various APIs (focus: Johns Hopkins, data wrt Ireland, tweets)
+   -Data Cleaning/Pre-processing 
+	 
+
