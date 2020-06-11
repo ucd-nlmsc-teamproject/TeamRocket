@@ -22,3 +22,6 @@ Role:
 1.Testing, and evaluation of the chatbot results at a high level: (SUMIT, VISHAL, NRIPENDRA) (Actual User tests cases to test functionality, then compare against user results for checking success rates). 
 
 2. Working on Django which will be used for the chatbot.(SUMIT, VISHAL, NRIPENDRA)
+
+3.Presentations and 5 min videos.( Minaz, Apurva)
+4. The front end, web development and integration.( Minaz, Aditya)
