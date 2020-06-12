@@ -24,11 +24,11 @@ Role:
 2. Working on Django which will be used for the chatbot.(SUMIT, VISHAL, NRIPENDRA)
 
 3.Presentations and 5 min videos.( Minaz, Apurva)
+
 4. The front end, web development and integration.( Minaz, Aditya)
 
-5. (Apurva, Nripendra, Vishal)
-   -Data Collection from various APIs (focus: Johns Hopkins, data wrt Ireland, tweets)
-   -Data Cleaning/Pre-processing 
+5. -Data Collection from various APIs (focus: Johns Hopkins, data wrt Ireland, tweets)
+   -Data Cleaning/Pre-processing  (Apurva, Nripendra, Vishal)
    
 6. Main editor of report, meetings (Aditya, Ashwin)
 
