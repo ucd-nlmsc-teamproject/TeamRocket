@@ -5,7 +5,7 @@ https://api.covid19api.com/countries
 https://api.covid19api.com/country/south-africa?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z
 
 3. Country total details
-https://api.covid19api.com/total/country/china\
+https://api.covid19api.com/total/country/china
 
 4. All the data about Covid
 https://api.covid19api.com/all
