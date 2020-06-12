@@ -1,0 +1,57 @@
+Minutes of meeting: Minaz and Aditya: 11th june
+1:30
+
+Break down of the features in detail for the design and functionality of the web page.
+
+Work on segments as whole 
+
+Upon access have a fade in intro to the website 
+•	The intro informs the user what the website entails
+•	Skip intro option.
+•	First time user feasibility for removing the intro sequence
+
+14:20: FEATURES: 
+MAIN WEB PAGE
+•	Logo on top left, with the web page title as a static in the header.
+•	Chatbot which will be minimised at the bottom right
+•	Chatbot will always be on the bottom right of the screen
+•	The map will be housed in the entire mid section box of the page in a way if the chatbot is maximised it would overlap the map rather than the map resizing itself again
+•	To better implement user interaction with the map while having the chatbot expanded, implement a better map interaction tools where the buttons would either be resized or relocated based upon what is being blocked upon the expansion of the chatbot.
+•	Bottom of the page below the map we will list the top 6 countries with the most active cases and show stats accordingly
+•	The titles of the countries for which the stats are being displayed will be intractable so that the map changes view and shows other related stats for that country.
+•	When the user interacts with the map, i.e clicks on a country for further details, the web page refreshes to the more detailed information view of that country.
+•	The navigation tabs will be housed inside a dropdown box, within a burger button style icon on the top right corner, like in grammarly.
+	 
+	
+•	Make the web page responsive based on the types of devices being used and for their respect screen resolutions
+
+
+Chatbot will be minimized with the map in the background
+
+Web page design and breakdown:
+•	The header title should stay same as the tabs are changed or page is refreshed 
+•	Scroll down Aspect to the main web page to scroll from the map to the stats of the countries down below
+•	Have navigation tabs for information data and sub sections
+•	Symptoms
+•	Preventions 
+•	Helpline numbers - check if there is centralised data for retrieving emergency contact numbers. For further help
+•	Frequently Asked Questions
+•	These sub sections for the information tab will be all housed in a different page seperate from the main web page containing the map and chatbot.
+•	Something of the sorts like the image below
+•	 
+
+14:50
+TASKS for now expand more later based on the features explained above:
+
+•	Logo design
+•	Logo for the chatbot dialogue box 
+•	Title of the web page
+•	COVID-19 Chatbot
+•	COVID-19 Interactive visualizer
+•	
+•	Name of chatbot
+•	Team rocket
+•	Baby - for a bit of lightheartedness when users visits the website.
+•	Rocky
+•	Identify potential colour combinations/theme
+
