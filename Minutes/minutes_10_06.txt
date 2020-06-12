@@ -29,5 +29,11 @@ Role:
 5. (Apurva, Nripendra, Vishal)
    -Data Collection from various APIs (focus: Johns Hopkins, data wrt Ireland, tweets)
    -Data Cleaning/Pre-processing 
+   
+6. Main editor of report, meetings (Aditya, Ashwin)
+
+7. Conflict res: weighted majority, ending in tie breaker resolved by leader (Ashwin)
+
+8. Cloud dev and architecture: (Ashwin, Sumit)
 	 
 
