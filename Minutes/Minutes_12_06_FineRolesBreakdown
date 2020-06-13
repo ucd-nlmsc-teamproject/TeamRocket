@@ -1,0 +1,63 @@
+Meeting minutes of 12th june: everyone was present,
+
+16:00 
+APURVA, VISHAL and NRIPENDRA:
+
+***
+
+***
+
+TASKS weekly for APURVA AND MINAZ
+
+1: Weekly stuff (that’s been done) to be updated, on mondays!
+2: Should be 5min videos explaining every bit that’s done and also future plans
+3: By sunday night so ppt is ready by monday eve
+
+
+Decision on the types of visualization to do: Decision on details will be made by the data team.
+Map visualization 
+Bar graphs/trends per country 
+
+
+16:40
+ADITYA, MINAZ: Front end
+
+1: Choose tools for dev
+2: colour themes
+3: Research colour palette (Cooler colours are used more in general)
+4: Consider limitations, colour blindness for example 
+5: Research for valid tool for front end visualization (Potential, tableau, vega-lite etc) (DECIDE BY NEXT TWO DAYS) 
+6: Decide on titles : COVID-19 Interactive visualizer
+7: Research bot icons and design bot design and logo
+8: Prepare front end minimal view (Prepare the main input boxes by tomorrow for the django team)
+9: Prepare information section data  
+10: icons and names for the site and bot
+11: Visualization team aims to use as a tool for the visualization let ashwin know
+
+  
+
+17:00
+SUMIT, VISHAL
+
+Testing and Evaluation of the product: 
+
+
+SUMIT AND NRIPENDRA (Django team)
+
+
+SUMIT, ADITYA
+Jira Setup
+
+
+17:40
+ASHWIN: Research and cloud support 
+
+1: Compare Azure and AWS to determine the best fit for our use case( 1 week)
+2: Study in brief the different resources available in the platform and in detail the resources that would be used for this project (By tuesday week)
+3: Test deploy the required resources (Data lake, PostrgreSQL DB, Data Factory) and learn its functionalities
+4: Create dummy scripts and trigger them using data factory peipelines and assess their effectiveness in data retrieval and storage
+5: Research about ways to connect the instance of PostgreSQL DB to the front-end web application and test it
+
+NEEDED Snapshot of data, the raw data from different apis, and what the Visualization team aims to use as a tool for the visualization
+
+
