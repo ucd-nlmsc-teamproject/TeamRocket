@@ -3,9 +3,15 @@ Meeting minutes of 12th june: everyone was present,
 16:00 
 APURVA, VISHAL and NRIPENDRA:
 
-***
-
-***
+1. Consider the data that is available within the API link's.
+2. Researching potential API’s to use (Done and decided on john hopkins, for now).
+3. Collection of raw data from the source (CSV format).
+  a. One summary data of all countries on that date of visit.
+  b. One country wise historical data for time series.
+4. Analysis of the information obtained to filter for the scope of the project. 
+5. Data Cleaning/Pre-processing.
+6. Going through the scope of project and the data associated with it to filter from the raw data (Keeping the raw data and the choice to keep what features to keep to be decided still).
+7. Provide Snapshot of data to ashwin, the raw data from different apis to ashwin.
 
 TASKS weekly for APURVA AND MINAZ
 
