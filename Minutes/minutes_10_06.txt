@@ -35,5 +35,12 @@ Role:
 7. Conflict res: weighted majority, ending in tie breaker resolved by leader (Ashwin)
 
 8. Cloud dev and architecture: (Ashwin, Sumit)
+
+9.Team manager - motivator, scheduling meetings, team charter: 
+(ADITYA, SUMIT)
+
+TODO: Go through the roles, and identify a set number of tasks that is relevant to you in that role and write them out in detail.
+Push the list of roles and the associated tasks to GIT
+
 	 
 
