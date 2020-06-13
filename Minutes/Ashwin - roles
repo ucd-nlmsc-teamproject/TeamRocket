@@ -1,0 +1,12 @@
+Cloud architecture:
+1. Compare Azure and AWS to determine the best fit for our use case
+2. Study in brief the different resources available in the platform and in detail the resources that would be used for this project
+3. Test deploy the required resources (Data lake, PostrgreSQL DB, Data Factory) and learn its functionalities
+4. Create dummy scripts and trigger them using data factory peipelines and assess their effectiveness in data retrieval and storage
+5. Research about ways to connect the instance of PostgreSQL DB to the front-end web application and test it
+
+Team Management Tasks:
+1. Responsible for minutes of the meeting (in rotation) during team discussions and meeting with UCD project mentors
+2. Support in academic writing and proofreading them
+3. Making presentations for weekly submissions (In rotation)
+
