@@ -29,3 +29,25 @@ Github: The team has created different folders and is constantly push-commiting 
 
 Progress over last week: this page just shows in slightly more detail the progress the team has achieved so far, We have achieved ….
 
+FINAL SCRIPT:
+Hello everyone my name is Minaz shaikh and I’m from Team Rocket. I’ll be taking you through this presentation. 
+Our project name is Covid-19 interactive visualizer.
+And we aim to create a Web-based Chatbot Application and Map Visualizer 
+this would enable us to solve user queries regarding the COVID-19 pandemic all across the world. Creating more awareness among people regarding the effects of the pandemic specifically in the health sector, 
+as you can see here we have two major features finalized to work on 
+1st on is a chatbot and other one is interactive map. 
+The user can directly interact our chatbot with some queries such as  : Infected rates, Death rates, Recovery rates etc .
+We will be using trusted sources to gather relevant information and power the map based visualizations of the world which will be also deployed on the same application.
+ we aim to achieve the MVP of the app by the submission date of the interim report 
+and we have incremental versions of the app along the way to efficiently manage the progress of the team 
+ we have divided our team in subgroups and these are the tasks the members of each team tackled for our first sprint, 
+The front end is being handled by Aditya and Minaz-
+Apurva and Vishal are working on data and visualization-
+Ashwin will look after the Cloud Deployment-
+Sumit and Nripendra  are woking on Django-
+As pointed in the previous meeting our roles were not well defined so now we have well defined roles, and a set number of tasks that is relevant for each member in that role and written them out in detail.
+
+-> We gather data from web apis(name a couple apis that we are using) that are publicly available and store them on the AWS data lake. The data from apis are extracted using a .py script using the BeautifulSoup framework and the data is transferred from API to the data lake using the AWS Data Piepline that stores and triggers scripts at regular intervals. The data from the lake is then transferred to an instance of PostgrSQL DB on AWS. This is achieved by writing a .py script that analyses and processes the data in the lake and this script is again stored in the AWS Data Pipeline and triggered at regular intervals. The front end has a web application and a chatbot embedded. The chatbot communicates with the data in PostgreSQL DB using the Amazon Lex API which is also used to train the chatbot. Also, the data on the web-application is connected to the DB using the Django framework. The end users are people who interact with the front-end web application and chatbot to get more information about covid-19. 
+->Data plan: we are dealing with two main categories of data(HEALTH AND STATIC INFORMATION ABOUT COVID)the team considered the potential web sources for data and the constrains to be applied to better compile and curate the data
+
+->Github: The team has created different folders and is constantly push-committing the work as and when it is completed. The point made last week were there are very few active pushes from the group members so we have improved on member involvement in git, each member is regularly pushing the work as and when it is completed
