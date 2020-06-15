@@ -1,0 +1,31 @@
+POINTS MADE IN PREV MEETING:
+1: Go through the roles, and identify a set number of tasks that is relevant for each member in that role and write them out in detail.
+2: improved on member involvement in git. Each member is regularly push-committing the work as and when it is completed.
+3: Once the tasks have been fleshed the management team will enter the tasks officially to JIRA and assign them to each member, as well as monitor the git pushes and documentation of each section in the google shared folder. (Document the team mngmnt process)
+
+STRUCTURE:
+1: Introduction / reminder of project objectives
+2: Plans for coming week
+3: Progress made since last presentation: (in regards to progress made from last week, we assigned roles to a finer detail to each sub team. We also tackled the points raised in pre meeting......
+4: Recap of current progress / architecture: Quick mention of addition of Amazon Lex for chatbot implementation, due to better support on AWS.
+5: Final pg of PPt containing 10-15 sec demo vid of page and scent shts of data 
+
+ROUGH OUTLINE:
+on top of making progress on the web application we addressed the following points made in the prv meeting:
+
+Introduce yourself as team member and express that you will be going through the ppt in the next 5 mins
+Talk about aim as written in the page, (By this point you are 30 secs - 1 min in)
+
+When explaining the project plan, quickly mention that we aim to achieve the MVP of the app by the submission date of the interim report 
+and we have incremental versions of the app along the way to efficiently manage the progress of the team 
+
+Roles of team members: specify that the roles mentioned here include the tasks the members of each team tackled for our first sprint, then quickly go through what each team did
+
+Quickly explain the rough idea of the web app architecture, (go by the image)
+
+Data plan: explain that given we are dealing with two main categories of data(HEALTH AND STATIC INFORMATION ABOUT COVID)the team considered the potential web sources for data and the constrains to be applied to better compile and curate the data
+
+Github: The team has created different folders and is constantly push-commiting the work as and when it is completed. 
+
+Progress over last week: this page just shows in slightly more detail the progress the team has achieved so far, We have achieved ….
+
