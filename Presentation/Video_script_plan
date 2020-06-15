@@ -32,6 +32,7 @@ Progress over last week: this page just shows in slightly more detail the progre
 FINAL SCRIPT:
 Hello everyone my name is Minaz shaikh and I’m from Team Rocket. I’ll be taking you through this presentation.
 Our project name is Covid-19 interactive visualizer. 
+
 To quickly remind you of our project objectives, we aim to create a Web-based Chatbot Application and Map Visualizer which would enable us to solve user queries regarding the COVID-19 pandemic all across the world. Creating more awareness among people regarding the effects of the pandemic specifically in the health sector,
 as you can see here we have two major features finalized to work on
 1st one is a chatbot and the other one is the interactive map which will contain visualizations of the data that is collected and curated.
@@ -44,18 +45,27 @@ The front end, which contains the web application and an embedded chatbot, will 
 The end users are people who interact with the front-end web application and chatbot to get more information about covid-19.
 
 Data plan: This is the outline of our data plan and you can view it by pausing this video.
+
 Github: As pointed out in the previous meeting to ensure the presence of the team on git, we have created different folders and each member is constantly push-committing the work as and when it is completed. Just to give a jist you can see in the image the different folders we have.
+
 Team management:  Also as pointed in the previous meeting the framework of the team management was not clearly mentioned. Sumit, aditya and ashwin keep track of members to ensure presence in git and the shared folders and initiate regular morning meetings. Assign tasks to each member and keep track of the progress in jira, git and google drive.
 
 Progress achieved in sprint 1: Each team did the following and are close to finishing the first basic version of the application.
+
 Front-End team is currently working on the Index page and its contents. Started with the CSS Framework Documentation to support the styling of the webpage. Researched and created the chatbot icons and team logo.
+
 The Data team has Research on potential API’s to use (Done and decided on John Hopkinns COVID-19 API), Given we are dealing with two main categories of data(HEALTH AND STATIC INFORMATION ABOUT COVID)
 Scripts for data collection were made ready. 
 Collected one summarized data of all countries and another one is the country-wise time-series data around the number of cases, deaths etc.
+
 Test Evaluation Scripts The creation of a User Test Case script template and a peer review template is done.
+
 For Cloud Architecture We have Started with the research on which platform is best suited for the project between AWS and Azure. Creation of an Analysis document is done which justify why AWS is better for this use case and Identification of the list of resources to be used on AWS is done.
+
 For Django Framework Creation of a Web Framework demo for the Chat-Bot is done. We have Started with the documentation analysis of Amazon LEX as a viable Chat-Bot option.
+
 I'll now show a few screen captures of the progress in terms of the front end view of the app, and the structure of the data saved up until now.
+Including the screen capture of the working project so far.
 Thank you.
 
 VISHAL:
