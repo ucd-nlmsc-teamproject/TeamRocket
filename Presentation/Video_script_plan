@@ -76,3 +76,15 @@ VISHAL:
 4. API also has data specific to country since January 2020 till current date. 
 5. The static data which we are looking is the data about the symptoms of covid, healthy practices of covid and helpline numbers which people might be in such situations.
 We will be using trusted sources to gather relevant information and power the map based visualizations of the world which will be also deployed on the same application.
+
+ASHWIN:
+
+We gather data from web apis(name a couple apis that we are using) that are publicly available and store them on the AWS data lake. 
+The data from apis are extracted using a .py script using the BeautifulSoup framework and the data is transferred from API to the 
+data lake using the AWS Data Piepline that stores and triggers scripts at regular intervals. The data from the lake is then 
+transferred to an instance of PostgrSQL DB on AWS. This is achieved by writing a .py script that analyses and processes the data in 
+the lake and this script is again stored in the AWS Data Pipeline and triggered at regular intervals. The front end has a web 
+application and a chatbot embedded. The chatbot communicates with the data in PostgreSQL DB using the Amazon Lex API which is also
+used to train the chatbot. Also, the data on the web-application is connected to the DB using the Django framework. The end users 
+are people who interact with the front-end web application and chatbot to get more information about covid-19.
+
