@@ -1,0 +1,16 @@
+Minutes of the Meeting
+14-June-2020
+ 
+14.00: Meeting started with Nripendra Explain the working of Github.
+ 
+14.05: Aditya and Minaz started working on the front-end Webpage
+        	- Started with Index page and the contents in it.
+        	- Started working on CSS Framework documentation analysis.
+ 
+14:20: Nripendra and Sumit started with the Documentation analysis of Django so that they can understand the working.
+-        Created a Demo web Framework for the Chabot and pushed the same on Github as of now.
+-        Started with the documentation analysis of Amazon LEX as a viable Chatbot option.
+ 
+14:35: Vishal and Apurva started with Data Collection.
+-        They have written scripts of Data collection from different API links.
+-        Raw data has been stored in the csv format and same is Pushed onto Github for future reference.
