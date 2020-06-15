@@ -30,24 +30,39 @@ Github: The team has created different folders and is constantly push-commiting 
 Progress over last week: this page just shows in slightly more detail the progress the team has achieved so far, We have achieved ….
 
 FINAL SCRIPT:
-Hello everyone my name is Minaz shaikh and I’m from Team Rocket. I’ll be taking you through this presentation. 
-Our project name is Covid-19 interactive visualizer.
-And we aim to create a Web-based Chatbot Application and Map Visualizer 
-this would enable us to solve user queries regarding the COVID-19 pandemic all across the world. Creating more awareness among people regarding the effects of the pandemic specifically in the health sector, 
-as you can see here we have two major features finalized to work on 
-1st on is a chatbot and other one is interactive map. 
-The user can directly interact our chatbot with some queries such as  : Infected rates, Death rates, Recovery rates etc .
+Hello everyone my name is Minaz shaikh and I’m from Team Rocket. I’ll be taking you through this presentation.
+Our project name is Covid-19 interactive visualizer. 
+To quickly remind you of our project objectives, we aim to create a Web-based Chatbot Application and Map Visualizer which would enable us to solve user queries regarding the COVID-19 pandemic all across the world. Creating more awareness among people regarding the effects of the pandemic specifically in the health sector,
+as you can see here we have two major features finalized to work on
+1st one is a chatbot and the other one is the interactive map which will contain visualizations of the data that is collected and curated.
+Plans for coming week:we aim to achieve the MVP of the app by the submission date of the interim report, and we have incremental versions of the app along the way to efficiently manage the progress of the team 
+
+Roles: As pointed in the previous meeting our roles were not well defined so now we have well defined roles as highlighted in this slide, and a set number of tasks that is relevant for each member in that role. The tasks are documented and monitored in detail via sprint plans in jira. 
+
+Architecture: We gather data from web apis and stored in an AWS data lake. Use the AWS Data Pipeline to trigger python scripts at regular intervals which will extract and store the data. The data is then transferred to an instance of PostgrSQL DB on AWS.
+The front end, which contains the web application and an embedded chatbot, will communicate with the data in the DB using Django and the Amazon Lex API which is also used to train the chatbot. 
+The end users are people who interact with the front-end web application and chatbot to get more information about covid-19.
+
+Data plan: This is the outline of our data plan and you can view it by pausing this video.
+Github: As pointed out in the previous meeting to ensure the presence of the team on git, we have created different folders and each member is constantly push-committing the work as and when it is completed. Just to give a jist you can see in the image the different folders we have.
+Team management:  Also as pointed in the previous meeting the framework of the team management was not clearly mentioned. Sumit, aditya and ashwin keep track of members to ensure presence in git and the shared folders and initiate regular morning meetings. Assign tasks to each member and keep track of the progress in jira, git and google drive.
+
+Progress achieved in sprint 1: Each team did the following and are close to finishing the first basic version of the application.
+Front-End team is currently working on the Index page and its contents. Started with the CSS Framework Documentation to support the styling of the webpage. Researched and created the chatbot icons and team logo.
+The Data team has Research on potential API’s to use (Done and decided on John Hopkinns COVID-19 API), Given we are dealing with two main categories of data(HEALTH AND STATIC INFORMATION ABOUT COVID)
+Scripts for data collection were made ready. 
+Collected one summarized data of all countries and another one is the country-wise time-series data around the number of cases, deaths etc.
+Test Evaluation Scripts The creation of a User Test Case script template and a peer review template is done.
+For Cloud Architecture We have Started with the research on which platform is best suited for the project between AWS and Azure. Creation of an Analysis document is done which justify why AWS is better for this use case and Identification of the list of resources to be used on AWS is done.
+For Django Framework Creation of a Web Framework demo for the Chat-Bot is done. We have Started with the documentation analysis of Amazon LEX as a viable Chat-Bot option.
+I'll now show a few screen captures of the progress in terms of the front end view of the app, and the structure of the data saved up until now.
+Thank you.
+
+VISHAL:
+
+1. The API used for this project is the john Hopkins one which had a lot of information regarding the Covid-19 stats around the globe.
+2. Best part about this API is it gives us, real time data, that means the API data is updated time to time and with that we can track the real time data. 
+3. As of now, the API gives us raw data which tells us total number of cases, recovered cases, deaths and active cases around the globe. 
+4. API also has data specific to country since January 2020 till current date. 
+5. The static data which we are looking is the data about the symptoms of covid, healthy practices of covid and helpline numbers which people might be in such situations.
 We will be using trusted sources to gather relevant information and power the map based visualizations of the world which will be also deployed on the same application.
- we aim to achieve the MVP of the app by the submission date of the interim report 
-and we have incremental versions of the app along the way to efficiently manage the progress of the team 
- we have divided our team in subgroups and these are the tasks the members of each team tackled for our first sprint, 
-The front end is being handled by Aditya and Minaz-
-Apurva and Vishal are working on data and visualization-
-Ashwin will look after the Cloud Deployment-
-Sumit and Nripendra  are woking on Django-
-As pointed in the previous meeting our roles were not well defined so now we have well defined roles, and a set number of tasks that is relevant for each member in that role and written them out in detail.
-
--> We gather data from web apis(name a couple apis that we are using) that are publicly available and store them on the AWS data lake. The data from apis are extracted using a .py script using the BeautifulSoup framework and the data is transferred from API to the data lake using the AWS Data Piepline that stores and triggers scripts at regular intervals. The data from the lake is then transferred to an instance of PostgrSQL DB on AWS. This is achieved by writing a .py script that analyses and processes the data in the lake and this script is again stored in the AWS Data Pipeline and triggered at regular intervals. The front end has a web application and a chatbot embedded. The chatbot communicates with the data in PostgreSQL DB using the Amazon Lex API which is also used to train the chatbot. Also, the data on the web-application is connected to the DB using the Django framework. The end users are people who interact with the front-end web application and chatbot to get more information about covid-19. 
-->Data plan: we are dealing with two main categories of data(HEALTH AND STATIC INFORMATION ABOUT COVID)the team considered the potential web sources for data and the constrains to be applied to better compile and curate the data
-
-->Github: The team has created different folders and is constantly push-committing the work as and when it is completed. The point made last week were there are very few active pushes from the group members so we have improved on member involvement in git, each member is regularly pushing the work as and when it is completed
