@@ -1,0 +1,42 @@
+Minutes of the Meeting
+16-June-2020
+
+
+****
+
+
+
+
+
+Pointers/ Concerns raised by Deepak: Team glued together well, and made good progress.
+Aim is clearer, and more focused. (roles better defined)
+On the right track.
+Focus on presentation.
+Goal as specific as possible.
+Clear description of What we aim to accomplish for interim:
+Deepak asked to make sure the data is finely tuned so that the chatbot queries can be strictly restricted.
+Liked the idea of integration
+Sent links for Covid data research: https://medium.com/@barrysmyth
+Have a look at the data sources to see ways to integrate to our plan.
+Evaluation strategies
+Team management hierarchies, and if sub teams were running well.
+
+
+
+Pointers to be addressed for next week:
+
+1: Showing that the project is worthy of 7 people spending 12 weeks.
+Can chatbot answer Non Trivial questions, eg: different Levels of granularity, state, city, continent, 1.e: questions that cannot be answered by directly pulling the data, smaller computations required before displaying the answer.(Union questions)
+
+2: Overview of the minimum project requirements and making sure that we are adhering to the main requirements before the MVP. Such as, making sure we are accomplishing the data sources requirements 
+
+3: Be a bit more ambitious, aim for MVP as basic functionality,
+Make sure all possible data is being collected for future queries…
+Non-trivial extensions we would like to integrate.
+Expand on the initial objective that we had of the application in a way that we are able to achieve the “reach goals”
+Integrating the different systems is one of these non trivial tasks.
+
+4: Go through the link of related research and data being pulled and brainstorm and implement new ways of potentially integrating data that may be relevant to the project from the link.
+Come up with a clearer plan for evaluation.
+
+
