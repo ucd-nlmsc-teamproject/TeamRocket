@@ -1,0 +1,17 @@
+1. Country details
+https://api.covid19api.com/countries
+
+2. Coutnry status details
+https://api.covid19api.com/country/south-africa?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z
+
+3. Country total details
+https://api.covid19api.com/total/country/china
+
+4. All the data about Covid
+https://api.covid19api.com/all
+
+5. Summary of the Covid-19 Data which contains all the statistics
+https://api.covid19api.com/summary
+
+6. Global Data (Tallied records: Total cases, Recovered, Deaths) Time Series Data
+https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
