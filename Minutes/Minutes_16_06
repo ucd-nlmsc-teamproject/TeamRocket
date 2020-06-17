@@ -2,10 +2,29 @@ Minutes of the Meeting
 16-June-2020
 
 
-****
+15:30: Started with addressing last week’s feedback and Ashwin explained it to deepak. And he asked for any challenges to be addressed.
+Focus on the delivery which is due in two weeks. Need to send the MOM back to them.
+
+15:35: Deepak asked what is the end goal about the project and nripendra started giving the details about the project. Specific details like what are the stats in any country. Covered the details of the MVP, and deepak asked us to reevaluate the project objective to potentially include any more non-trivial features.
+
+15:45: Minimum viable product: Certain parts are to be worked on. Chatbot which won't be completely trained and which will give more general answers. Amazon lex is being used for the Chatbot. Working on Django as no one us has its experience. Front End is being handled by Minaz and Aditya.
+Chatbot will be allowing any query. Still not finalized on any raw data and not set to ask any specific questions.
+Keep the query set restricted. Follow a strict query format which can be parsed. 
 
 
+15:55 Inputs to how to train the chatbot
+Answer: restrict the chatbot to specific datasets which are very clean. From the clean dataset we can answer queries efficiently. Cannot be able to answer any type of queries.
 
+16:00: Explained the data source and told what all data we will be using and again explained the how visualization will work. 
+Deepak expressed concerns for lack of clear plan of evaluation and suggested different evaluation strategies to consider. 
+
+Plans For evaluation: Sumit, evaluating the product as a whole from the users perspective. Set of use cases, to make sure that stats and visualization are being displayed correctly, and comparing the stats with other implementations.
+Mark the response time, is it Fast enough or not. Accuracy is not the only thing to be looked at. User testing, response time for response, accuracy of data
+If the response Time acceptable or not, not just compare speeds with other chatbots
+
+Can ask the user if the time taken for response is good or not?
+
+16:10: Went over the team structure and was happy that the team was gelling well, and we addressed the contingency plans in case of Ashwin leaving the team. Mentioned that every section of the development is being documented in a way that in case anyone drops from the team then the transfer of roles can be managed in a very fluid and efficient manner.
 
 
 Pointers/ Concerns raised by Deepak: Team glued together well, and made good progress.
