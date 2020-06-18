@@ -1,0 +1,11 @@
+18/06/2020-Cloud and Deployment.
+Sumit and Ashwin met for Cloud set up for AWS.
+
+Ashwin applied for the student account.
+We looked up on the sample services documents like S3,EC2,
+We discussed on  the documentation available on aws portal.
+We discussed how data can be pushed onto s3 from external sources.
+Ashwin once he has the acess will look into the AWS console and try to create a pipeline
+He will also deploy all the necessary resources to the pipeline.
+
+If there are any challenge we will meet again to figure out how we should proceed.
