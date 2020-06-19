@@ -1,0 +1,37 @@
+
+Data to be considered when using the above APIs
+-Statistics of COVID-19 cases (total, currently active, recovered, deceased, tests done) [real time data required, updates happen regularly] -> LIVE DATA
+-Data already loaded in (symptoms of COVID-19, healthy habits to be followed, whom to contact for testing related situations...) [stored-and-forgotten scenario, doesn’t need updates] -> OLD DATA
+
+COVID-19 APIs in consideration
+•	Johns Hopkins COVID-19 
+Majorly using https://api.covid19api.com/summary
+•	European Centre for Disease Prevention and Control: COVID-19
+•	https://data.gov.ie/
+•	Tweets from Twitter  (if required)
+
+Data Collection and required filtering/cleaning/pre-processing
+-Data Collection from various APIs
+	-considering the above mentioned APIs (focus: Johns Hopkins, data wrt Ireland)
+-Data Cleaning/Pre-processing
+	-Removing stop-words where necessary?
+	-missing values if present? (mostly there won’t be any for the statistics part though, just in case of no countries with no cases at all I guess) 
+
+Visualizations to be decided on : 
+Map visualizations, bar/ trends per country?
+Research and find out about ways this can be implemented in Tableau
+
+Presentations
+Weekly stuff (that’s been done) to be updated, on mondays!
+Should be 5min videos explaining every bit that’s done and also future plans
+
+
+
+
+
+
+
+
+
+
+
