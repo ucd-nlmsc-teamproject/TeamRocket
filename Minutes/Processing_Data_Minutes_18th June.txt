@@ -1,0 +1,44 @@
+Google Meet
+19th June,20
+
+4 - 5 pm (Apurva, Vishal, Ashwin)
+
+Discussion started on the two types of main data under consideration for further visualization
+-Summarized (1 dataframe having the statistical data) (This is perfect and done, no further changes required)
+-Time Series (in this, there are 4 different dfs corresponding to Active cases, deaths, confirmed cases and recovered cases)
+Visualization mainly to be in the form of trends/graphs showing how gradually COVID-19 spread over the various months in countries.
+
+Discussed about merging the stats data of Active, Confirmed, Recovered and Death cases (for the time series dataframe; since that would be useful in plotting all the data easily).
+That is, combining (4 different dataframes , mentioned above) for better visualizations. 
+
+Discussed about having additional columns that'd segragate dates on a much more granular level,
+That is, separate the Date into corresponding Day of the week and month (year over here is not essential)
+
+
+Met on TeamViewer
+6pm - 10pm (Apurva, Vishal)
+
+PART-1: 
+
+Pre-processing completed; ie, merging of the 4 dataframes as discussed in the earlier call.
+Created a separate column to store the Country and another column that'd store the (Active, Confirmed, Recovered and deaths for every country)
+So for every country A, there would be 4 rows dedicated to the Country A
+
+eg, Country Afghanistan : Confirmed
+    Country Afghanistan : Active
+    Country Afghanistan : Deaths
+    Country Afghanistan : Recovered
+
+So when we'd be referring to the cases in particular, we'd use two keys (Country name with the cases column) to identify the same.
+
+PART-2:
+
+Raw Data
+Added additional columns to separate the date into the respective DAY of the week and MONTH of the year. (Didn't consider the month, it's constant: 2020).
+Used the Calendar package for the same.
+Additional columns added separately for each country's records.
+
+
+
+
+
