@@ -13,6 +13,6 @@ body{
   /* Making it responsive using viewport height*/
   background-size: cover;
   background-position: centre;
-  
+
   height:100vh;
 }
