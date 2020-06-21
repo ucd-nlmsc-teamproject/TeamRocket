@@ -1,0 +1,112 @@
+
+VERSIONS/MILESTONES:
+Planning the release versions of the web application to a finer level for shorter sprints and better team efficiency.
+
+v1.0  (8th June – 15th June’20)
+First view of the rough front-end page of the web-page along with main statistical summarized data collected.
+
+v1.1  (16th June – 22nd June’20)
+Integration of Django to the front-end and a basic implementation of the Chat-Bot.
+
+v1.2  (24th June – 1st July’20)  Milestone 1 / MVP
+Core implementation of the paramount tasks (House the Chat-Bot and prepare the map visualizations) before the interim presentation and subsequent preparation of the report.
+
+After having achieved V1.2 and the delivery of MVP , we aim to further breakdown tasks and reach goals  to design a finalized sprint plan and plan the release versions accordingly.
+
+
+
+
+
+
+
+
+
+SPRINT PLAN
+Sprint 1
+9th june - 15th june
+
+
+Sprint 1 tasks : 9th june - 15th june 
+
+Cloud and deployment team:
+Identify the resources and limitations of each platform - Cloud and Deployment team 
+Compare AZURE and AWS to determine the better of the two cloud architectures
+
+Data team: 
+Consider data that is available within the scope of the project
+Collecting raw data from the potential shortlist of all available sources
+Data cleaning and preprocessing
+Researching potential API's to use
+
+Project management
+Keep track of members to ensure presence in git and the shared folders and have daily morning meetings
+Add tasks and assign owners to each member
+Create sprint plans for subsequent weeks
+Weekly presentation to log progress of the team
+preparation of 5 min video explaining the rough overview of the progress
+
+Django team
+Backend framework setup, development and integration
+analyze any risks involved
+Understanding django, identify issues for implementation
+
+Front end Team
+prepare front end minimal view, including main input input boxes
+Research icon and bot designs and finalise on designs for both
+Choose tools for development of the front end of the website
+decide on the titles of the webpage, as well as the name for the bot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sprint 2 tasks : 16th june - 22nd june 
+Aim: Aim to fine-tune the data samples, start finalizing the types of visualizations to be used, start integrating Django, test the cloud framework to begin implementation and have a clean front end to display. (Confer on the types of queries to be answered? Filters to apply?)
+
+
+Tasks:
+
+Project management
+Keep track of members to ensure presence in git and the shared folders and have daily morning meetings
+Add tasks and assign owners to each member
+Create sprint plans for subsequent weeks
+Weekly presentation to log progress of the team
+preparation of 5 min video explaining the rough overview of the progress
+
+Cloud and deployment team:
+Test deploy the required resources (Data lake, PostrgreSQL DB, Data Factory) and learn its functionalities
+Create dummy scripts and trigger them using data factory peipelines and assess their effectiveness in data retrieval and storage
+
+Data team: 
+Data cleaning and preprocessing
+Finalize potential API's to use
+preparation of global summary data of all countries until the date of visit to the website
+Decision on the types of visualizations to do(Once the data has been finely prepared and curated)
+Provide snapshot of the final raw data and processed data to the cloud team for collaboration
+
+Django team
+Backend framework setup, development and integration
+analyze any risks involved
+Understanding django, identify issues for implementation
+
+Front end Team
+Prepare information section data
+Prepare the main colour themes and the colour palette for visualizations
+Clean the front end of the web application design and structure the layout of the pages accordingly.
+
+
+
+
+
+
+
