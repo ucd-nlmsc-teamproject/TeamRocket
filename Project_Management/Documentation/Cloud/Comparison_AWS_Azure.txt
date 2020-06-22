@@ -1,0 +1,22 @@
+Cloud Architecture
+Comparison between Amazon AWS and Microsoft Azure.
+For the list of resources in the scope of this project, we believe AWS is more suited compared to Azure due to the following reasons:
+1. AWS has a cheaper data storage cost in data lakes and databases compared to Azure
+2. AWS subscription is cheaper compared to Azure and charges on an hourly basis compared to a minute basis by Azure
+3. The number of free credits available for Amazon student subscription is higher
+4. The Amazon Lex API is much more advanced in terms of functionality compared to the Microsoft Bot on Azure
+5. AWS also lets us connect to DialogFlow whereas Azure does not have that option
+Resources used in AWS for the project:
+Amazon S3 - To store raw data and pre-processed data
+AWS Data Pipeline – To transfer data from a source to destination
+Amazon RDS – To store data in relational tables
+Amazon Lex(Alternative to DialogFlow)  -To train and build the chatbot
+Sources:
+https://www.datacenterknowledge.com/cloud/can-aws-lake-formation-take-azure-data-lake
+https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-s3deploy.html
+https://stackshare.io/stackups/aws-glue-vs-azure-data-factory#:~:text=AWS%20Glue%3A%20Fully%20managed%20extract,Schedule%2C%20%26%20Manage%20Data%20Pipelines.&text=Serverless%20%2D%20AWS%20Glue%20is%20serverless.
+https://aws.amazon.com/blogs/big-data/introducing-on-demand-pipeline-execution-in-aws-data-pipeline/
+https://www.knowledgenile.com/blogs/aws-data-pipeline-vs-aws-glue/
+https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0
+https://www.edureka.co/blog/aws-vs-azure/#:~:text=Both%20AWS%20and%20Azure%20provide,and%20automatic%20replication%20across%20regions.
+https://www.otava.com/reference/aws-vs-azure-key-differences/
