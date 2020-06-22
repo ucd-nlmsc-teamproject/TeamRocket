@@ -1,0 +1,24 @@
+**************
+
+
+
+After having studied above APIs, currently we’ve narrowed down on the John Hopkinns API, for the reasons below:
+It has all the data that is required for us to work on, ie. A lot of information about the statistics of MANY countries to start with.
+It gives the information specific to countries starting from the month of January until the latest updated date, ie. If we’re getting the data for the date 16th June, we’d get the data updated until 15th June. So basically, it provides us with real time data! This could be useful when we’re plotting visualizations for various countries (to show trends that the cases follow) 
+We’ve already  collected raw data pertaining to the total cases, recovered cases and deaths for about 186 countries as of now.
+We’ve also collected the time series data pertaining to the same 186 countries (for each day until today, starting from 22nd Jan, until the most recent updation date of data collection)
+
+Apart from this real time data, we look forward to collect static data (which requires no updation) pertaining to the symptoms of COVID, healthy habits and so on. 
+We’d also be getting information from some additional APIs and integrate the required datasets to enhance the availability of data from various APIs to be put in one place.
+Pre_processing:
+We need the summary data to be clean enough in the matter of Timestamp and other elements.
+We have dropped only one column from the summary data which is slug. This column was used to country names in the end of the api to collect data. 
+Next is the country data which we collected. This data has many columns which were null so they were dropped.
+The next thing was to convert the data into time series data.
+External Links!!
+1. https://api.covid19api.com/countries (Country Details)
+2. https://api.covid19api.com/country/south-africa?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z (Country Status Details)
+3. https://api.covid19api.com/total/country/china (Total stats/details per country)
+4. https://api.covid19api.com/all (Everything about COVID-19)
+5. https://api.covid19api.com/summary (Summary of stats like total cases, recovered cases, deaths)
+6. https://github.com/CSSEGISandData/COVID19/tree/master/csse_covid_19_data/csse_covid_19_time_series  (Global Data (Tallied records: Total cases, Recovered, Deaths) Time Series Data)
