@@ -1,0 +1,36 @@
+FINAL SCRIPT:
+Hello everyone my name is Minaz shaikh and I’m from Team Rocket. I’ll be taking you through this presentation.
+Our project name is Covid-19 interactive visualizer. 
+To quickly remind you of our project objectives, we aim to create a Web-based Chatbot Application and Map Visualizer which would enable us to solve user queries regarding the COVID-19 pandemic all across the world. Creating more awareness among people regarding the effects of the pandemic specifically in the health sector, (30 s)
+The two main features of the application are as follows:
+1st one is a chatbot and the other one is the interactive map which will contain visualizations of the data that is collected and curated.
+As part of the main non-trivial extensions we would like to integrate these two main features of the application in a manner where the Visualizer responds to queries made in the chatbot.
+Plans for coming week: We aim to achieve the MVP of the app by the submission date of the interim report. In order to address the concern from last week of showing that the application is complex enough for a 12 week project, we have addressed the issue in the following slides. To ensure that the progress of the team is being efficiently managed, the MVP of the application is aimed to be functional at a basic level, including the core visualizations and a basic implementation of the chatbot. 
+
+Roles: As mentioned in last week's video, each member has been assigned to a team and has a set of defined roles for until the interim presentation. For each sprint we set a number of tasks that are relevant for each member in that role. The tasks are documented and monitored in detail via sprint plans in jira.
+
+(1:35s)Architecture: We gather data from web apis and store it in an AWS data lake. As described before, the front end, which contains the web application and an embedded chatbot, will communicate with the data in the DB using Django and the Amazon Lex API which is also used to train the chatbot. 
+The end users are people who interact with the front-end web application and chatbot to get more information about covid-19.
+
+Data plan: This is the outline of our data plan and you can view it by pausing this video.
+Github: As pointed out in the previous meeting to ensure that we are keeping track of the minimum project requirements and that we are adhering to the main requirements before the MVP, we have created different folders and each member is constantly push-committing the work as and when it is completed. Just to give a jist you can see in the image the different folders we have.
+Team management:  As mentioned in the last video, Sumit, aditya and ashwin keep track of members to ensure presence in git and the shared folders and initiate regular morning meetings. Each task is carefully assigned and monitored in jira, git and google drive.
+Progress achieved in sprint 2: Each team did the following and are close to finishing version 1.1 of the application.
+Front-End team is currently working on the Index page and its contents. Refining the overall structure of the web page with a clean flow and layout. Started with the CSS Framework Documentation to support the styling of the webpage. Researched and created the chatbot icons and team logo.
+DATA: Apurva,Vishal
+After having collected these two main datasets, they were cleaned and preprocessed to be further refined onto a granular level.
+Two major tasks have been done:
+Merging of 4 dataframes (which contain active/confirmed/deceased/recovered cases) so all of the data is available in one dataframe easily.
+Adding additional columns on the basis of parent column DATE: ie, Day of the week, week number, month in order to use them for trend visualizations.
+Finally to be a bit more ambitious for the upcoming interim demo, the team is exploring related research carried out on the COVID-19 pandemic and implement new ways of potentially integrating data that may be relevant to the project such as from the barry smith medium page.
+Two main visualizations have been decided and deployed on Tableau which you'll see further in the ppt. 
+Test Evaluation Scripts The creation of a User Test Case script template and a peer review template is done.
+
+For Cloud Architecture We have Started with the research on which platform is best suited for the project between AWS and Azure. Creation of an Analysis document is done which justify why AWS is better for this use case and Identification of the list of resources to be used on AWS is done.
+For Django Framework : Analyzed django's framework, and prepared the document analysis to prepare the advantages and limitations of it in web development. We have set up a functional framework and successfully attached the homepage, and is successfully running on the local machine.
+Also ran basic tests on Amazon LEX to understand the way the chabot responds to queries to start limiting the queries that can be answered. As part of a more complex task to be attempted we aim to get the chatbot to be able to answer non-trivial questions which will be a step above a simple data retrieval request.
+
+I'll now show a few screen captures of the progress in terms of the front end view of the app, and the structure of the data saved up until now.
+Including the screen capture of the working project so far.
+Thank you.
+
