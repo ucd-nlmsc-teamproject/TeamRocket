@@ -1,6 +1,36 @@
-**************
+
+DATA MANAGEMENT DOCUMENT 
+
+(Progress since June 1st week until now..)
+
+DATA TEAM : Apurva Deore, Vishal Padma
+
+Initial research was done on various APIs such as below,
+●	Johns Hopkins COVID-19 : Majorly using https://api.covid19api.com/summary
+●	European Centre for Disease Prevention and Control: COVID-19 
+●	https://data.gov.ie/
+●	Tweets from Twitter  (if required) 
+
+Considering that we need the data that’d answer statistical and theoretical questions asked to the Chatbot; we further divided the data into two broad sections.
+I) Statistics of COVID-19 cases (total, currently active, recovered, deceased, tests done) [real time data required, updates happen regularly] -> LIVE DATA
+II) Data already loaded in (symptoms of COVID-19, healthy habits to be followed, whom to contact for testing related situations...) [stored-and-forgotten scenario, doesn’t need updates] -> OLD DATA
+
+DYNAMIC / LIVE DATA
+Statistics of COVID-19 cases Per Country [Real Time Data, Updating regularly]
+-Total cases
+-Active cases
+-Recovered cases
+-Deceased cases
+-Tests done
+https://api.covid19api.com/summary
+https://api.covid19api.com/countries
 
 
+STATIC DATA
+Data already loaded in and doesn’t need frequent updates.
+-Symptoms of COVID-19?
+-Healthy habits to be followed? 
+-Whom to contact for testing related situations (some helpline numbers)
 
 After having studied above APIs, currently we’ve narrowed down on the John Hopkinns API, for the reasons below:
 It has all the data that is required for us to work on, ie. A lot of information about the statistics of MANY countries to start with.
