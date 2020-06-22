@@ -22,52 +22,6 @@
 		display: block;
 	}
 
-		.dropdown {
-	  float: left;
-	  overflow: hidden;
-	}
-
-	.dropdown .dropbtn {
-	  font-size: 16px;
-	  border: none;
-	  outline: none;
-	  color: white;
-	  padding: 14px 16px;
-	  background-color: inherit;
-	  font-family: inherit;
-	  margin: 0;
-	}
-
-	.navbar a:hover, .dropdown:hover .dropbtn {
-	  background-color: red;
-	}
-
-	.dropdown-content {
-	  display: none;
-	  position: absolute;
-	  background-color: Black;
-	  min-width: 160px;
-	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	  z-index: 1;
-	}
-
-	.dropdown-content a {
-	  float: none;
-	  color: black;
-	  padding: 12px 16px;
-	  text-decoration: none;
-	  display: block;
-	  text-align: left;
-	}
-
-	.dropdown-content a:hover {
-	  background-color: #ddd;
-	}
-
-	.dropdown:hover .dropdown-content {
-	  display: block;
-	}
-
 	body {
 		line-height: 1;
 	}
@@ -3409,14 +3363,14 @@
 	#banner {
 		color: #f2a3a5;
 		padding: 13em 0 11em 0;
-		background-color: rgb(0, 0, 0);
-		background-image: url("../../images/banner.jpg");
+		background-color: rgb(255, 255, 255);
+/*		background-image: url("../../images/banner.jpg");*/
 		background-size: contain;
 /*		background-repeat: no-repeat;*/
 /*		background-position: 15% left;*/
 		text-align: left;
 /*		position: relative;*/
-		z-index: 9999;
+/*		z-index: 9999;*/
 	}
 
 		#banner input, #banner select, #banner textarea {
@@ -3527,7 +3481,7 @@
 			height: 100%;
 			display: block;
 			top: 0;
-			left: 0;
+			left: 0;    
 			background-color: #0c0c0c;
 			opacity: 0.25;
 		}
