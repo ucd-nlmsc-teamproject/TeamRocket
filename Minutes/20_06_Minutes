@@ -1,0 +1,29 @@
+Minutes of the Meeting
+20-June-2020
+
+A summary of the tasks being worked on by each team
+15:00: need to work on the evaluation techniques which will be tackled in depth at the end of week3 meeting next monday, along with more focused progress towards preparing the limitations for the chatbot queries.
+
+15:15 Apurva and vishal discussed the visualizations that have been produced on tableau.
+Templates prepared. 
+Sumit ran a demo on the django framework working on one page.
+Integrated with the front page, remains to be integrated with the second page.
+
+15:20: Discussion regarding data and cloud to tackle visualization, initially 4 datasets, active, death etc, merged into 1, raw data save. So that there is only one big dataset being monitored.
+Granularity drill down, dates into days, weeks etc, integrate the different datasets into a single table, to power two tableau templates.
+
+Big task: prepare data in specific format for cloud 
+Decision to how to present a live demo of tableau, access to tableau online?
+
+15:30 presented visualizations and demoed what we have. What sort of logarithmic visualizations we would like
+How country has progressed individually, compared to other countries
+
+Top x choice of countries to show how each of them perform in relation to each other
+Prepare colour schemes for reach goal.
+
+15:45: django demo
+Refactoring folder structure in git.
+
+End of meeting.
+
+
