@@ -1,0 +1,61 @@
+Web dev documentation:
+This document highlights the tools that is being used in the development of the front end of the web application, as well as the process of creating the web page
+Atom: As a text editor Atom was released by GitHub. Since Atom is written in HTML, CSS, and JavaScript, It gives a great level of support for creating full-fledged desktop apps. Given that it has been in the scene for longer than other platforms, it has a dedicated and large user base allowing for a large amount of support and tutorials for development. Atom even goes a step further, offering complete GitHub integration and its smart auto-completion helps to write code faster with multiple pane support for better work efficiency.
+ 
+VS Code: Despite Visual studio Code having slightly better performance out of the box, Atom, on the other hand, gives much more power to the plugins such as the live server plugin allowing for the user to actively view the page as changes are being made.
+As much of the editor’s functionality comes from built-in plugins, the right plugin can create an almost entirely new app. The availability of shortcuts which immediately produce chunks of predefined code makes the atom platform compared to VS code, a very user friendly and hackable app.
+ Considerations for designing the web page:
+1: Since the web application will contains both the static (User can only read the information but can’t do any modification or interact with the information.) and dynamic (Dynamic web page shows different information at different point of time ) aspects of a web page, we
+It is possible to change a portion of a web page without loading the entire web page. It has been made possible using Ajax technology.
+AJAX is based on the following open standards −
+Browser-based presentation using HTML and Cascading Style Sheets (CSS).
+Data is stored in XML format and fetched from the server.
+At the moment we are yet to decide whether it will be easier to make direct requests to the server from the web page or have another visualizer such as tableau(housed on the page) which will be interacting with the underlying data.
+Server-side dynamic web page
+
+
+2: User Experience.
+Also known as UX, user experience is about what type of experience your customers and prospective clients have on your site.
+When designing a website, it’s all too easy to get caught up in what you want to see on the site and forget about the people actually using your site. were thinking about themselves more than their target audience.To prevent the website from having too much clutter from excess information and confusing verbiage and labeling, we followed a few core rules to help better the user experience.
+Clean flow and layout. Make sure it’s easy for people to understand and navigate, allowing for the experience to be interactive and simple. Make all information easy to access and intuitive. If its too difficult to understand how th website works, or requires explanation, its a failure.
+Reducing the clutter: To make the information page less confusing and overwhelming since we are dealing with a serious subject, we carefully consider and curate the most important information that the users will look for and compile them in a interesting an intuitive manner with the help of recognisable icons and plenty of negative space to help the page breathe , making it easy to navigate and find the required information. (including about us, contact etc). Also low use of jargon.
+Responsive design : Make sure that the website is compatible across all devices and resizes the important components accordingly. Make the website appeal to the users in a way they stay connected to the web application and receive the critical information needed.
+
+
+3. Visual hierarchy
+Since this web page is aimed to primarily be an informational page on the COVID-19 pandemic, with core visualizations, to help people scan through the website effectively, the web pages will be built by considering the measured reading patterns by placing important elements, like the logo, the map visualizer and the chatbot icons, along the axes that the reader is expected to scan. We will approach the conventional “F” shape in the information section to layout the information in a user friendly manner. 
+Its a known fact that in most cultures, people read left-to-right and top-down by scrolling on mobile devices. Therefore since the web application will be supported in multiple platforms we intend to support intuitive scroll down responses on the web page based on the user interaction, to help the user scan for information rather than having to read exactly what the information is.
+For example when a user asks the chatbot a question, the webpage will scroll down to display the relevant trends that the user queried about.
+4: Exploring templates and themes:
+We would like to make the webpage as cohesive to the theme of Covid-19 as possible. In order to make sure that the colours are not exaggerated and overwhelming to the user to the point, the experience becomes jarring. 
+Using “Web safe” fonts to accommodate for almost all the browsers across all platforms. To reduce clutter, we will keep the number of different fonts on the platform to a minimum. Two or three at the most.
+Take considerations to ensure that the font files are not overly large, drastically affecting the load times of the application. 
+Images and colours:
+We will consider two or three main colour palettes which will all be minimal and choose from the lot, which would be more appealing for a user given the task they wish to accomplish when visiting the web page. The colour palette pairings will be researched to consider for colour blindness.
+Pleasing the eye in a way so that textual information can be easily read and consumed by the average viewer, while serving to highlight the most important information.
+Even though the main map visualizer is intended to be interactive to the user, the movement is aimed to be very minimal, and most of the images in the information section will be stills, given the fact that In general, studies have shown that viewers much prefer websites that keep still.
+The images in use will abide by the licensing restrictions and  will be relatively small to consider for the fact that Images often account for 60% or more of a web page’s size/loading time.
+ 
+Templated.co theras
+https://materializecss.com/grid.html
+colour palette approachable etc
+Themes explored and reasoning for choice.
+
+Embedding tableau dashboard onto the web page.
+https://help.tableau.com/current/pro/desktop/en-us/embed.htm
+
+
+
+Chatbot implementations:
+https://landbot.io/blog/chatbot-website-examples/
+Risk assessment chatbot 
+https://www.chatbot.com/covid19-chatbot/
+https://www.hse.ie/chatbot/covid/chatiframe.aspx
+ 
+
+Splash page:
+https://blog.hubspot.com/marketing/splash-page
+
+Web des guide: 
+https://99designs.ie/blog/tips/web-design-basics-guide/
+
