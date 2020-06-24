@@ -3128,7 +3128,7 @@
 			}
 
 		#header .logo {
-			font-family: 'Pacifico', cursive;
+			font-family: 'impact';
 			display: inline-block;
 			height: inherit;
 			left: 0;
@@ -3138,9 +3138,9 @@
 			position: absolute;
 			top: 0;
 			color: #e5474b;
-			font-size: 1.75em;
+			font-size: 1.95em;
 			text-transform: none;
-			font-weight: normal;
+			font-weight: lighter;
 			padding: 0;
 		}
 
@@ -3363,14 +3363,14 @@
 	#banner {
 		color: #f2a3a5;
 		padding: 13em 0 11em 0;
-		background-color: rgb(0, 0, 0);
-		background-image: url("../../images/banner.jpg");
+		background-color: rgb(255, 255, 255);
+/*		background-image: url("../../images/banner.jpg");*/
 		background-size: contain;
 /*		background-repeat: no-repeat;*/
 /*		background-position: 15% left;*/
 		text-align: left;
 /*		position: relative;*/
-		z-index: 9999;
+/*		z-index: 9999;*/
 	}
 
 		#banner input, #banner select, #banner textarea {
