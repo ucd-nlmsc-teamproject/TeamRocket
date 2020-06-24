@@ -1,0 +1,26 @@
+Minutes of the Meeting
+17-June-2020
+
+
+Tasks: data team, assigning new tasks to Apurva: 
+
+Decision to how to represent static data, include about                                                                
+1: Populate the web page in one section regarding information
+2: When asking questions to the chatbot, what happens: How to filter the queries, sumit and nripendra to explore the api in depth later.
+
+
+USER INPUT: chatbot input and interaction with the web page.
+Ping on static page to show when last updated
+
+Reasoning for no search bar, chatbot does this
+Issues with Django, going through tutorials, finalise fields that will be available for user. 
+	
+Update static data: from 
+
+Check ways to breakdown code, how to integrate scripts. 
+Start looking at integrating visualizations, 
+
+For interim, stick to trivial questions that can be answered by the chatbot. I.e standard data retrieval
+Compile list of queries so that we can back engineer the ways to restrict the chatbot into answering trivial questions.
+1 way to restrict trivial queries: If the user asks a question with the keywords that are in the data frame itself, then the question will be answered by
+
