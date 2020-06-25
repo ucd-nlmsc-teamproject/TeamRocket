@@ -1,23 +1,14 @@
-<!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!doctype html>
 
-
-<html>
-{% load static %}
-	<head>
-		<title>Introspect by TEMPLATED</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
-	</head>
-	<body>
-
-		<!-- Header -->
-			<header id="header">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static '../../static/chatbot/assets/css/main.css' %} " />
+    <link rel="stylesheet" media="print" href="{% static '../../static/chatbot/assets/css/print.min.css' %}" />
+  <title>COVID-19 Interactive Visualizer</title>
+</head>
+<body>
+    <header id="header">
 				<div class="inner">
 					<a href="index.html" class="logo">COVID-19 Interactive Visualizer</a>
 					<nav id="nav">
@@ -26,63 +17,34 @@
                             <option>Statistics</option>
                             <option>Information Section</option>
                         </select>
--->
-						<a href="index.html">Stats</a>
+-->                     <a href="index.html">Overview</a>
 <!--						<a href="generic.html">Generic</a>-->
-						<a href="elements.html">Information</a>
+						<a href="infoindex.html">Information</a>
+                        
 					</nav>
 				</div>
+        
 			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-
-		<!-- Banner -->
-			<section id="banner">
-
-
-<!--
-            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="inner"><div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-                var setting= {
-                    "height": 500, "width":1020,
-                    "zoom":10, "queryString":"Dublin, Ireland", "place_id":"ChIJL6wn6oAOZ0gRoHExl6nHAAo", "satellite":false, "centerCoord":[], "cid":"0xa00c7a9973171a0", "lang":"en", "id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id":"226122"
-                }
-                ;
-                var d=document;
-                var s=d.createElement('script');
-                s.src='https://1map.com/js/script-for-user.js?embed_id=226122';
-                s.async=true;
-                s.onload=function (e) {
-                    window.OneMap.initMap(setting)
-                }
-                ;
-                var to=d.getElementsByTagName('script')[0];
-                to.parentNode.insertBefore(s, to);
-            }
-
-            )();
-            </script><a href="https://1map.com/map-embed">1 Map</a></div>
--->
-
-
-
-<!--
+    <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+	<div class='tableauPlaceholder' style='width: 1250px; height: 600px;'>
+		<object class='tableauViz' width='1366' height='603' style='display:none;'>
+			<param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> 
+			<param name='embed_code_version' value='3' /> 
+			<param name='site_root' value='&#47;t&#47;covid19projectteamrocket' />
+			<param name='name' value='WorldMap&#47;Sheet1' />
+			<param name='tabs' value='no' />
+			<param name='toolbar' value='no' />
+			<param name='showAppBanner' value='false' />
+		</object>
+	</div>
+    <section id="one">
 				<div class="inner">
-					<h1>Introspect: <span>A free + fully responsive<br />
-					site template by TEMPLATED</span></h1>
-					<ul class="actions">
-						<li><a href="#" class="button alt">Get Started</a></li>
-					</ul>
-				</div>
--->
-			</section>
-
-		<!-- One -->
-			<section id="one">
-				<div class="inner">
+                    
 					<header>
-
-						<h2>Globally, as of 11:52am CEST, 15 June 2020, there have been 7,805,148 confirmed cases of COVID-19, including 431,192 deaths, reported</h2>
+                
+						<h2>Welcome to Team Rocket's COVID-19 Visualizer</h2>
 					</header>
-					<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu, erisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula bibendum nibh ut tristique. Proin vel quam non dui dictum tincidunt ac quis ex. Nullam dignissim sit amet erat tempor eleifend. Donec semper enim purus, sit amet ultricies ipsum mattis vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam neque leo, iaculis eu fermentum eu, tincidunt quis eros. Morbi quis nisl euismod, rutrum nibh a, commodo augue. Mauris sit amet arcu ac nisl finibus ultricies. Duis a est laoreet, laoreet tortor non, viverra ligula. In hac habitasse platea dictumst. Phasellus gravida dolor tortor, vel convallis lorem tincidunt non.
+					<p>This is a Web-based Chatbot Application and Map Visualizer which aims to visualize the current situation of the COVID-19 pandemic all across the world, and the chatbot will help answer basic queries concerning the circumstances.
                     </p>
 					<ul class="actions">
 <!--						<li><a href="#" class="button alt">Learn More</a></li>-->
@@ -99,7 +61,7 @@
 								<h3>Total Confirmed Deaths WorldWide</h3>
 							</header>
 							<div class="image fit">
-								<img src="{% static 'chatbot/images/pic01.jpg' %}" alt="" />
+								<img src="{% static '../../static/chatbot/images/pic01.jpg' %}" alt="" />
 							</div>
 							<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
 						</div>
@@ -110,7 +72,7 @@
 								<h3>Total Confirmed Recoveries WorldWide</h3>
 							</header>
 							<div class="image fit">
-								<img src="{% static 'chatbot/images/pic02.jpg' %}" alt="" />
+								<img src="{% static '../../static/chatbot/images/pic02.jpg' %}" alt="" />
 							</div>
 							<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
 						</div>
@@ -148,7 +110,7 @@
 					<article>
 					<div class="content">
 							<span class="icon fa-laptop"></span>
-							<header>
+							<header> 
 								<h3>Sed Magna</h3>
 							</header>
 							<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.</p>
@@ -163,7 +125,7 @@
 		<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
-					<header>
+					<header> 
 						<h2>Get in Touch</h2>
 					</header>
 					<form method="post" action="#">
@@ -190,10 +152,9 @@
 			</section>
 
 		<!-- Scripts -->
-			<script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'chatbot/assets/js/skel.min.js' %}"></script>
-			<script src="{% static 'chatbot/assets/js/util.js' %}"></script>
-			<script src="{% static 'chatbot/assets/js/main.js' %}"></script>
-
-	</body>
+			<script src="{% static '../../static/chatbot/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static '../../static/chatbot/assets/js/skel.min.js' %}"></script>
+			<script src="{% static '../../static/chatbot/assets/js/util.js' %}"></script>
+			<script src="{% static '../../static/chatbot/assets/js/main.js' %}"></script>
+</body>
 </html>
