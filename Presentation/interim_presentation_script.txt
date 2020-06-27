@@ -1,0 +1,94 @@
+The interim presentation is a 10 minute formal presentation of current progress. Like the show-and-tell presentations, this should be prerecorded by the team and uploaded here in mp4 format. The presentation should be structured as follows:
+What is the link to the corresponding challenge?
+Welcome as the team member of team rocket. Given the extent of the current situation regarding the COVID-19 pandemic, people are yet to grasp a good understanding. Due to the mind numbingly large sources of data(news articles, open source data sets, and huge social media traffic, it is difficult for the average user to get access to true and diverse information. Thus we decided to tackle this topical COVID-19 challenge as part of the summer project. 
+Given the main overview of the project requirements including:
+providing a (near)real time view of the current situation  
+allowing for geographically and/or temporal differentiated views of the situation
+ 
+Overview of project objectives: what problem(s) is the project trying to solve / address?
+We thus came up with the following project objective: Creation of a Web-based Chatbot Application and Map Visualizer which would enable us to solve user queries regarding the COVID-19 pandemic across the world and better inform and educate users on the situation. 
+We aim to implement two core features on the web application which include:
+A chatbot which would selectively answer user’s queries about covid-19, based on the underlying information we store. Eg: What are the symptoms of COVID-19? What is the current number of active cases in ireland?
+An interactive map based feature which represents the world via multiple intuitive visualizations which would be user interactable, providing the user with various statistics and other useful information about the pandemic across different parts of the world.
+E.g. Total cases? Active cases?
+The project aims to create more awareness among the general public regarding the effects of the pandemic specifically in the health sector, i.e Infected rates, Death rates, Recovery rates, etc, by letting users directly interact and query the chatbot regarding questions pertaining to the pandemic such as identifying the symptoms of the disease, information on the number of cases in the user’s area/city/country, promoting healthy habits to prevent infection and spread etc. 
+The web page will use trusted sources to gather relevant, regularly updated information in the aforementioned categories which will be used to drive the responses of the bot and power the intuitive map and graph based visualizations of the world which will also be deployed on the same application. The visualization dashboards of the data that will be carefully collected and curated aim to give a clear and reliable indication to the user at a glance of the situation across different parts of the world.
+
+
+Who are you doing this for? Why do they need it? 
+The application primarily aims to present users with COVID-19 cases and deaths reported by countries, territories and areas. By obtaining present official daily counts from reliable data sources, the dashboards which will be integrated onto the platform are intended to serve as a frequently updated data visualization and data exploration resource for the general user. 
+It will also provide a centralised location to gather all the important information pertaining to the COVID-19 disease, which would be gathered from trusted sources so that users are aware and armed with the most accurate and up to date data. This would be done by either, directly interacting with the chatbot, or via an information page where the most important static data will be curated and stored, aiding users in the efforts to enable everyone to stay protected, safe and healthy while being able to easily monitor the situation across the entire world.
+
+Technology Stack: What are the key technologies that you are using and why are they the best choices for your project? 
+Team management: 
+Communication and documentation: Shared google drive folder: A file storage and synchronization service which allows the team to be able to efficiently save all the documentation of progress of the project including MOM’s, powerpoint presentations and other scripts. Since the tool allows for each of access and simultaneous editing, it's the preferred tool.
+WhatsApp: Team members maintain regular contact via WhatsApp for quick updates and close to daily meetings are conducted via Google Meet. Since everyone is familiar with the platform which allows for easy creation of groups and supports enhanced sharing of files.
+Project management: Jira: Jira is a highly configurable and flexible tool which allows for usage in a wide variety of environments and processes. The Jira workflows, issue types, and screens enable tailoring for almost any scenario and can easily be monitored and changed via the administration user Interface. The ease of use for configuring sprint and updating tasks makes it the right tool for the task
+Version control: Git: A Version-control system for tracking changes in source code during the development of the web application. The management team keeps track of the members to ensure that everyone is push-committing regularly onto the repository to maintain a good presence on the platform, enabling efficient update and development of code within each sub-team.
+Data processing: 
+Jupyter notebook: Jupyter Notebook is an open-source web application that allows us to create and share codes and documents. It provides an environment, where you can document your code, run it, look at the outcome, visualize data and see the results without leaving the environment. We run it using python 3.7, Due to the ease in streamlining the work and enabling more productivity and easy collaboration amongst team members, this is the tool of choise for data dev.
+Visualizations: Tableau online: data visualization tool which helps you convert textual and numerical information to beautiful visualizations via interactive dashboards. It is the best way to change or transform the raw data into easily understandable data and is very user friendly and supports a high degree of customisability. Thanks to it also supporting easy embeding of dashboards onto a web platform, its the primary tool of choice for visualizations.
+Backend and chatbot: Amazon Lex: Bot: Since the Amazon Lex bot is powered by Automatic Speech Recognition (ASR), it can understand user input provided with text or speech and converse in natural language, by creating Lambda functions and add them as code hooks in your intent configuration to perform user data validation and fulfillment tasks. Intent: An intent represents an action that the user wants to perform. You create a bot to support one or more related intents. Due to the support of voice and text recognition and high level of configuration we decided to use the tool to develop the bot.
+ 
+The  API also supports the creation of custom tools to manage your Amazon Lex resources. 
+ 
+Django: Given that django is one of the most mature web frameworks for Python, it greatly supports reducing web application development time, by taking advantage of python syntax rules to produce easily manageable code. The features provided by Django allows us to build custom web applications rapidly according to varying project requirements. 
+Since the project requires the application to be supported on various devices and platforms, django enhances the accessibility of web applications by supporting major operating systems like Windows, Linux and MacOS.
+Due to the high amount of support and documentation, both of these tools were chosen for backend development.
+Web development: 
+Atom and brackets: As a text editor Atom was released by GitHub.Both of the text editors  comes with a great set of visual tools and preprocessor supports. The availability of shortcuts which immediately produce chunks of predefined code, and its git integration makes the atom a very user friendly editor.
+Both text editors support smart auto-completion, and the Inline Editors allow easy opening and editing of HTML, Javascript and CSS files. Given the live preview feature which supports real-time connection to your browser to immediately see the changes made on the file reflect on the screen.
+What systems architecture / infrastructure do you have?
+Cloud 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Data Sources: What are the key data resources you are using and how are you accessing them and how will they support your application? 
+Considering that we need the data that’d answer statistical and theoretical questions asked to the 
+Chatbot; we further divided the data into two broad sections.
+
+I) Statistics of COVID-19 cases (total, currently active, recovered, deceased, tests done) [real time data required, updates happen regularly] -> LIVE DATA
+II) Data already loaded in (symptoms of COVID-19, healthy habits to be followed, whom to contact for testing related situations...) [stored-and-forgotten scenario, doesn’t need updates] -> OLD DATA
+ 
+ 
+How are you organising and storing data?
+ 
+ 
+Evaluation: How will you evaluate your system? What question(s) are you trying to answer with your application and how will you evaluate if it is successful?
+ 
+Current status: Outline the progress you have made so far and explain why this constitutes an MVP.
+
+
+The two core features will be implemented in an iterative fashion where we will have a basic implementation for each which later will be developed to a higher level given time and success. 
+
+Basic features for chatbot: Predefined query responses and good UI
+High level implementation: NLP based query analysis for answering questions, and conversation style like in google.
+Increasing level of complexity in the types/themes of queries that can be answered( Volunteering, Reporting, etc)
+Basic feature of map: An overview of the impact of the COVID-19 pandemic in different areas( Hospitals, businesses etc), across different parts of the world
+Minimum partition by countries
+High level implementation: Greater level of granularity of area based stats
+The map graphics is dynamic and reacts to user interaction with :
+1: The map itself
+2: The map reacts to queries made in the chatbot 
+
+
+Team Management: how are you currently operating as a team? What's working well? What isn't working well, and how will/could you improve?
+Jira: Use of professional project management tool Jira, to have a centralized framework where other team members can actively view each other’s progress.
+Use backlogs and epics to outline each team member’s work and filter them accordingly by each team, define sprints, plan the work to be done and the corresponding deadlines for them.
+This is monitored and updated regularly.
+The documents are split and saved within its corresponding folders. The people in charge regularly maintain the shared folders to ensure everything is cleaned and well organized. The minutes of each team meeting is thoroughly logged to closely track the progress of the team at each stage along the way and stored into the minutes folder. Likewise storing other documents such as description of roles and team code into their respective folders allows for both documentation and all data to be cumulated at one place for enhanced availability and accessibility.
+
+
+Sprints covered, 
+ 
+Sprint plan: where are you in your sprint plan? Are you on schedule? What are the immediate next steps and longer term plans towards the final presentation? 
+ 
+Integrate ML on the data to have expected trends, integration between the features to make them interactive and responsive, 
+Higher level of query responses and a level of NLP to help with a higher degree of interaction with user queries.
+Automated query generation to help better train the bot.
+
+
