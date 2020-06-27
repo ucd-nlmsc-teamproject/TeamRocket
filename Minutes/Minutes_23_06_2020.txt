@@ -1,0 +1,23 @@
+Minutes of the Meeting
+23-June-2020 (Weekly meeting with Neil)
+
+15:30: Meeting started with neil, expressed overview of what the team had achieved over the last sprint. The team is in a pretty good place, advised to ensure that the team continues to have a good vision as to how it can get better beyond the MVP.
+Critical remark : Need to continue to be ambitions, geographical data and visualizations, are at a basic level and of concern that they may not be complex enough to warrant a high mark
+Question of evaluation: Try and prepare a clear framework for evaluating the web application, have a basic structure prepared for the interim.
+15:45: Sumit and vishal: testing and evaluation, explained that the team has user test cases prepared to test the response of the application. 
+Prepare data with the ground truth to compare against web page evaluation measures.
+Variation of queries?
+Neil proposed to research a tool which may help to generate based on a dataset, a new dataset consisting of different ways to ask the same query and if the information is being correctly displayed for each type of query being asked.
+(eg: For a query of TYPE A, it can be generated to be asking in a million different ways, but each way of asking the type A question always returns an answer of TYPE A.)
+Research other potential datasets which may be available, to evaluate the chatbot.
+Precision recalls evaluation, a lot of different questions in different ways, with ground truth associated with that.
+How the chatbot deals with random questions,
+Real users interact in complicated ways, since user testing is only viable options
+16:00: Asked if we store historical info
+It has been announced, the number of cases being modified of some days in the past, how it can be managed in the database,
+Have you noticed any changes in data collected, Detecting any anomalies and updates made on anomalies. Vishal, expressed how the apis are being continually refreshed regularly, and the new data is saved and thus automatically updates the webpage. Also addressed the concern if data is lost, we saw raw data as backup to go back to.
+
+Summary of where we are: nice place: danger: geographical part looks straightforward, looking to beyond, show the value of the project
+EG: Time series machine learning x- number of days in the future estimate
+Possible TODO Beyond MVP: Predict r0 numbers, rt numbers, make sure that we have the data to support that
+Clear idea on how to evaluate the chatbot.
