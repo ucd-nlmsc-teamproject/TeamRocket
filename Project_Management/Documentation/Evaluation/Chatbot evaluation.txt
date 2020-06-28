@@ -1,0 +1,13 @@
+Below are the three basic evaluation questions/measures which will be used to evaluate the chatbot:
+1. The information retrieval perspective: As part of this evaluation, we would  be looking at the questions answering service offered by the chatbot, so we can measure their performance in terms of accuracy, e.g. using precision, recall, F-measure (Whichever is suited). This is a common approach, but focuses on relatively low-level metrics that don’t always align with the overall user experience. In this way we can check on the information being retrieved and can measure how relevant the data is with respect to the user query.
+2. The user experience perspective: As part of this evaluation, we would  be looking at chatbot  which is essentially an interactive software application, which can evaluate them from a human factors or usability point of view, and focus on measures such as task completion and user satisfaction which are considered to be the primary measures. This method can give us insights and feedback on how well the user is satisfied with the chatbot and its overall functionality of the application of delivering the answers to the user query.
+3. Measure of performance with respect to time: As part of this evaluation, we would be looking at the performance of the chatbot with respect to information retrieval for any given query. In other words, time taken by the chatbot to answer the user query and this way we can check the speed of the chatbot and analyse further to make the speed better using different feasible changes to the chatbot.  
+
+Type of questions to be answered by the chatbot:
+1)  What is the condition of Country(need to specify) right now?
+2) What are the recovered cases of “country”?
+3) What are the death cases of “country”?
+
+4) What is the current number of infected/confirmed cases in “country”?
+
+These are the types of questions we are tackling for the product right now and as we move forward with the project we will tackle some more feasible queries. And these queries will be evaluated on the basis of the above three measures as mentioned. As of now the Chatbot is in a learning phase where it is set up and running and we are yet to configure the queries regarding the covid 19 statistics. As of now the chatbot can do greetings to the user and has some few more tricks up its sleeves. But we are still yet to reach the milestone of it answering the user queries for chatbot.
