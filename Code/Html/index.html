@@ -5,6 +5,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" media="print" href="assets/css/print.min.css" />
+    <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" media="print" href="assets/css/print.min.css" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <title>COVID-19 Interactive Visualizer</title>
 </head>
 <body>
@@ -17,27 +23,47 @@
                             <option>Statistics</option>
                             <option>Information Section</option>
                         </select>
--->                     <a href="index.html">Overview</a>
-<!--						<a href="generic.html">Generic</a>-->
-						<a href="infoindex.html">Information</a>
-                        
+-->                      <ul class="nav navbar-nav">
+<!--
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+-->
+
+                <li class="dropdown">
+                  <a href="index.html">Overview</a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="symptoms.html"  style="color:black;">Symptoms</a></li>
+                    <li><a href="prevention.html"  style="color:black;">Prevention</a></li>
+                    <li><a href="FAQ.html"  style="color:black;">FAQ</a></li>
+<!--
+                    <li class="divider"></li>
+                    <li><a href="#" >Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+-->
+                  </ul>
+                </li>
+              </ul>
+
 					</nav>
 				</div></header>
         <div class="content">
 							<header>
 								<h2>Welcome to Team Rocket's COVID-19 Visualizer</h2>
-                                
+
 							</header>
         </div>
-			
-   
-    
-    <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1536px; height: 602px;'><object class='tableauViz' width='1536' height='602' style='display:none;'><param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;covid19projectteamrocket' /><param name='name' value='WorldMapTrendFinal&#47;Sheet1&#47;aditya.krishnan@ucdconnect.ie&#47;a2d83764-736b-4d1c-8fd2-8c0a5777077f' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div>
-        
+
+
+
+    <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+    <div class='tableauPlaceholder' style='width: 2000px; height: 602px;'><object class='tableauViz' width='1850px' height='602' style='display:none;'><param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;covid19projectteamrocket' /><param name='name' value='WorldMapTrendFinal&#47;Sheet1&#47;aditya.krishnan@ucdconnect.ie&#47;a2d83764-736b-4d1c-8fd2-8c0a5777077f' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div>
+
     <section id="one">
 				<div class="inner">
-                    
-					
+
+
 					<p><bold>This is a Web-based Chatbot Application and Map Visualizer which aims to visualize the current situation of the COVID-19 pandemic all across the world, and the chatbot will help answer basic queries concerning the circumstances.</bold>
                     </p>
 					<ul class="actions">
@@ -49,18 +75,31 @@
 		<!-- Two -->
 			<section id="two">
 <!--				<div class="inner">-->
-					
+
 						<div class="content">
 							<header>
-								<h3>Top 10 Countries by Case-Category</h3>
-                                
+								<h3>Top 10 Countries by Case-Category</h3><br>
+
 							</header>
 							<script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 900px; height: 452px;'><object class='tableauViz' width='900' height='452' style='display:none;'><param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;apurvadeore95' /><param name='name' value='Visualizations_Top10&#47;Top10CONFIRMED' /><param name='tabs' value='yes' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div>
-							<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
-						</div><br>
+
+						</div> <br>
+
+
 <!--				</div>-->
 			</section>
 <section id="two">
+
+    <div class="content">
+
+					<header>
+								<h3>Major COVID-19 Trends across the world</h3><br>
+
+							</header>
+							<script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1920px; height: 800px;'><object class='tableauViz' width='1920' height='834' style='display:none;'><param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;apurvadeore95' /><param name='name' value='World_Trend_Individual_Countries&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div>
+
+				</div>
+<!--
 				<div class="inner">
 					<article>
 						<div class="content">
@@ -73,10 +112,12 @@
 							<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
 						</div>
 					</article>
-					
+
 				</div>
+-->
 			</section>
 		<!-- Three -->
+<!--
 			<section id="three">
 				<div class="inner">
 					<article>
@@ -106,7 +147,7 @@
 					<article>
 					<div class="content">
 							<span class="icon fa-laptop"></span>
-							<header> 
+							<header>
 								<h3>Sed Magna</h3>
 							</header>
 							<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.</p>
@@ -117,11 +158,12 @@
 					</article>
 				</div>
 			</section>
+-->
 
 		<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
-					<header> 
+					<header>
 						<h2>Get in Touch</h2>
 					</header>
 					<form method="post" action="#">
@@ -141,9 +183,7 @@
 							<li><input type="submit" value="Send Message" class="alt" /></li>
 						</ul>
 					</form>
-					<div class="copyright">
-						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
-					</div>
+
 				</div>
 			</section>
 

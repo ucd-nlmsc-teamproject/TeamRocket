@@ -40,7 +40,7 @@
          .theme-cyan nav ul.tp-nav-main li.active.selected>a:first-child{color:#006c80;}
           
       </style>
-      <link rel="stylesheet" type="text/css" href="../modules/css-js-patches/covidstyletemp.css">
+      <link rel="stylesheet" type="text/css" href="modules/css-js-patches/covidstyletemp.css">
       <!-- CSS Added Dynamically Here -->		
       <meta name="DC.date" content="2020-06-01T06:18:33Z" />
       <meta name="cdc:last_published" content="2020-06-01T20:43:07Z" />
@@ -53,17 +53,20 @@
             <a href="index.html" class="logo">COVID-19 Interactive Visualizer</a>
              
             <nav id="nav">
+                
               <ul class="nav navbar-nav">
 <!--
                 <li class="active"><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
 -->
+                
                 <li class="dropdown">
+                  <a href="index.html">Overview</a>
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#mildsimps"  style="color:black;">Symptoms</a></li>
-                    <li><a href="#"  style="color:black;">Prevention</a></li>
-                    <li><a href="#"  style="color:black;">FAQ</a></li>
+                    <li><a href="symptoms.html"  style="color:black;">Symptoms</a></li>
+                    <li><a href="prevention.html"  style="color:black;">Prevention</a></li>
+                    <li><a href="FAQ.html"  style="color:black;">FAQ</a></li>
 <!--
                     <li class="divider"></li>
                     <li><a href="#" >Separated link</a></li>
@@ -91,6 +94,7 @@
             </nav>
        
          </div>
+<!--
        <script>
            $('ul.nav li.dropdown').hover(function() {
             $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
@@ -98,6 +102,7 @@
                 $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
                 });
        </script>
+-->
       </header>
       <!-- Page Content Wrap -->
       <div class="container d-flex flex-wrap body-wrapper bg-white">
@@ -122,7 +127,7 @@
          <div class="row">
             <div  class="col content ">
                <div class="syndicate">
-                  <h1 id="content">Symptoms of Coronavirus</h1>
+                   <h1 id="content"><a id="title">Symptoms of Coronavirus</a></h1>
                </div>
                <div class="mb-3 card tp-related-pages fourth-level-nav d-none">
                   <div class="card-header collapse-icon">
@@ -167,7 +172,7 @@
                         <h4 class="mt-0">Symptoms of COVID-19</h4>
                         <p>Please be familiar with the following range of symptoms, increasing in severity related to the virus as people with these symptoms may have COVID-19:</p>
                         <ul>
-                           <h5 class="mt-0">Mild Symptoms</h5>
+                            <h5 class="mt-0"><a id="mildsymptoms">Mild Symptoms</a></h5>
                            <li>Dry and Sore Throat</li>
                            <li>Coughing - This can be any kind of cough, not just dry</li>
                            <li>Tiredness and a lack of energy for daily tasks.</li>
@@ -175,7 +180,7 @@
                               <p><strong>People with mild symptoms who are otherwise healthy, should behave as if you have the virus and self-isolate for 14 days. People in your household will need to restrict their movements.</strong></p>
                            </div>
                            <br>
-                           <h5 class="mt-0">Moderate Symptoms</h5>
+                            <h5 class="mt-0"><a id="moderatesymptoms">Moderate Symptoms</a></h5>
                            <li>Fever - High temperature of 38 degrees Celsius or above</li>
                            <li>Loss or Change to your sense of smell or taste - You cannot smell or taste anything</li>
                            <li>Loss or Change to your sense of smell or taste - Things smell or taste different to normal</li>
@@ -183,7 +188,7 @@
                            <li>Lack of orientation, Decreased alertness, and muscle pain.</li>
                            <li>Conjunctivitis, a rash on skin, or discolouration of fingers or toes</li>
                            <br>
-                           <h5 class="mt-0">Severe Symptoms</h5>
+                            <h5 class="mt-0"><a id="severesymptoms">Severe Symptoms</a></h5>
                            <li>Difficulty breathing or shortness of breath</li>
                            <li>Dizziness- Difficulty concentrating</li>
                            <li>Chest pain or pressure</li>
@@ -192,150 +197,51 @@
                         </ul>
                         <br>
                         <div class="card-body bg-amber-q">
-                           <p><strong>Seek immediate medical attention if you have any of the serious symptoms. You may also need to be tested for coronavirus. Find out when you should call your GP to be assessed for a test.
-                              </strong>
-                           </p>
-                        </div>
-                        <br>
-                        <p>This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19. <br> They can be similar to the symptoms of cold and flu so contact your ....</p>
-                        <div class="card border-0 mb-3">
-                           <a class="onThisPageAnchor" id="anchor_1591881015" name="symptom-checker" title="symptom-checker" ></a>
-                           <div class="card-body ">
-                              <a role="button" href="https://www2.hse.ie/conditions/coronavirus/managing-coronavirus-at-home/when-to-get-medical-help-and-hospital-treatment.html" id="cdc-chat-bot-button" class="ds-8 ds-5 card-btn noLinking noDecoration card" target="_blank">
-                                 <div class="card-body ">
-                                    <div class="row">
-                                       <div class="card-icon pt-2"><span class="sr-only">user md chat light icon</span><span class="fi cdc-icon-user-md-chat-light icon fill-cyan-p x64" aria-hidden="true"></span></div>
-                                       <div class="col">
-                                          <h2 class="card-title h4 mb-1 text-left">Self-Checker</h2>
-                                          <p>A guide to help you make decisions and seek appropriate medical care.</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                        </div>
-                        <p></p>
-                     </div>
-                  </div>
-                  <div class="row ">
-                     <div class="col-md-12">
-                        <div class="row-fluid">
-                           <div class="vc_empty_space col-12 pt-4"><span class="vc_empty_space_inner"></span></div>
-                        </div>
-                        <div class="card bg-transparent border-0 mb-3">
-                           <a class="onThisPageAnchor" id="seek-medical-attention" name="When%20to%20seek%20medical%20attention" title="When to seek medical attention">
-                              <!-- -->
-                           </a>
-                           <div class="card-body p-0">
-                              <div>
-                                 <div class="card border-0 mb-3">
-                                    <div class="card-body bg-cyan-q">
-                                       <div class="card-title h4 text-left">When to Seek Emergency Medical Attention</div>
-                                       <p>Look for <a id="anchor_1588970424185" class="onThisPageAnchor" title="Warning Signs"></a><strong>emergency warning signs*</strong>&nbsp;for COVID-19. If someone is showing any of these signs, <strong>seek emergency medical care</strong> <strong>immediately</strong></p>
-                                       <ul>
-                                          <li>Trouble breathing</li>
-                                          <li>Persistent pain or pressure in the chest</li>
-                                          <li>New confusion</li>
-                                          <li>Inability to wake or stay awake</li>
-                                          <li>Bluish lips or face</li>
-                                       </ul>
-                                       <p>*This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.</p>
-                                       <p><strong>Call Emergency or call ahead to your local emergency facility: </strong>Notify the operator that you are seeking care for someone who has or may have COVID-19.</p>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <h4>Caring for yourself or others</h4>
-                        <ul class="false">
-                           <li><a href="/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">How to protect yourself</a></li>
-                           <li><a href="/coronavirus/2019-ncov/if-you-are-sick/care-for-someone.html">How to care for someone who is sick</a></li>
-                           <li><a href="/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">What to do if you are sick</a></li>
-                        </ul>
-                        <div class="row-fluid">
-                           <div class="vc_empty_space col-12 pt-3 pb-3"><span class="vc_empty_space_inner"></span></div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row  mb-3 pt-3 bg-white">
-                     <div class="col-md-12"></div>
-                  </div>
-                  <div class="row ">
-                     <div class="col-md-12">
-                        <div class="card ">
-                           <div class="card-header h4 bg-tertiary">Digital Resources</div>
-                        </div>
-                        <div class="fs0875">
-                           <!-- CDC Carousel Module -->		
-                           <div class="cdc-card-slider" id="UNIQUE151395ee22e14df8e1">
-                              <div class="card ">
-                                 <a href="https://www.cdc.gov/coronavirus/2019-ncov/communication/print-resources.html?Search=stop%20the%20spread%20of%20germs&amp;Sort=Date::desc" class="card noLinking text-black"><img alt="Help prevent the spread of respiratory diseases, like coronavirus disease 2019 by avoiding close contact with people who are sick; covering cough and sneeze; avoiding touching eyes, nose and mouth; and washing your hands with soap and water." class="card-img-top" src="/coronavirus/2019-ncov/images/symptoms-testing/stop-the-spread-of-germs-thumb.png"></a>
-                                 <div class="card-body">
-                                    <div class="card-title h5 text-left"></div>
-                                    <p></p>
-                                    <h5>Stop the Spread of Germs (PDF)</h5>
-                                    Help prevent the spread of respiratory diseases, like coronavirus disease 2019.
-                                 </div>
-                              </div>
-                              <div class="card ">
-                                 <a href="https://www.cdc.gov/coronavirus/2019-ncov/communication/print-resources.html?Search=Symptoms%20of%20Coronavirus%20Disease%202019%20poster&amp;Sort=Date::desc" class="card noLinking text-black"><img alt="Patients with COVID-19 have experienced mild to severe respiratory illness. Symptoms can include fever, cough and shortness of breath. Symptoms may appear 2-14 days after exposure." class="card-img-top" src="/coronavirus/2019-ncov/images/symptoms-testing/COVID19-symptoms-thumb.png"></a>
-                                 <div class="card-body">
-                                    <div class="card-title h5 text-left"></div>
-                                    <p></p>
-                                    <h5>Symptoms of COVID-19 (PDF)</h5>
-                                    Patients with COVID-19 have experienced mild to severe respiratory illness. 
-                                 </div>
-                              </div>
-                              <div class="card ">
-                                 <a href="https://www.youtube.com/watch?v=7zzfdYShvQU" class="card noLinking text-black"><img alt="This video presents the symptoms of coronavirus and what to do if symptoms are present." class="card-img-top" src="/coronavirus/2019-ncov/images/symptoms-testing/covid-symptoms-video-thumb.png"></a>
-                                 <div class="card-body">
-                                    <div class="card-title h5 text-left"></div>
-                                    <p></p>
-                                    <h5>Symptoms of COVID-19 (Video)</h5>
-                                    Symptoms can include fever, cough and shortness of breath.
-                                 </div>
-                              </div>
-                              <div class="card ">
-                                 <a href="https://youtu.be/IN_GVlbyC4Y" class="card noLinking text-black"><img alt="An overview of the signs and symptoms of COVID-19 presented in American Sign Language" class="card-img-top" src="/coronavirus/2019-ncov/images/symptoms-testing/symptoms-covid-asl.png"></a>
-                                 <div class="card-body">
-                                    <div class="card-title h5 text-left"></div>
-                                    <p></p>
-                                    <h5>Symptoms of COVID-19: ASL (Video)</h5>
-                                    American Sign Language Video about symptoms.
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="row-fluid">
-                           <div class="vc_empty_space col-12 pt-3 pb-3"><span class="vc_empty_space_inner"></span></div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row ">
-                     <div class="col-md-12">
-                        <div class="card mb-3">
-                           <div class="card-header h4 bg-gray-l3">More Information</div>
-                           <div class="card-body bg-white">
-                              <ul class="mb-0 cc-md-2 lsp-out block-list">
-                                 <li><a href="https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers">List of emergency telephone numbers
-                                    </a>
-                                 </li>
-                                 <li><a class="" href="/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk-old.html">People at Higher Risk for Severe Illness</a></li>
-                                 <li><a class="" href="/coronavirus/2019-ncov/travelers/index.html">Travelers</a></li>
-                                 <li><a class="" href="/coronavirus/2019-ncov/hcp/index.html">Healthcare Professionals</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row d-none d-lg-block">
-            <div class="col pca">
-               <!-- Persistent Content Area Here -->
-            </div>
-         </div>
+<p><strong>Call Emergency services and seek immediate medical attention if you have any of the serious symptoms to notify the operator that you are seeking care for someone who has or may have COVID-19. <br> You may also need to be tested for coronavirus. Contact your local GP to find out when you should call to be assessed for a test.
+    </strong></p></div><br>
+<p>This list does not include all possible symptoms. HSE will continue to update this list as we learn more about COVID-19.</p>
+
+
+<div class="card border-0 mb-3"><a class="onThisPageAnchor" id="anchor_1591881015" name="symptom-checker" title="symptom-checker" ></a><div class="card-body "><a role="button" href="https://www2.hse.ie/conditions/coronavirus/managing-coronavirus-at-home/when-to-get-medical-help-and-hospital-treatment.html" id="cdc-chat-bot-button" class="ds-8 ds-5 card-btn noLinking noDecoration card" target="_blank">
+<div class="card-body ">
+  <div class="row">
+    <div class="card-icon pt-2"><span class="sr-only">user md chat light icon</span><span class="fi cdc-icon-user-md-chat-light icon fill-cyan-p x64" aria-hidden="true"></span></div>
+    <div class="col">
+      <h2 class="card-title h4 mb-1 text-left">Self-Checker / Treatment</h2>
+      <p>A guide to help you make decisions and seek appropriate medical care.</p>
+    </div>
+  </div>
+</div>
+</a></div></div>
+<p></p></div></div><div class="row "><div class="col-md-12">
+<h4>Caring for yourself or others</h4>
+<ul class="false">
+<li><a href="prevention.html">How to protect yourself</a></li>
+</ul>
+<div class="row-fluid">
+	<div class="vc_empty_space col-12 pt-3 pb-3"><span class="vc_empty_space_inner"></span></div>
+</div>
+</div></div>
+<div class="row "><div class="col-md-12"><div class="card mb-3"><div class="card-header h4 bg-gray-l3">More Information</div>
+<div class="card-body bg-white">
+<!-- <ul class="mb-0 cc-md-2 lsp-out block-list"> -->
+<li><a href="https://www2.hse.ie/emergencies/when-to-call-112-or-999.html">If you are experiencing any severe symptoms or in an emergency contact 112 or 999.
+</a></li>
+<!-- <li><a class="" href="/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk-old.html">People at Higher Risk for Severe Illness</a>
+</li>
+<li><a class="" href="/coronavirus/2019-ncov/travelers/index.html">Travelers</a></li>
+<li><a class="" href="/coronavirus/2019-ncov/hcp/index.html">Healthcare Professionals</a></li> -->
+<!-- </ul> -->
+</div></div></div></div>
+					</div>
+													</div>
+		</div>
+
+					<div class="row d-none d-lg-block">
+				<div class="col pca">
+					<!-- Persistent Content Area Here -->
+														</div>
+			</div>
       </main>
       <!-- Left / Bottom Nav -->
       <div class="col-lg-3 order-lg-1 leftnav-wrapper">
@@ -352,10 +258,10 @@
                         <span class="fi cdc-icon-plus" aria-hidden="true"></span>
                    </a>
                    <ul id="nav-group-1" class="collapse">
-                     <li class="list-group-item nav-lvl2"><a href="#">Mild Symptoms</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="#">Moderate Symptoms</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="#">Severe Symptoms</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="#">Self-Checker</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#title">Mild Symptoms</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#mildsymptoms">Moderate Symptoms</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#moderatesymptoms">Severe Symptoms</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#severesymptoms">Self-Checker</a></li>
                    </ul>
                     
                 </li>
@@ -379,15 +285,17 @@
                                         <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">Recommendations for Cloth Face Covers</a></li></ul></li>
                         
                         -->
-                     <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/gloves.html">Wearing Gloves</a></li>
                      <li class="list-group-item nav-lvl2">
-                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">Cleaning Your Home</a><a href="index.html#nav-group-70d2e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-70d2e"><span class="sr-only">plus icon</span>
+                        <a href="prevention.html#clean">Cleaning Your Home</a>
+<!--
+                         <a href="index.html#nav-group-70d2e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-70d2e"><span class="sr-only">plus icon</span>
                         <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
                         <ul id="nav-group-70d2e" class="collapse">
                            <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Detailed Disinfection Guidance</a></li>
                         </ul>
+-->
                      </li>
-                     <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Social Distancing</a></li>
+                
                   </ul>
                </li>
                <li class="list-group-item nav-lvl1">
@@ -396,7 +304,7 @@
                      <span class="sr-only">plus icon</span> 
                      <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
                   <ul id="nav-group-d187d" class="collapse">
-                     <li class="list-group-item nav-lvl2"><a href="steps-when-sick.html">What to Do If You Are Sick</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="FAQ.html#social">Social Distancing</a></li>
                      <li class="list-group-item nav-lvl2"><a href="care-for-someone.html">Caring for Someone</a></li>
                      <li class="list-group-item nav-lvl2"><a href="end-home-isolation.html">When You Can be Around Others</a></li>
                      <li class="list-group-item nav-lvl2"><a href="quarantine-isolation.html">Quarantine &amp; Isolation</a></li>
