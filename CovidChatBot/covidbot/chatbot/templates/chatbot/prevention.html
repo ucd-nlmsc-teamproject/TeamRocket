@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-us" class="theme-cyan" >
+   <head>
+      <!-- Global / universal meta tags -->
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+      <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
+      <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <!--<link rel="stylesheet prefetch" href="assets/css/app.min.css_v=20-06-04T19_34_55Z.css"/>-->
+      <link rel="stylesheet prefetch" href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css?v=20-06-04T19:34:55Z" />
+      <title>If You Are Sick or Caring for Someone  | CDC</title>
+      <meta name="description" content="Take steps to care for yourself and help protect others – COVID-19."/>
+      <meta name="keywords" content="covid-19, coronavirus, sick, caring, disinfecting, isolation, home isolation, symptoms, contact, exposure, 10 days, positive test, Cleaning/ Disinfecting/Sanitizing, Daily Life, Prevention, Disease Information"/>
+      <meta name="robots" content="index, archive" />
+      <meta property="cdc:template_version" content="4.0"/>
+      <meta property="cdc:last_updated" content="May 24, 2020"/>
+      <meta property="cdc:last_reviewed" content="May 24, 2020"/>
+      <meta property="cdc:content_source" content="NATL CENTER FOR IMMUNIZATION AND RESPIRATORY DISEASES; DIVISION OF VIRAL DISEASES"/>
+      <meta property="cdc:maintained_by" content="NATL CENTER FOR IMMUNIZATION AND RESPIRATORY DISEASES"/>
+      <meta property="cdc:content_id" content="15393" />
+      <link rel="canonical" href="index.html"/>
+      <meta property="cdc:wcms_build" content="4.9.4 - b.2628" />
+      <!-- Footer Nav Override -->
+      <style>
+         @media (max-width:992px) {
+         .leftnav-wrapper nav > ul > li > ul {
+         display: none;
+         }
+         .leftnav-wrapper nav > ul > li a.nav-expandcollapse {
+         display: none !important;
+         }
+         }
+         .theme-cyan nav ul.tp-nav-main li.active.selected>a:first-child{color:#006c80;}
+      </style>
+      <link rel="stylesheet" type="text/css" href="{% static 'chatbot/modules/css-js-patches/covidstyletemp.css' %}">
+      <!-- CSS Added Dynamically Here -->
+      <meta name="DC.date" content="2020-06-01T06:18:33Z" />
+      <meta name="cdc:last_published" content="2020-06-01T20:43:07Z" />
+   </head>
+   <body class="no-js">
+      <header id="header">
+         <div class="inner">
+            <a href="index.html" class="logo">COVID-19 Interactive Visualizer</a>
+            <nav id="nav">
+
+              <ul class="nav navbar-nav">
+<!--
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+-->
+
+                <li class="dropdown">
+                  <a href="index.html">Overview</a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="symptoms.html"  style="color:black;">Symptoms</a></li>
+                    <li><a href="prevention.html"  style="color:black;">Prevention</a></li>
+                    <li><a href="FAQ.html"  style="color:black;">FAQ</a></li>
+<!--
+                    <li class="divider"></li>
+                    <li><a href="#" >Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+-->
+                  </ul>
+                </li>
+              </ul>
+<!--
+                  <button class="ddButton">Information</button>
+                  <div class="ddContent">
+                    <a href="#">Prevention</a>
+                    <a href="#">Symptoms</a>
+                    <a href="#">FAQ</a>
+                  </div>
+-->
+              </div>
+
+<!--
+               <a href="index.html">Overview</a>
+                <a href="generic.html">Generic</a>
+               <a href="infoindex.html">Information</a>
+-->
+            </nav>
+
+         </div>
+<!--
+          <script>
+           $('ul.nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
+            }, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                });
+       </script>
+-->
+      </header>
+      <!-- Page Content Wrap -->
+      <div class="container d-flex flex-wrap body-wrapper bg-white">
+      <!-- Content -->
+      <main class="col-lg-9 order-lg-2" role="main" aria-label="Main Content Area">
+         <div class="row visual-element">
+            <div class="col">
+               <!-- Visual Element, this is what was the site identity in TP3 -->
+               <!-- mp_trans_add
+                  <div class="syndicate">
+                  <div class="row "><div class="col-md-12"><div class="card mb-3"><div class="card-body bg-gray-l3"><p class="small"><i><strong>Disclaimer:</strong></i><i> This website is frequently updated. Some content may be in English until all the content is translated.</i></p>
+                  </div></div></div></div>
+                  </div>
+                  -->
+            </div>
+         </div>
+         <div class="section-nav-area">
+            <nav role="navigation" aria-label="Section Nav" class="w-100 sticky-top">
+               <!-- Page Title/Section Nav (mobile) -->
+            </nav>
+         </div>
+         <div class="row">
+         <div  class="col content ">
+         <div class="syndicate">
+            <h1 id="content">How to Protect Yourself & Others</h1>
+         </div>
+<!--
+         <div class="dropdown p-none" style="margin-top:-5px; margin-bottom:33px;">
+            <button class="btn bg-white dropdown-toggle fs08 c-blue b-gray-l3" type="button" id="languageDropDownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Languages</button>
+            <div class="dropdown-menu ds-4" aria-labelledby="languageDropDownMenu">
+               <a class="dropdown-item fs08" onclick="return switchMPLanguage('es');" href="https://espanol.cdc.gov/enes/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">Español</a><a class="dropdown-item fs08" onclick="return switchMPLanguage('zh');" href="https://chinese.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">简体中文</a><a class="dropdown-item fs08" onclick="return switchMPLanguage('vi');" href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">Tiếng Việt</a><a class="dropdown-item fs08" onclick="return switchMPLanguage('ko');" href="https://korean.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">한국어</a>
+               <div class="dropdown-divider"></div>
+               <a class="dropdown-item fs08" href="https://wwwn.cdc.gov/pubs/other-languages/">Other Languages</a>
+            </div>
+         </div>
+-->
+         <div class="mb-3 card tp-related-pages fourth-level-nav d-none">
+            <div class="card-header collapse-icon">
+               <a class="collapse-link float-right nav-minus fs0875" data-toggle="collapse"
+                  href="#collapse_164175ee3be7423415" aria-expanded="false"
+                  aria-controls="collapse_164175ee3be7423415">
+                  <svg viewBox="0 0 24 24" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                     <title>Minus</title>
+                     <path d="M19,13H5V11H19V13Z">
+                     </path>
+                  </svg>
+               </a>
+               <div class="h4">Related Pages</div>
+            </div>
+            <div class="card-body collapse show" id="collapse_164175ee3be7423415"></div>
+         </div>
+         <div class="syndicate">
+            <div class="row ">
+               <div class="col-md-12">
+                  <div class="card bl-3 bl-amber-t border-0 mb-3">
+                     <div class="card-body bg-amber-q">
+                        <p><strong>Older adults and people who have severe underlying medical conditions</strong> like heart or lung disease or diabetes seem to be at higher risk for developing serious complications from COVID-19 illness. More information on <a href="/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">Are you at higher risk for serious illness</a>.</p>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="row-fluid">
+                           <div class="vc_empty_space col-12 pb-1"><span class="vc_empty_space_inner"></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <div class="card-body ">
+                              <div class="row">
+                                 <div class="card-icon pt-2 d-none d-md-block"><span class="sr-only">head side cough light icon</span><span class="fi cdc-icon-head-side-cough-light icon fill-cyan-p x48" aria-hidden="true"></span></div>
+                                 <div class="col">
+                                    <h3 class="card-title h3 mb-2 text-left">Know how it spreads</h3>
+                                    <ul>
+                                       <li><strong>The best way to prevent illness is to avoid being exposed to this virus.</strong></li>
+                                       <li>
+                                          The virus is thought to <a href="/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">spread mainly from person-to-person</a>.
+                                          <ul>
+                                             <li>Between people who are in close contact with one another (within about 6 feet).</li>
+                                             <li>Through respiratory droplets produced when an infected person coughs, sneezes or talks.</li>
+                                             <li>These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</li>
+                                             <li>Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.</li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <div class="card-body bg-white">
+                              <h2>Everyone Should</h2>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <div class="card-body ">
+                              <div class="row">
+                                 <div class="card-icon pt-2 d-none d-md-block"><span class="sr-only">hands wash light icon</span><span class="fi cdc-icon-hands-wash-light icon fill-cyan-p x48" aria-hidden="true"></span></div>
+                                 <div class="col">
+                                    <h3 class="card-title h3 mb-2 text-left">Wash your hands often</h3>
+                                    <ul>
+                                       <li><a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Wash your hands</a> often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
+                                       <li>If soap and water are not readily available, <strong>use a hand sanitizer that contains at least 60% alcohol</strong>. Cover all surfaces of your hands and rub them together until they feel dry.</li>
+                                       <li><strong>Avoid touching</strong> <strong>your eyes, nose, and mouth</strong> with unwashed hands.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="row-fluid">
+                           <div class="vc_empty_space col-12 pb-3"><span class="vc_empty_space_inner"></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <div class="card-body ">
+                              <div class="row">
+                                 <div class="card-icon pt-2 d-none d-md-block"><span class="sr-only">people arrows light icon</span><span class="fi cdc-icon-people-arrows-light icon fill-cyan-p x48" aria-hidden="true"></span></div>
+                                 <div class="col">
+                                    <h3 class="card-title h3 mb-2 text-left">Avoid close contact</h3>
+                                    <ul>
+                                       <li><strong>Avoid close contact with people who are sick, even inside your home.</strong> If possible, maintain 6 feet between the person who is sick and other household members.</li>
+                                       <li>
+                                          <strong>Put distance between yourself and other people outside of your home</strong>.
+                                          <ul>
+                                             <li>Remember that some people without symptoms may be able to spread virus.</li>
+                                             <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">Stay at least 6 feet (about 2 arms&rsquo; length) from other people</a>.</li>
+                                             <li>Keeping distance from others is especially important for <a href="/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk of getting very sick</a>.</li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="row-fluid">
+                           <div class="vc_empty_space col-12 pb-3"><span class="vc_empty_space_inner"></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <a class="onThisPageAnchor" id="cloth-face-cover" name="Cover%20your%20mouth%20and%20nose%20with%20a%20cloth%20face%20cover%20when%20around%20others" title="Cover your mouth and nose with a cloth face cover when around others">
+                              <!-- -->
+                           </a>
+                           <div class="card-body ">
+                              <div class="row">
+                                 <div class="card-icon pt-2 d-none d-md-block"><span class="sr-only">head side mask light icon</span><span class="fi cdc-icon-head-side-mask-light icon fill-cyan-p x48" aria-hidden="true"></span></div>
+                                 <div class="col">
+                                    <h3 class="card-title h3 mb-2 text-left">Cover your mouth and nose with a cloth face cover when around others</h3>
+                                    <ul>
+                                       <li>You could spread COVID-19 to others even if you do not feel sick.</li>
+                                       <li>
+                                          Everyone should wear a <a href="/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">cloth face cover</a> when they have to go out in public, for example to the grocery store or to pick up other necessities.
+                                          <ul>
+                                             <li>Cloth face coverings should not be placed on young children under age 2, anyone who has trouble breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.</li>
+                                          </ul>
+                                       </li>
+                                       <li>The cloth face cover is meant to protect other people in case you are infected.</li>
+                                       <li>Do NOT use a facemask meant for a healthcare worker.</li>
+                                       <li>Continue to keep about 6 feet between yourself and others. The cloth face cover is not a substitute for social distancing.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="row-fluid">
+                           <div class="vc_empty_space col-12 pb-3"><span class="vc_empty_space_inner"></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <div class="card-body ">
+                              <div class="row">
+                                 <div class="card-icon pt-2 d-none d-md-block"><span class="sr-only">box tissue light icon</span><span class="fi cdc-icon-box-tissue-light icon fill-cyan-p x48" aria-hidden="true"></span></div>
+                                 <div class="col">
+                                     <h3 class="card-title h3 mb-2 text-left"><a id="clean">Cover coughs and sneezes</a>
+                                     </h3>
+                                    <ul>
+                                       <li><strong>If you are around others and do not have on your cloth face covering, remember to always cover your mouth and nose</strong> with a tissue when you cough or sneeze or use the inside of your elbow and do not spit.</li>
+                                       <li><strong>Throw used tissues</strong> in the trash.</li>
+                                       <li>Immediately <strong>wash your hands</strong> with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="row-fluid">
+                           <div class="vc_empty_space col-12 pb-3"><span class="vc_empty_space_inner"></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <div class="card-body bg-white">
+                              <div class="row">
+                                 <div class="card-icon pt-2 d-none d-md-block"><span class="sr-only">spraybottle icon</span><span class="fi cdc-icon-spraybottle icon fill-cyan-p x48" aria-hidden="true"></span></div>
+                                 <div class="col">
+                                    <h3 class="card-title h3 mb-2 text-left">Clean and disinfect</h3>
+                                    <ul class="false">
+                                       <li><strong>Clean AND disinfect <a href="/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html">frequently touched surfaces</a>&nbsp;daily</strong>. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
+                                       <li><strong>If surfaces are dirty, clean them.</strong> Use detergent or soap and water prior to disinfection.</li>
+                                       <li><strong>Then, use a household disinfectant.</strong> Most common <a class="tp-link-policy tp-link-policy" href="https://www.epa.gov/pesticide-registration/list-n-disinfectants-use-against-sars-cov-2" data-domain-ext="gov">EPA-registered household disinfectants<span class="sr-only">external icon</span><span class="fi cdc-icon-external x16 fill-external" aria-hidden="true"></span></a>&nbsp;will work.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="row-fluid">
+                           <div class="vc_empty_space col-12 pb-3"><span class="vc_empty_space_inner"></span></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ">
+                     <div class="col-md-12">
+                        <div class="card border-0 mb-3">
+                           <div class="card-body bg-white">
+                              <div class="row">
+                                 <div class="card-icon pt-2 d-none d-md-block"><span class="sr-only">head side medical light icon</span><span class="fi cdc-icon-head-side-medical-light icon fill-cyan-p x48" aria-hidden="true"></span></div>
+                                 <div class="col">
+                                    <h3 class="card-title h3 mb-2 text-left">Monitor Your Health</h3>
+                                    <ul class="false">
+                                       <li>
+                                          <strong>Be alert for symptoms.</strong> Watch for fever, cough, shortness of breath, or <a href="/coronavirus/2019-ncov/symptoms-testing/symptoms.html">other symptoms</a><strong>&nbsp;of COVID-19. </strong>
+                                          <ul>
+                                             <li>Especially important if you are <a href="/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">running essential errands</a>, going into the office or workplace, and in settings where it may be difficult to keep a <a href="/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html">physical distance of 6 feet</a>.</li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <strong>Take your temperature</strong> if symptoms develop.
+                                          <ul>
+                                             <li>Don&rsquo;t take your temperature within 30 minutes of exercising or after taking medications that could lower your temperature, like acetaminophen.</li>
+                                          </ul>
+                                       </li>
+                                       <li>Follow <a href="/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">CDC guidance</a>&nbsp;if symptoms develop.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row d-none d-lg-block">
+            <div class="col pca">
+               <!-- Persistent Content Area Here -->
+            </div>
+         </div>
+      </main>
+      <!-- Left / Bottom Nav -->
+      <div class="col-lg-3 order-lg-1 leftnav-wrapper">
+         <!-- include virtual="/TemplatePackage/4.0/includes/nav-main.html" -->
+         <nav role="navigation" aria-label="Left Navigation Menu">
+            <div class="nav-section-home d-sm-block"><span class="sr-only">home</span>
+               <span class="fi cdc-icon-home nav-home-icon x24" aria-hidden="true"></span>
+               <a href="">Coronavirus Disease (COVID-19) Important information</a>
+            </div>
+            <ul class="list-group tp-nav-main">
+               <li class="list-group-item nav-lvl1"><a href="symptoms.html">Symptoms</a>
+                   <a href="#nav-group-1" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-1">
+                      <span class="sr-only">plus icon</span>
+                        <span class="fi cdc-icon-plus" aria-hidden="true"></span>
+                   </a>
+                   <ul id="nav-group-1" class="collapse">
+                     <li class="list-group-item nav-lvl2"><a href="symptoms.html#title">Mild Symptoms</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="symptoms.html#mildsymptoms">Moderate Symptoms</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="symptoms.html#moderatesymptoms">Severe Symptoms</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="symptoms.html#severesymptoms">Self-Checker</a></li>
+                   </ul>
+
+                </li>
+               <li class="list-group-item nav-lvl1">
+                  <a href="prevention.html">Prevention</a>
+                  <a href="#nav-group-2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-2">
+                      <span class="sr-only">plus icon</span>
+                  <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
+                  <ul id="nav-group-2" class="collapse">
+                     <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">How It Spreads</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Protect Yourself</a></li>
+                     <!--
+                        <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">Cloth Face Covers</a>
+                            <a href="index.html#nav-group-ad28e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-ad28e"><span class="sr-only">plus icon</span>
+                                <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
+                                    <ul id="nav-group-ad28e" class="collapse">
+                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">About Cloth Face Coverings</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Cloth Face Coverings</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">Wash Cloth Face Coverings</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-make-cloth-face-covering.html">Make Cloth Face Coverings</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">Recommendations for Cloth Face Covers</a></li></ul></li>
+
+                        -->
+                     <li class="list-group-item nav-lvl2">
+                        <a href="#clean">Cleaning Your Home</a>
+<!--
+                         <a href="index.html#nav-group-70d2e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-70d2e"><span class="sr-only">plus icon</span>
+                        <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
+                        <ul id="nav-group-70d2e" class="collapse">
+                           <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Detailed Disinfection Guidance</a></li>
+                        </ul>
+-->
+                     </li>
+
+                  </ul>
+               </li>
+               <li class="list-group-item nav-lvl1">
+                  <a href="FAQ.html">Frequently Asked Questions</a>
+                  <a href="#nav-group-d187d" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-d187d">
+                     <span class="sr-only">plus icon</span>
+                     <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
+                  <ul id="nav-group-d187d" class="collapse">
+                     <li class="list-group-item nav-lvl2"><a href="FAQ.html#social">Social Distancing</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="care-for-someone.html">Caring for Someone</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="end-home-isolation.html">When You Can be Around Others</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="quarantine-isolation.html">Quarantine &amp; Isolation</a></li>
+                  </ul>
+               </li>
+               <!--
+                  <li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/index.html">Daily Life &amp; Coping</a><a href="index.html#nav-group-1549b" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-1549b"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-1549b" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/food-and-COVID-19.html">Food &amp; COVID-19</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/at-home.html">At Home</a><a href="index.html#nav-group-7c697" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-7c697"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-7c697" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/checklist-household-ready.html">Household Checklist</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">Living in Close Quarters</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">Living in Shared Housing</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html">Errands &amp; Going Out</a><a href="index.html#nav-group-fcdbb" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-fcdbb"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-fcdbb" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/deciding-to-go-out.html">Deciding to Go Out</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">Running Errands</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/personal-social-activities.html">Personal and Social Activities</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/using-transportation.html">Using Transportation</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/doctor-visits-medicine.html">Doctor Visits &amp; Getting Medicines</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/visitors.html">Visiting Parks &amp; Recreational Facilities</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/caring-for-children.html">Caring for Children</a><a href="index.html#nav-group-ef109" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-ef109"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-ef109" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">For Parents: MIS-C</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keep Children Healthy</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/protect-children.html">Stop the Spread in Children</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/learning.html">Help Children Learn</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/talking-with-children.html">Talking to Children</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/index.html">Stress &amp; Coping</a><a href="index.html#nav-group-29638" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-29638"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-29638" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">Coping with Stress</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">Helping Children Cope</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/reducing-stigma.html"> Reducing Stigma </a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/share-facts.html">Stop the Spread of Rumors</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/grief-loss.html">Grief and Loss</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/alcohol-use.html">Alcohol and Substance Use</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/abuse.html">Support for People Experiencing Abuse</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/veterans.html">Support for Veterans</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/young-adults.html">Support For Teens and Young Adults</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html">Funeral Guidance</a></li>
+
+               -->
+            </ul></li>
+      </div>
+
+                    </ul>			</nav>
+   </body>
+</html>
