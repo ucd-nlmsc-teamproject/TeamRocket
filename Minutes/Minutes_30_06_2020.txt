@@ -1,0 +1,82 @@
+Minutes of the Meeting
+30-june-2020 (Weekly meeting with Mark)
+
+
+15:30: Opened the meeting with initial query regarding the purpose of the meeting. Questions: 
+What we are going to between now and next week.
+Wed-Friday would be evaluated.
+
+15:35: Mark:
+
+Expressed the need for the team to cohesively understand the top level idea 
+Needs more precision since the idea is still a bit broad
+1. What do we know what people care about now? What is the reasoning behind the type of information that we have decided to show
+2.How have you designed your system, and what it aims to help the user do.
+
+Two components :chatbot and map
+How do they work together .What are the use cases ?
+
+What types of data are we going to collect?
+For now the data we have its for our interim we are looking for the 
+
+team: Chatbot would be answering all  the questions in the final project.
+
+15:45 Mark: Add considering the static data occasionally, by focusing on the scope to ireland, we can update the information, and see if the chatbot responses can be updated dynamically to mirror the changes in information.
+localising the symptoms .
+considering the factors like social distancing.
+Limit outing the scope and then adding features is the right way to approach the project.
+Thinking about the project from the user perspective.
+
+15: 50 Team : asking for advice on if set a no. of questions and base the chatbot on them.
+Mark: have data driven approach look online do a survey with friends,groups.
+add that in the final report to show the research would be helpful.
+
+Feasibility for the scope left in the project. 
+Re evaluate the initial scope of the project and see what is necessary to ensure the most value out of the time left.
+Capturing all the plans and writing them in the final report.
+
+Plans for the next sprints?
+Nripendra and Sumit we are in the learning phase for lex .Next would be adding the lambda hooks.connecting the chatbot and website
+.
+
+Evaluation:
+
+Do all the user experience on the parameters.
+record all the user experience based on the training of the chatbot.
+
+If you are going to train the chatbot based on accuracy on the go.
+second would be after deploying it in the user environment. 
+
+Evaluation  measure should be integral with the project that we are going to achieve.
+Pressure test the system.
+Think the best way we can  test the system in an intelligent way ,meaningful .
+
+Talk  to people what people want with the time we can do in this limited time.
+Even if its not done completely you can try to come up with things which you can do if you had more time.
+Document the process of thinking of the features we want to add, identify the limitation and document them also and report it clearly.
+
+16:20 TA:  comments to add:
+Issues for motivation: how is it different from the all the bots and trackers.
+there are sources how are already there .
+
+Suggestion: Have a more cohesive narrative for the average user to understand what the application helps them accomplish. To be able to get all the relevant info at one spot without having to traverse through confusing spaces in a simple intuitive manner , use the things more presentation .Try to not use things like not relevant,not true.
+Language can be improved in presentation.
+Focus more on chatbot.
+Determine the pitfalls of the trackers which the chatbot can handle.
+So,that the people can use the chatbot rather than the trackers .
+Think about user experience being the main theme of the project.
+
+Project can be more unified .
+
+Project management understanding how the team is managing sprints.
+What are the aims in the future?
+Are you working on sprints?
+
+Are you sure about the initial plan that you had submitted.
+The project plan has been met for interim
+But, for the final project the scope still needs to be done.
+
+Be careful and considerate with the time you are investing in the project.
+
+
+
