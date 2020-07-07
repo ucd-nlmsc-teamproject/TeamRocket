@@ -1,0 +1,77 @@
+FINAL SCRIPT
+Hello everyone my name is Minaz shaikh and I’m from Team Rocket. I’ll be taking you through this presentation.
+Our project name is Covid-19 interactive visualizer. 
+Based on our report from the interim presentation we redefined our project with a clearer objective. We aim to create a system which provides an overview of the situation regarding the COVID-19 pandemic at a quick glance.
+Given the graveness and potency of the virus, we have noticed that existing platforms aimed at informing the public about the pandemic have been structured in a way, which only helps people who know how to traverse websites and access tabs by finding the relevant information, making it a minefield for those who lack the savviness to understand the layout of webpages and be able to open multiple pages and traverse between them.
+Hence the two main features of the application are as follows
+1st one is a chatbot and the other one is the interactive map which will contain visualizations of the data that is collected and curated.
+The chatbot aims to provide a very user friendly, accessible platform for user of any type to interact and get the most important information regarding the pandemic, with the visualization aiding with the impact of information received and improving the overall experience of the application.
+
+
+Plans for coming week Based on the overly broad scope we had initially, we have decided to reimagine the application with the scope of information being provided by the chatbot to be initially restricted to ireland.
+We aim to achieve the Final version of our product by the end of the month in preparation of user based testing for the first week of july by further breaking down tasks and reach goals into sprints and release versions as seen.
+
+
+
+
+
+
+
+
+
+
+
+
+Roles Each member has been assigned to a team and has a set of defined roles for until the final submission of the application. For each sprint we set a number of tasks that are relevant for each member in that role. The tasks are documented and monitored in detail via sprint plans in jira.
+
+(135s)Architecture The architecture of the application is as described in the previous video, the front end, which contains the web application and an embedded chatbot, will communicate with the data in the DB using Django and the Amazon Lex API which is also used to train the chatbot. 
+The end users are people who interact with the front-end web application and chatbot to get more information about covid-19.
+
+Data plan This is the outline of our data plan and you can view it by pausing this video.
+Github We are keeping track of the minimum project requirements and that we are adhering to the main requirements before the MVP, by ensuring each member is constantly push-committing the work as and when it is completed. Just to give a jist you can see in the image the different folders we have.
+Team management  As mentioned in the last video, Sumit, aditya and ashwin keep track of members to ensure presence in git and the shared folders and initiate regular morning meetings. Each task is carefully assigned and monitored in jira, git and google drive.
+Progress achieved this week After the review of the interim report we have dedicated this week to refine and restructure our scope and research further into each section.
+Front-End team 
+Refining the overall structure of the web page with a clean flow and layout. Refine the Web page by researching improved functionality to help better the User experience.
+DATA Apurva,Vishal
+Research on the second potential API, Yatko API, required and write scripts for Data Collection.
+Merging of the two APIs to create a single dataset which will contain all the data from both the API’s.
+Identify any data discrepancies in the john hopkins data, and fill the missing or bad data into john hopkins from the yatko API.
+Finally to be a bit more ambitious for the upcoming interim demo, the team is exploring related research data carried out on the COVID-19 pandemic to integrate
+
+For Cloud Architecture 
+Created basic pipelines to connect the file system with the data lake. 
+Creating dummy scripts and triggering them using data factory pipelines
+Based on the research on which platform is best suited for the project between AWS and Azure, we are considering the possibility of using azure given the ease of use of the platform.
+For Django Framework 
+Also ran basic tests on Amazon LEX to understand the limitations.
+As part of a more complex task to be attempted we aim to get the chatbot to be able to answer non-trivial questions which will be a step above a simple data retrieval request.
+
+I'll now show a few screen captures of the progress in terms of the front end view of the app, and the structure of the data saved up until now. We have not made any visual changes to the application this week hence the images are the same as the previous presentation.
+Thank you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
