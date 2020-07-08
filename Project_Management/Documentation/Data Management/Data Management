@@ -5,7 +5,7 @@ Initial research was done on various APIs such as below,
 1. Johns Hopkins COVID-19 : Majorly using (https://api.covid19api.com/summary)
 2. European Centre for Disease Prevention and Control: COVID-19 (https://data.gov.ie/)
 3. Tweets from Twitter  (if required) 
-4. Yatko API - (https://www.programmableweb.com/api/yatko-coronavirus-map-rest-api-v10https://api.quarantine.country/api/v1/summary/latest)
+4. Yatko API - https://api.quarantine.country/api/v1/summary/latest
 5. Bing covid 19 data from github (https://raw.githubusercontent.com/microsoft/Bing-COVID-19-Data/master/data/Bing-COVID19-Data.csv)
 
 Considering that we need the data that’d answer statistical and theoretical questions asked to the Chatbot; we further divided the data into two broad sections.
@@ -63,14 +63,57 @@ Total_Cases_Tested
 Dataset 3: Bing Covid 19 Data
 The 3rd data which we will be looking into is the data from bing 19 covid data and here the data is collected from many different sources and the same is converted to time series data. This data records data like Confirmed cases,  deaths cases and recovered cases. Data is recorded when the first case is seen in that particular country. It also records the data for each date and for some countries the data is recorded for each date for each state/province. But some countries don't have data recorded according to the state/province. One interesting thing is that this API also records data for the whole world for each date.
 As of now we have extracted the data from the API and saved into datasets  and the next we are trying to convert the data in the format of what we have for the John Hopkins data. The idea of this is to, make sure when we we have any data discrepancies in the john hopkins data, we can refer to this data and fill the missing or bad data into john hopkins from this data to maintain and fill the gap in the datasets which will be used by the chatbot or the world map.
+
 Pre-processing Part:
 Apart from this real time data, we look forward to collecting static data (which requires no updation) pertaining to the symptoms of COVID, healthy habits and so on. 
 We’d also be getting information from some additional APIs and integrating the required datasets to enhance the availability of data from various APIs to be put in one place.
-Pre_processing:
-We need the summary data to be clean enough in the matter of Timestamp and other elements.
-We have dropped only one column from the summary data which is slug. This column was used to country names in the end of the api to collect data. 
-Next is the country data which we collected. This data has many columns which were null so they were dropped.
-The next thing was to convert the data into time series data.
+
+-We need the summary data to be clean enough in the matter of Timestamp and other elements.
+-We have dropped only one column from the summary data which is slug. This column was used to country names in the end of the api to collect data. 
+-Next is the country data which we collected. This data has many columns which were null so they were dropped.
+-The next thing was to convert the data into time series data.
+
+Explanation for all Pre-processing done on the APIs until now.
+=> Now we have two main datasets to focus on : Johns Hopkinns
+-> One with global summarized statistical data for 186 countries
+-> One with the time series data with information starting from the last week of Jan until the latest date of update.
+
+For the cleaning/pre-processing we planned and did the following,
+-Summarized (1 dataframe having the statistical data) (To clean this dataset, we tried to remove unwanted columns like slug, it wasn’t really required, re-arranged the columns to make a better looking dataframe, changed/modified the date column such that it represent only the DATE and not the timestamp )
+-Time Series (in this, there are 4 different dfs corresponding to Active cases, deaths, confirmed cases and recovered cases)
+-> Created a separate column to store the Country and another column that'd store the (Active, Confirmed, Recovered and deaths for every country)
+So for every country A, there would be 4 rows dedicated to the Country A, eg Afghanistan
+eg, Country Afghanistan : Confirmed
+       Country Afghanistan : Active
+       Country Afghanistan : Deaths
+       Country Afghanistan : Recovered
+So when we'd be referring to the cases in particular, we'd use two keys (Country name with the cases column) to identify the same.
+We also added additional columns to separate the date into the respective DAY of the week and MONTH of the year. (Didn't consider the month, it's constant: 2020). Used the Calendar package for the same. Additional columns added separately for each country's records.
+
+=>  We have one dataframe consisting of Yatko Raw Data
+with the columns name, iso3166a2, iso3166a3, iso3166numeric, total_cases, active_cases, deaths, recovered, critical, Tested, Death_Ratio, Recovery_Ratio, change)
+
+=>  Another main data is the Merged Dataframe: Yatko + Johns Hopkinns API
+This is the merged dataframe in which we performed pre-processing and cleaning in order to make the Yatko dataframe compliant with the main dataframe (John Hopkinns).
+In the pre-processing phase, we took care of the countries like Namibia (countryCode “NA” was getting counted as a null value when reading the dataset), differences between namings between the two APIs (USA/United States of America ; UK = United Kingdom), other countries like Congo had two different names assigned for same values, CAR = Central African Republic. To make the dataframe look more appealing and easier to interpret, we renamed columns and cleaned it further.
+Now the merged dataframe consists of the following columns giving information for 186 countries:
+CountryCode, Country, Date, NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed, TotalDeaths, TotalRecovered, DeathRatio, RecoveryRatio, Total Tests Done.
+For a clear and concise view of the data sources, we’ve put up a simple flow diagram to explain the main sources and what all data records/columns from them we would be using going further.
+
+
+VISUALIZATIONS
+Currently we’ve been using Tableau for our visualizations. But, going ahead, we would also try and see for other feasible visualization tools which would better suit our project.
+We’ve decided to make the following main types of visualizations
+1) Map related visualizations (when a user hovers over a particular country, the map would show the user statistics for that country (ie. Details about active, deceased, recovered and confirmed cases))
+This would be displayed on the main webpage and uses the Summarized data which has info about cases for all countries affected by COVID-19.
+
+2) Trend graph kind of visualization that’d show users the trend followed by a particular country. Basically 4 trend lines in one graph. (representing active, deceased, recovered and confirmed cases trend-lines).
+Two done so far : One worldwide (trends for the world’s total cases), One country-wise (filter on the country)
+
+3) To show top 5/top 10 countries with respect to the cases as for recovered, confirmed and deceased cases. (considering the world-wide summarized cases dataset)
+
+
+
 External Links!!
 1. https://api.covid19api.com/countries (Country Details)
 2. https://api.covid19api.com/country/south-africa?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z (Country Status Details)
@@ -78,4 +121,6 @@ External Links!!
 4. https://api.covid19api.com/all (Everything about COVID-19)
 5. https://api.covid19api.com/summary (Summary of stats like total cases, recovered cases, deaths)
 6. https://github.com/CSSEGISandData/COVID19/tree/master/csse_covid_19_data/csse_covid_19_time_series  (Global Data (Tallied records: Total cases, Recovered, Deaths) Time Series Data)
+7. https://api.quarantine.country/api/v1/summary/latest (Yatko API)
+8. https://raw.githubusercontent.com/microsoft/Bing-COVID-19-Data/master/data/Bing-COVID19-Data.csv (Bing Dataset)
 
