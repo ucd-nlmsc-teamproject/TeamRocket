@@ -1,0 +1,65 @@
+Minutes of the Meeting
+7th july-2020 (Weekly meeting with simon)
+
+
+15:45 Simon: Asking if feedback was good
+
+Not yet crystal clear, the overall structure of the project, the relation of each part with each other. Reasoning behind it.
+
+Sources of data: what are the sources of data, which will be used to train the bot. Final dataset to be used.
+
+People in chatbot team: increase the number of personell to help improve the functionality of chatbot.
+
+Streamline the application and user experience, built around the chatbot. 
+Initially application was designed with the chatbot as primary feature, but as a failsafe build visualizations to have a basic user interaction available with the application.
+
+Even if we done this, but we should have done it the other way? 
+Retrospective look into what could have been done better. Greater focus on Lex to get a better understanding quicker, a week sooner potentially.
+
+Able to want to make mistakes.
+Cautious when planning for failure.
+
+Chatbot serving up web content. Will take some time
+Start with basic query, data retrieval
+Chatbot v2: visualizations
+Job in the back where images are updated everyday.
+Dynamic queries 
+Ad hoc queries: intent to 
+
+Aim high.
+Build up complexity as you go.
+Keep initial intent as simple. With data integration from start to finish. 
+Then slowly scale up.
+
+16:00: Prepare a secondary jump around role.
+Get two more people to jump on lex.
+
+Make sure people are documenting.
+Get the version 1: of chatbot api.
+
+
+
+
+16:15: Team: all of you have a significant technical contribution to show for the report.
+Cloud: AWS, azure, AWS better suited for lex, raising issue, student access on AWS does not gives access to active directories, to give roles, permission etc. 
+How we could solve it.
+Jumped the gun, Free version of Azure.
+
+
+Final demo, we do all the cool stuff, then they use it .
+Set of instruction on how to use it.
+So that they can show it to the external examiners.
+
+Scalability, how to include usability for future.
+
+
+NOT CONTENT HEAVY. Ppt.  
+Final presentation. Content heavy ppt will NOT WORK.
+
+Much more clearer, the relationship of each part with each other.
+Document the structure and ask if it works.
+Different way to present the architecture, image.
+Experiment before the final presentation.
+
+
+
