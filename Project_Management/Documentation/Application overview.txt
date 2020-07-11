@@ -1,0 +1,25 @@
+What specifically do you see as the significant barriers in current systems for people hoping to learn about the virus? How does your system seek to address them? 
+We aim to create a system which provides an overview of the situation regarding the COVID-19 pandemic at a quick glance.
+Given the graveness and potency of the virus, it affects everyone and knows no discrimination, Despite this being the case we have noticed that existing platforms aimed at informing the public about the pandemic have been structured in a way, which only helps people who know how to traverse websites and access tabs by finding the relevant information, making it a minefield for those who lack the savyness to understand the layout of webpages and be able to open multiple pages and traverse between them.
+
+Making it different from existing implementations, as the vision is to create a tech friendly Chatbot feature , which focuses around information based on Ireland with a broad understanding of the situation regarding the main case categories of covid for the rest of the world.  
+
+The chatbot aims to provide an accessible natural language interface to dynamic virus-related information, for users of any type to interact with and get the most important information regarding the pandemic, with the visualization aiding with the impact of information received and improving the overall experience of the application.
+ 
+What alternative systems exist in the area and how is your system different? 
+The existing chatbot systems which do exist in the web space, are primarily focused on educating the populace on the symptoms of COVID-19 and to track any symptoms the person may have and get advice on what to do. Rather than being an open ended tool, with which the user can interact, the existing implementations only provide information based on the list of questions that are shown to the user, Similar to a Q and A sessions, which is not tailor driven based on the users interests or queries they may have regarding the pandemic.
+ 
+ 
+ 
+Existing systems examples include the risk assessment checker bot from HSE which identifies coronavirus Symptoms based on the answers fed by the user. 
+Chatbot.com which provides instant triage and diagnosis based on the WHO guidelines and information provided by professionals. Built in collaboration with   Infermedica, a provider of AI-driven solutions for medical diagnosis. By combining ChatBot’s technology and Infermedica's expertise, the tool helps self-evaluate the risk of infection
+WHO in collaboration with facebook messenger have created an intuitive bot which is able to learn from user queries and display the most relevant information that is related to the query. What we hope to achieve is a similarly fashioned bot which is able to provide the most up to date user driven data based on the epidemic and is able to function in a fluid manner requiring very little effort from the general users perspective.
+What we aim to further achieve is to integrate a far better visualization tool along with the bot aiding with the impact of information received based on the query and improving the overall experience of the application.
+Links:
+https://www.hse.ie/chatbot/covid/chatiframe.aspx
+https://www.messenger.com/t/WHO
+https://www.chatbot.com/covid19-chatbot/
+Discussion of alternative tools in consideration:
+The tool we decided to use for Development is LEX API. 
+Alternative tools: Microsoft Bot services
+chatbot.com: automates sales, support, and marketing Chatbot
