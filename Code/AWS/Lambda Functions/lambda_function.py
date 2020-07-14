@@ -16,6 +16,18 @@ def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message)
             'message': message
         }
     }
+    
+def close(session_attributes, fulfillment_state, message):
+    response = {
+        'sessionAttributes': session_attributes,
+        'dialogAction': {
+            'type': 'Close',
+            'fulfillmentState': fulfillment_state,
+            'message': message
+        }
+    }
+
+    return response
 
 def db_parameters():
     endpoint = 'database-1.cdnnok48tja6.us-east-1.rds.amazonaws.com'
@@ -25,10 +37,10 @@ def db_parameters():
     return endpoint, username, password, database_name
     
 
-def get_db_cursor(typeofCase, query):
+def get_db_cursor(query):
+    endpoint, username, password, database_name = db_parameters()
     connection = pymysql.connect(endpoint, user=username,
     passwd=password, db=database_name)
-    endpoint, username, password, database_name = db_parameters()
     cursor = connection.cursor()
     cursor.execute(query)
     return cursor
@@ -99,7 +111,20 @@ def get_country_data(intent_request):
             validation_result['message']
         )
     else:
-        #Code to fetch data from Database for the given country
+        country = intent_request['currentIntent']['slots']['Country']
+        typeofCase = intent_request['currentIntent']['slots']['TypeOfCases']
+        date = intent_request['currentIntent']['slots']['Date']
+        query = "Select " +country+ " from " +typeofCase+ "Cases where Date='"+date+"'"
+        figure = get_db_cursor(query).fetchall()[0]
+        
+        return close(
+            {},
+            'Fulfilled',
+            {
+                'contentType': 'PlainText',
+                'content': 'There were '+str(figure[0])+' '+typeofCase+' Cases in '+country+' on '+date
+            }
+        )
         
 def lambda_handler(event, context):
     # TODO implement
