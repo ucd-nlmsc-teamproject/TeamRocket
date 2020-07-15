@@ -7,6 +7,10 @@ Initial research was done on various APIs such as below,
 3. Tweets from Twitter  (if required) 
 4. Yatko API - https://api.quarantine.country/api/v1/summary/latest
 5. Bing covid 19 data from github (https://raw.githubusercontent.com/microsoft/Bing-COVID-19-Data/master/data/Bing-COVID19-Data.csv)
+6. Ireland related data
+   http://opendata-geohive.hub.arcgis.com/datasets/4779c505c43c40da9101ce53f34bb923_0.csv?outSR={"latestWkid":3857,"wkid":102100}
+   http://opendata-geohive.hub.arcgis.com/datasets/d8eb52d56273413b84b0187a4e9117be_0.csv?outSR={"latestWkid":3857,"wkid":102100}
+   http://opendata-geohive.hub.arcgis.com/datasets/d9be85b30d7748b5b7c09450b8aede63_0.csv?outSR={"latestWkid":3857,"wkid":102100}
 
 Considering that we need the data that’d answer statistical and theoretical questions asked to the Chatbot; we further divided the data into two broad sections.
 
@@ -64,6 +68,13 @@ Dataset 3: Bing Covid 19 Data
 The 3rd data which we will be looking into is the data from bing 19 covid data and here the data is collected from many different sources and the same is converted to time series data. This data records data like Confirmed cases,  deaths cases and recovered cases. Data is recorded when the first case is seen in that particular country. It also records the data for each date and for some countries the data is recorded for each date for each state/province. But some countries don't have data recorded according to the state/province. One interesting thing is that this API also records data for the whole world for each date.
 As of now we have extracted the data from the API and saved into datasets  and the next we are trying to convert the data in the format of what we have for the John Hopkins data. The idea of this is to, make sure when we we have any data discrepancies in the john hopkins data, we can refer to this data and fill the missing or bad data into john hopkins from this data to maintain and fill the gap in the datasets which will be used by the chatbot or the world map.
 
+Dataset 4: Ireland Data
+We’re now considering Ireland data provided by data.gov.ie
+Amongst the data, we’re focusing on statistical data, that focuses on Confirmed/Deaths/Recovered cases for the whole country. It also provides population related data (per county wise) and population-confirmed cases ratio. It also provides statistical data (time-series data) revolving around other attributes like age groups of the hospitalized cases, number of males-females affected by the virus, what was the reason for the spread(travel abroad/community transmission etc.). It also provides county-wise confirmed cases till the latest update. 
+CountyName, Population, Lat,Long,ConfirmedCases,Case by Population,Date
+Date, ConfirmedCovidCases, TotalConfirmedCovidCases, ConfirmedCovidDeaths, TotalCovidDeaths, ConfirmedCovidRecovered, TotalCovidRecovered,StatisticsProfileDate, Hospitalized statistics like : Aged35to44, CommunityTransmission, CloseContact, TravelAbroad	and Male - Female Affected cases
+
+
 Pre-processing Part:
 Apart from this real time data, we look forward to collecting static data (which requires no updation) pertaining to the symptoms of COVID, healthy habits and so on. 
 We’d also be getting information from some additional APIs and integrating the required datasets to enhance the availability of data from various APIs to be put in one place.
@@ -102,6 +113,7 @@ For a clear and concise view of the data sources, we’ve put up a simple flow d
 
 
 VISUALIZATIONS
+-> TABLEAU
 Currently we’ve been using Tableau for our visualizations. But, going ahead, we would also try and see for other feasible visualization tools which would better suit our project.
 We’ve decided to make the following main types of visualizations
 1) Map related visualizations (when a user hovers over a particular country, the map would show the user statistics for that country (ie. Details about active, deceased, recovered and confirmed cases))
@@ -111,6 +123,13 @@ This would be displayed on the main webpage and uses the Summarized data which h
 Two done so far : One worldwide (trends for the world’s total cases), One country-wise (filter on the country)
 
 3) To show top 5/top 10 countries with respect to the cases as for recovered, confirmed and deceased cases. (considering the world-wide summarized cases dataset)
+
+-> Flourish
+Flourish is a tool that allows to create visualization dashboards/storytelling scenarios in a more fancy way. It provides certain map visualizations, to name some: survey maps, projection maps. We tried to create a map visualization similar to that done in Tableau to sort of compare which one is better. Some visualization we tried were as follows:
+
+-> PowerBI
+Created map-based visualizations for the summary data from Johns Hopkins API, and after the front end team embedded it onto the web-pages, we were able to compare it's functionality against the one's initially made using Tableau. Found that the one's made by Tableau fit better and look better than the PowerBI ones.
+
 
 
 
