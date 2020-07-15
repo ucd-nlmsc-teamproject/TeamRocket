@@ -23,3 +23,26 @@ Discussion of alternative tools in consideration:
 The tool we decided to use for Development is LEX API. 
 Alternative tools: Microsoft Bot services
 chatbot.com: automates sales, support, and marketing Chatbot
+
+Discussion of alternative tools in consideration:
+
+Alternative tools: chatbot.com: automates sales, support, and marketing Chatbot, Microsoft Bot services: What it is,
+Why not suitable for the current project, Initial issue of not extensively exploring all the available tools in the marketplace since no one had the knowledge and skill of creating a bot, we had to learn how to use the tool in order to create the interactive bot from scratch. Given the initial recommendation to use Amazon Lex, we decided to completely focus on the service than spend time exploring other tools.
+If given more time we would have explored all available tools in conjunction with the cloud platforms to find one that works best across all platforms.
+Like Lex API , Azure Bot Service and Bot Framework provide tools to build, test, deploy, and manage intelligent bots, all in one place. The modular and extensible framework provided by the SDK, tools, templates, and AI services supports bots that use speech, understand natural language, and handle questions and answers.
+The tool offers extra functionality via the addition of extra components such as LUIS, which enables the bot to process and understand natural language and understand each user Intent just like Lex. It also provides enhanced user experience via graphics menus and cards.
+
+ADVANTAGES:
+
+Luis has a more sophisticated learning system and there is more power in the luis.ai console than Lex, However it is not easy at all to implement.
+With Lex you can easily get a content manager or another stakeholder to help you define entities and/or types and fill in user utterances
+ 
+ 
+Lex is perfect for clear, easy flow conversational assistance to construct a personal assistant that can help with information within a small domain by passing simple and strict commands.
+Luis has a bunch of shared sources and an existing bot framework to build a chat based on Luis’ intents and logic.
+
+CHOICE:
+
+Luis also has many integrations with popular social messengers, Hence, It would be the choice if we had more time to achieve the final vision of a flexible and high end user driven bot experience since this system is preferable for more complicated flows and it really is an effective solution for a chatbot with more complicated actions.
+
+Given a huge system like Luis, for the kinds of simple actions we initially hoped to perform and demo for our application, lex was the choice. Given the restricted domain and subject of the project, to provide information on a strict subject, our goal was to initially create a bot with basic functionality to display the intent behind the vision.
