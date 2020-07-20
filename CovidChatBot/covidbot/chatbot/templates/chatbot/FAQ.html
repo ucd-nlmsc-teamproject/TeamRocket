@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" class="theme-cyan" >
+  {% load static %}
    <head>
       <!-- Global / universal meta tags -->
       <meta charset="utf-8" />
@@ -45,64 +46,13 @@
       <meta name="cdc:last_published" content="2020-06-01T20:43:07Z" />
    </head>
    <body class="no-js">
-      <header id="header">
-         <div class="inner">
-            <a href="index.html" class="logo">COVID-19 Interactive Visualizer</a>
-            <nav id="nav">
-
-              <ul class="nav navbar-nav">
-<!--
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
--->
-
-                <li class="dropdown">
-                  <a href="index.html">Overview</a>
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="symptoms.html"  style="color:black;">Symptoms</a></li>
-                    <li><a href="prevention.html"  style="color:black;">Prevention</a></li>
-                    <li><a href="FAQ.html"  style="color:black;">FAQ</a></li>
-<!--
-                    <li class="divider"></li>
-                    <li><a href="#" >Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
--->
-                  </ul>
-                </li>
-              </ul>
-<!--
-                  <button class="ddButton">Information</button>
-                  <div class="ddContent">
-                    <a href="#">Prevention</a>
-                    <a href="#">Symptoms</a>
-                    <a href="#">FAQ</a>
-                  </div>
--->
-              </div>
-
-<!--
-               <a href="index.html">Overview</a>
-                <a href="generic.html">Generic</a>
-               <a href="infoindex.html">Information</a>
--->
-            </nav>
-         </div>
-      </header>
-      <!-- Page Content Wrap -->
+      {% include "chatbot/header.html" %}
+      <!-- Page Content.html Wrap -->
       <div class="container d-flex flex-wrap body-wrapper bg-white">
       <!-- Content -->
       <main class="col-lg-9 order-lg-2" role="main" aria-label="Main Content Area">
          <div class="row visual-element">
             <div class="col">
-               <!-- Visual Element, this is what was the site identity in TP3 -->
-               <!-- mp_trans_add
-                  <div class="syndicate">
-                  <div class="row "><div class="col-md-12"><div class="card mb-3"><div class="card-body bg-gray-l3"><p class="small"><i><strong>Disclaimer:</strong></i><i> This website is frequently updated. Some content may be in English until all the content is translated.</i></p>
-                  </div></div></div></div>
-                  </div>
-                  -->
             </div>
          </div>
          <div class="section-nav-area">
@@ -223,6 +173,7 @@
          <div class="row last-reviewed-row">
 
          </div>
+         {% include "chatbot/footer.html" %}
       </main>
       <!-- Left / Bottom Nav -->
       <div class="col-lg-3 order-lg-1 leftnav-wrapper">

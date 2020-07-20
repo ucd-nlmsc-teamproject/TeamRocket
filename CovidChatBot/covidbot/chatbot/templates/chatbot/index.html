@@ -14,40 +14,7 @@
       <title>COVID-19 Interactive Visualizer</title>
    </head>
    <body>
-      <header id="header">
-         <div class="inner">
-            <a href="index.html" class="logo">COVID-19 Interactive Visualizer</a>
-            <nav id="nav">
-               <!--
-                  <select name="burgerButton">
-                      <option>Statistics</option>
-                      <option>Information Section</option>
-                  </select>
-                  -->                      
-               <ul class="nav navbar-nav">
-                  <!--
-                     <li class="active"><a href="#">Link</a></li>
-                     <li><a href="#">Link</a></li>
-                     -->
-                  <li class="dropdown">
-                     <a href="index.html">Overview</a>
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="symptoms.html"  style="color:black;">Symptoms</a></li>
-                        <li><a href="prevention.html"  style="color:black;">Prevention</a></li>
-                        <li><a href="FAQ.html"  style="color:black;">FAQ</a></li>
-                        <!--
-                           <li class="divider"></li>
-                           <li><a href="#" >Separated link</a></li>
-                           <li class="divider"></li>
-                           <li><a href="#">One more separated link</a></li>
-                           -->
-                     </ul>
-                  </li>
-                </ul>
-            </nav>
-         </div>
-      </header>
+    {% include "chatbot/header.html" %}
       <div class="content">
          <header>
             <h2>Welcome to Team Rocket's COVID-19 Visualizer</h2>
@@ -105,8 +72,8 @@
                <h3>Major COVID-19 Trends across the world</h3>
                <br>
             </header>
-             
-            
+
+
             <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
             <div class='tableauPlaceholder' style='width: 1920px; height: 800px;'>
                <object class='tableauViz' width='1920' height='834' style='display:none;'>
@@ -133,7 +100,7 @@
             			<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
             		</div>
             	</article>
-            
+
             </div>
             -->
       </section>
