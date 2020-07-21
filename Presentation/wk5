@@ -1,0 +1,57 @@
+FINAL SCRIPT:
+Hello everyone my name is Minaz shaikh and I’m from Team Rocket. I’ll be taking you through this presentation.
+Our project name is Covid-19 interactive visualizer. 
+Based on our report from the interim presentation we redefined our project with a clearer objective. We aim to create a system which provides an overview of the situation regarding the COVID-19 pandemic at a quick glance.
+Given the graveness and potency of the virus, we have noticed that existing platforms aimed at informing the public about the pandemic have been structured in a way, which only helps people who know how to traverse websites and access tabs by finding the relevant information, making it a minefield for those who lack the savviness to understand the layout of webpages and be able to open multiple pages and traverse between them.
+
+enables us to solve user queries regarding the COVID-19 pandemic across the world. We aim to create more awareness among people regarding the effects of the pandemic specifically in the health sector, i.e Infected rates, Death rates, Recovery rates, etc, by letting users directly interact with the chatbot. The web page will use trusted sources to gather relevant information in the aforementioned categories which will be used to drive the responses of the bot and power the map based visualizations of the world which will be also deployed on the same application.
+
+Hence the two main features of the application are as follows:
+1st one is a chatbot and the other one is the interactive map which will contain visualizations of the data that is collected and curated.
+The chatbot aims to provide a very user friendly, accessible platform for user of any type to interact and get the most important information regarding the pandemic, with the visualization aiding with the impact of information received and improving the overall experience of the application.
+
+
+Plans for coming week: With the scope of information being provided by the chatbot to be  restricted to ireland.
+We aim to achieve the Final version of our product by the end of the month in preparation of user based testing for the first week of july by further breaking down tasks and reach goals into sprints and release versions as seen.
+
+
+
+Roles: Each member has been assigned to a team and has a set of defined roles for until the final submission of the application. For each sprint we set a number of tasks that are relevant for each member in that role. The tasks are documented and monitored in detail via sprint plans in jira.
+
+(1:35s)Architecture: The architecture of the application is as described in the previous video, the front end, which contains the web application and an embedded chatbot, will communicate with the data in the DB using Django and the Amazon Lex API which is also used to train the chatbot. 
+The end users are people who interact with the front-end web application and chatbot to get more information about covid-19.
+
+Data plan: This is the outline of our data plan and you can view it by pausing this video.
+
+Upon the overall world data by country which we had gathered we decided to prepare data of Ireland regarding the pandemic in greater detail to demonstrate the current scope of the project.
+The refined irish data is aimed to demonstrate what type of data of each country we envision the final version of the application would contain for users to access.
+These are the final sources of data, which will be used to train the bot.
+
+Github: We are keeping track of the minimum project requirements and that we are adhering to the main requirements before the MVP, by ensuring each member is constantly push-committing the work as and when it is completed. Just to give a jist you can see in the image the different folders we have.
+Team management:  As mentioned in the last video, Sumit, aditya and ashwin keep track of members to ensure presence in git and the shared folders and initiate regular morning meetings. Each task is carefully assigned and monitored in jira, git and google drive.
+Progress achieved this week: After the review of the interim report we were able to refine the scope to focus further on irish specific data. We also made progress in terms of deploying core intents for the chatbot.
+Front-End team 
+Clean the front-end of the web application design and structuring the layout of the pages accordingly.
+Researching potential features for better UX
+Test deployment of bot on a web page, solving issues in relation to Django and node js.
+The integration of the bot with the application has been met with a few challenges and are actively trying to solve it.
+DATA: Apurva,Vishal
+Integration of the summary data from the two main APIs, Yatko and John hopkins respectively and the final merged Dataset set for each country which will be later used in the visualization.
+Working on Tableau with further visualizations for the newly curated data pertaining to Ireland. Some of the visualizations done so far are displayed in the following slides
+
+For Cloud Architecture 
+-          Created a MySQL server hosted on Azure to connect using the MySQL Workbench
+-          This instance of MySQL server was created to connect with the instance of Amazon Lex used to build the chatbot
+-          A table ActiveCases was created on the server with the appropriate schema and the required data
+-          The intents of Lex were successfully tested to fetch data present in ActiveCases
+-           2 pipelines were created to automate the data transferring process of ActiveCases. One pipeline to fetch data from local file system to data lake and the other pipeline to transfer data from data lake to the database on MySQL server
+
+For Django/lex development :
+Reorganise the structure to narrow the scope of the queries that is aimed to be fulfilled.
+Prepare for development of a user intent for deployment from start to finish.
+Intent of get country data for Active, confirmed and deceased cases successfully implemented.
+Development  of image generation with current intent.
+
+
+I'll now show a few screen captures of the progress in terms of the front end view of the app, and the structure of the data saved up until now. We have not made any visual changes to the application this week hence the images are the same as the previous presentation.
+Thank you.
