@@ -14,6 +14,8 @@ import csv
 import requests
 import json
 import datetime
+import warnings
+warnings.filterwarnings("ignore")
 
 
 # In[2]:
@@ -25,7 +27,7 @@ def Save_file(df,name,I):
     if I == 1:
         df.to_csv(output_file)
     elif I == 0:
-        df.to_csv(output_file,index=False)
+        df.to_csv(output_file,index = False)
 
 
 # ### This is the dataframe that provides the CONFIRMED covid-19 cases till date in Ireland along with population data county-wise
@@ -44,12 +46,6 @@ def get_data(csv):
     df.fillna(0, inplace = True) #filling NaN values
     return df
     
-
-
-# In[ ]:
-
-
-
 
 
 # In[4]:
@@ -78,28 +74,71 @@ Save_file(Ireland_counties_df,"IrelandConfirmedCases",0)
 # In[6]:
 
 
+# def Ireland_Overall(url):
+#     df = pd.read_csv(url)
+#     df['Date'] = pd.to_datetime(df['Date'])
+#     df['Date'] = df['Date'].dt.date
+#     df.fillna(0, inplace = True)
+#     df['StatisticsProfileDate'] = pd.to_datetime(df['StatisticsProfileDate']).dt.strftime('%Y-%m-%d')
+#     df['Date'] = pd.to_datetime(df['Date']).dt.strftime('%Y-%m-%d')
+
+
+    
+#     #this is the dataframe that'd consist of all the statistical data(confirmed/recovered/deaths)
+#     df1 = df.filter(['Date', 'ConfirmedCovidCases', 'TotalConfirmedCovidCases',
+#        'ConfirmedCovidDeaths', 'TotalCovidDeaths', 'ConfirmedCovidRecovered',
+#        'TotalCovidRecovered'], axis = 1)
+#     df1 = df1.rename(columns = {'ConfirmedCovidCases':'Confirmed', 'TotalConfirmedCovidCases':'TotalConfirmed',
+#        'ConfirmedCovidDeaths':'Deaths', 'TotalCovidDeaths': 'TotalDeaths','ConfirmedCovidRecovered':'Recovered',
+#        'TotalCovidRecovered':'TotalRecovered' })
+    
+#     #this is the dataframe that'd consist of all the Hospital related statistical data 
+#     df2 = df.drop(columns = ['X', 'Y', 'ConfirmedCovidCases', 'TotalConfirmedCovidCases',
+#        'ConfirmedCovidDeaths', 'TotalCovidDeaths', 'ConfirmedCovidRecovered',
+#        'TotalCovidRecovered', 'StatisticsProfileDate', 'CovidCasesConfirmed','HealthcareWorkersCovidCases', 'ClustersNotified','Male', 'Female', 'Unknown', 'Aged1',
+#        'Aged1to4', 'Aged5to14', 'Aged15to24', 'Aged25to34', 'Aged35to44',
+#        'Aged45to54', 'Aged55to64', 'Aged65up', 'Median_Age',
+#        'CommunityTransmission', 'CloseContact', 'TravelAbroad',
+#        'UnderInvestigation', 'FID'])
+#     df2 = df2.rename(columns= {'HospitalisedCovidCases': 'HospitalisedCases','RequiringICUCovidCases': 'Critical_ICUCases',
+#                                                              'HospitalisedAged5': 'Aged5','HospitalisedAged5to14': 'Aged5-14','HospitalisedAged15to24': 'Aged15-24',
+#                                                              'HospitalisedAged25to34': 'Aged25-34','HospitalisedAged35to44': 'Aged35to44',
+#                                                              'HospitalisedAged45to54': 'Aged45to54','HospitalisedAged55to64': 'Aged55to64','HospitalisedAged65up': 'Aged65up'})
+    
+#     #this dataframe consist of gender related data (number males/females affected)
+#     df3 = df.filter(['Date','Male','Female'], axis = 1)
+    
+#     #this dataframe consist of reasons for the spread of covid amongst people
+#     df4 = df.filter(['Date','CommunityTransmission', 'CloseContact', 'TravelAbroad'], axis = 1)
+#     return df, df1, df2, df3, df4
+    
+
+
+# In[7]:
+
+
 def Ireland_Overall(url):
     df = pd.read_csv(url)
     df['Date'] = pd.to_datetime(df['Date'])
     df['Date'] = df['Date'].dt.date
     df.fillna(0, inplace = True)
+    df['StatisticsProfileDate'] = pd.to_datetime(df['StatisticsProfileDate']).dt.strftime('%Y-%m-%d')
+    df['Date'] = pd.to_datetime(df['Date']).dt.strftime('%Y-%m-%d')
+
+
     
     #this is the dataframe that'd consist of all the statistical data(confirmed/recovered/deaths)
     df1 = df.filter(['Date', 'ConfirmedCovidCases', 'TotalConfirmedCovidCases',
-       'ConfirmedCovidDeaths', 'TotalCovidDeaths', 'ConfirmedCovidRecovered',
-       'TotalCovidRecovered'], axis = 1)
+       'ConfirmedCovidDeaths', 'TotalCovidDeaths'], axis = 1)
     df1 = df1.rename(columns = {'ConfirmedCovidCases':'Confirmed', 'TotalConfirmedCovidCases':'TotalConfirmed',
-       'ConfirmedCovidDeaths':'Deaths', 'TotalCovidDeaths': 'TotalDeaths','ConfirmedCovidRecovered':'Recovered',
-       'TotalCovidRecovered':'TotalRecovered' })
+       'ConfirmedCovidDeaths':'Deaths', 'TotalCovidDeaths': 'TotalDeaths' })
     
     #this is the dataframe that'd consist of all the Hospital related statistical data 
     df2 = df.drop(columns = ['X', 'Y', 'ConfirmedCovidCases', 'TotalConfirmedCovidCases',
-       'ConfirmedCovidDeaths', 'TotalCovidDeaths', 'ConfirmedCovidRecovered',
-       'TotalCovidRecovered', 'StatisticsProfileDate', 'CovidCasesConfirmed','HealthcareWorkersCovidCases', 'ClustersNotified','Male', 'Female', 'Unknown', 'Aged1',
+       'ConfirmedCovidDeaths', 'TotalCovidDeaths', 'StatisticsProfileDate', 'CovidCasesConfirmed','HealthcareWorkersCovidCases', 'ClustersNotified','Male', 'Female', 'Unknown', 'Aged1',
        'Aged1to4', 'Aged5to14', 'Aged15to24', 'Aged25to34', 'Aged35to44',
        'Aged45to54', 'Aged55to64', 'Aged65up', 'Median_Age',
-       'CommunityTransmission', 'CloseContact', 'TravelAbroad',
-       'UnderInvestigation', 'FID'])
+       'CommunityTransmission', 'CloseContact', 'TravelAbroad', 'FID'])
     df2 = df2.rename(columns= {'HospitalisedCovidCases': 'HospitalisedCases','RequiringICUCovidCases': 'Critical_ICUCases',
                                                              'HospitalisedAged5': 'Aged5','HospitalisedAged5to14': 'Aged5-14','HospitalisedAged15to24': 'Aged15-24',
                                                              'HospitalisedAged25to34': 'Aged25-34','HospitalisedAged35to44': 'Aged35to44',
@@ -114,72 +153,109 @@ def Ireland_Overall(url):
     
 
 
-# In[7]:
+# In[8]:
 
 
 link = 'http://opendata-geohive.hub.arcgis.com/datasets/d8eb52d56273413b84b0187a4e9117be_0.csv?outSR={"latestWkid":3857,"wkid":102100}'
 Entire_Ireland, Ireland_All_Stats, Ireland_Hospital_Data, Ireland_Gender, Ireland_Spread = Ireland_Overall(link) 
 
 
-# In[8]:
+# In[9]:
 
 
 # Entire_Ireland
 
 
-# In[9]:
+# In[10]:
 
 
 Save_file(Entire_Ireland,"Ireland_TimeSeries",0)
 # Entire_Ireland.to_csv('Ireland_TimeSeries.csv', index = False)
 
 
-# In[10]:
+# In[11]:
 
 
 # Ireland_All_Stats
 
 
-# In[11]:
+# In[12]:
 
 
 Save_file(Ireland_All_Stats,"IrelandCaseTypes",0)
 # Ireland_All_Stats.to_csv('IrelandCaseTypes.csv', index = False)
 
 
-# In[12]:
+# In[13]:
 
 
 # Ireland_Hospital_Data
 
 
-# In[13]:
+# In[14]:
+
+
+def data_preproc(df):
+    list_dates = list()
+    P = df.index[df['Date'] == '2020-04-24'][0]
+    P1 = df.index[df['Date'] == '2020-04-25'][0]
+    A = df.iloc[P]['Aged65up']
+    df.loc[P1,'Aged65up'] = A
+    return df
+
+
+# In[15]:
+
+
+Ireland_Hospital_Data = data_preproc(Ireland_Hospital_Data)
+
+
+# In[16]:
 
 
 Save_file(Ireland_Hospital_Data,"IrelandHospitalData",0)
 # Ireland_Hospital_Data.to_csv('IrelandHospitalData.csv', index = False)
 
 
-# In[14]:
+# In[17]:
 
 
-# Ireland_Gender
+def Data_cleaning(df):
+    list_dates = list()
+    R = df.index[df['Date'] == '2020-04-22'][0]
+    R1 = df.index[df['Date'] == '2020-04-23'][0]
+    T = df.index[df['Date'] == '2020-07-03'][0]
+    T1 = df.index[df['Date'] == '2020-07-04'][0]
+    X = df.iloc[R]['Male']
+    Y = df.iloc[R]['Female']
+    Z = df.iloc[T]['Female']
+    df.loc[R1,'Male'] = X
+    df.loc[T1,'Female'] = Z
+    df.loc[R1,'Female'] = Y
+    
+    return df
 
 
-# In[15]:
+# In[18]:
+
+
+Ireland_Gender = Data_cleaning(Ireland_Gender)
+
+
+# In[19]:
 
 
 Save_file(Ireland_Gender,"IrelandGenderWise",0)
 # Ireland_Gender.to_csv('IrelandGenderWise.csv', index = False)
 
 
-# In[16]:
+# In[20]:
 
 
 # Ireland_Spread
 
 
-# In[17]:
+# In[21]:
 
 
 Save_file(Ireland_Spread,"IrelandSpreadCategory",0)
@@ -191,7 +267,7 @@ Save_file(Ireland_Spread,"IrelandSpreadCategory",0)
 # ##### AllCounties_timeseries = pd.read_csv('http://opendata-geohive.hub.arcgis.com/datasets/d9be85b30d7748b5b7c09450b8aede63_0.csv?outSR={"latestWkid":3857,"wkid":102100}')
 # #### Gives Confirmed cases starting from February until the latest update
 
-# In[18]:
+# In[22]:
 
 
 def IrelandCases(url):
@@ -206,14 +282,14 @@ def IrelandCases(url):
     return df
 
 
-# In[19]:
+# In[23]:
 
 
 IrelandCounties = IrelandCases('http://opendata-geohive.hub.arcgis.com/datasets/d9be85b30d7748b5b7c09450b8aede63_0.csv?outSR={"latestWkid":3857,"wkid":102100}')
 # IrelandCounties
 
 
-# In[20]:
+# In[24]:
 
 
 def Time_Series_Data(df):
@@ -243,35 +319,35 @@ def Time_Series_Data(df):
     return Confirmed_Data.T
 
 
-# In[21]:
+# In[25]:
 
 
 Confirmed_Ireland = Time_Series_Data(IrelandCounties)
 
 
-# In[22]:
+# In[26]:
 
 
 # Confirmed_Ireland
 
 
-# In[23]:
+# In[27]:
 
 
 # Date = AllCounties_timeseries['TimeStamp'].unique()
 # CountyName = AllCounties_timeseries['CountyName'].unique()
 
 
-# In[24]:
+# In[28]:
 
 
 # Counties_Timeseries = pd.DataFrame(index = CountyName, columns = (Date))
 # Counties_Timeseries
 
 
-# In[25]:
+# In[29]:
 
 
-Save_file(Confirmed_Ireland,"CountyWise_TimeSeries",0)
+Save_file(Confirmed_Ireland,"CountyWise_TimeSeries",1)
 # Confirmed_Ireland.to_csv(CountyWise_TimeSeries.csv', index = False)
 
