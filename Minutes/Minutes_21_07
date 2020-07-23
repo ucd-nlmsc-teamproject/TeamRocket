@@ -1,0 +1,43 @@
+Minutes of the Meeting
+21st july-2020 (Weekly meeting with Deepak)
+
+
+15:30 : Discussed how the presentation for the final submission must Demonstrate how some parts of the application work via screenshots and integrate more infographics,
+for content heavy parts.
+
+Adjudicators were unsure behind the reasoning of having multiple high end visualizations while the chatbot development was still at v1: basic implementation with standard data retrieval.
+
+We aim for the bot to be able to answer different types of user queries based around 3-4 core intents we hope to implement. 
+For each of these intentions we are yet to find a way to integrate image generation OR a way to refresh the main tableau visualizations in response to the user query.
+
+To be decided on how restricted the bot will be in terms of the queries being answered. More restricted? Or able to train better with Automated user query generator
+
+Achieve at least Bot version V2( Including a level of image generation/Visualization updation) before evaluation by the other teams.
+
+Went through the visualizations: Ireland specific visualizations. How the county wise information is drilled down 
+
+Since its a demonstration: start with world map: 
+But integrate higher level of queries in relation to ireland and work on visual integrations with ireland data first.
+Showed to deepak what we plan to do with 
+
+16:00 Evaluation plans: Focus on greater detail which version we plan to 
+Plan to have a V2 version of the application ready by the end of the week. So that upon pairing with another team next week Prepare for pilot trail followed by full blown evaluation.
+
+Plan to evaluate: Metrics generated in the bot itself which saves the interactions with each user.
+Creating very specific polls on different aspects of the application to show.
+Create google form sheets to query users on User experience as well as all the different aspects of the application.
+ 
+Would we give login details to the other team, figure out if credentials are required to be provided once the entire application is reviewed.
+
+
+
+
+Deepak confirmed no need to include F1 measure and other precision metrics as since the type of queries that can be answered is restricted. Unless we can in the future control the level of open style language that can be used to query the bot.
+(Eg: Bot responds with the right response 7 out of 10 types of similar questions asked)
+
+ 
+
+
+
+
+
