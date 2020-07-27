@@ -5,8 +5,8 @@
       <meta charset="utf-8">
       <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %} " />
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
       <link rel="shortcut icon" href="favicon.ico">
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
       <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
@@ -14,7 +14,8 @@
       <title>COVID-19 Interactive Visualizer</title>
    </head>
    <body>
-    {% include "chatbot/header.html" %}
+   {% load static %}
+   {% include "chatbot/header.html" %}
       <div class="content">
          <header>
             <h2>Welcome to Team Rocket's COVID-19 Visualizer</h2>
@@ -38,7 +39,6 @@
                <bold>This is a Web-based Chatbot Application and Map Visualizer which aims to visualize the current situation of the COVID-19 pandemic all across the world, and the chatbot will help answer basic queries concerning the circumstances.</bold>
             </p>
             <ul class="actions">
-               <!--						<li><a href="#" class="button alt">Learn More</a></li>-->
             </ul>
          </div>
       </section>
@@ -87,67 +87,9 @@
                </object>
             </div>
          </div>
-         <!--
-            <div class="inner">
-            	<article>
-            		<div class="content">
-            			<header>
-            				<h3>Total Confirmed Recoveries WorldWide</h3>
-            			</header>
-            			<div class="image fit">
-            				<img src="images/pic02.jpg" alt="" />
-            			</div>
-            			<p>Cumsan mollis eros. Pellentesque a diam sit amet mi magna ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit amet lorem ipsum feugiat tempus.</p>
-            		</div>
-            	</article>
-
-            </div>
-            -->
+         
       </section>
-      <!-- Three -->
-      <!--
-         <section id="three">
-         	<div class="inner">
-         		<article>
-         			<div class="content">
-         				<span class="icon fa-laptop"></span>
-         				<header>
-         					<h3>Tempus Feugiat</h3>
-         				</header>
-         				<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna lorem ullamcorper laoreet, lectus arcu.</p>
-         				<ul class="actions">
-         					<li><a href="#" class="button alt">Learn More</a></li>
-         				</ul>
-         			</div>
-         		</article>
-         		<article>
-         			<div class="content">
-         				<span class="icon fa-diamond"></span>
-         				<header>
-         					<h3>Aliquam Nulla</h3>
-         				</header>
-         				<p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed.</p>
-         				<ul class="actions">
-         					<li><a href="#" class="button alt">Learn More</a></li>
-         				</ul>
-         			</div>
-         		</article>
-         		<article>
-         		<div class="content">
-         				<span class="icon fa-laptop"></span>
-         				<header>
-         					<h3>Sed Magna</h3>
-         				</header>
-         				<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula.</p>
-         				<ul class="actions">
-         					<li><a href="#" class="button alt">Learn More</a></li>
-         				</ul>
-         			</div>
-         		</article>
-         	</div>
-         </section>
-         -->
-      <!-- Footer -->
+      
       <section id="footer">
          <div class="inner">
             <header>
