@@ -20,8 +20,8 @@ from chatbot import views
 
 urlpatterns = [
     path('', views.home),
-    path('symptoms/', views.symptoms),
-    path('prevention/', views.prevention),
+    path('s/', views.s),
+    path('p/', views.p),
     path('faq/', views.faq),
     path('footer/', views.footer),    
 ]
