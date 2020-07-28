@@ -2,12 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return render(request,'chatbot/index.html')
+    return render(request,'chatbot/overview.html')
 
-def s(request):
+def symptoms(request):
     return render(request,'chatbot/symptoms.html')
 
-def p(request):
+def prevention(request):
     return render(request,'chatbot/prevention.html')
 
 def faq(request):
