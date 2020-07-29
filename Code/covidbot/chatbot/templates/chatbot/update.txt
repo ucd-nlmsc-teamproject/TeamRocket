@@ -1,0 +1,35 @@
+#update.txt
+
+---covidbot/chatbot/views.py
+from django.shortcuts import render
+
+# Create your views here.
+def home(request):
+    return render(request,'chatbot/index.html')
+
+def s(request):
+    return render(request,'chatbot/symptoms.html')
+
+def p(request):
+    return render(request,'chatbot/prevention.html')
+
+def faq(request):
+    return render(request,'chatbot/FAQ.html')
+
+def footer(request):
+    return render(request,'chatbot/footer.html')
+
+
+---covidbot/covidbot/urls.py
+from django.shortcuts import render
+from django.contrib import admin
+from django.urls import path
+from chatbot import views
+
+urlpatterns = [
+    path('', views.home),
+    path('s/', views.s),
+    path('p/', views.p),
+    path('faq/', views.faq),
+    path('footer/', views.footer),    
+]
