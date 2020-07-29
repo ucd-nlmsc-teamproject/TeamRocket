@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
+    <link rel="stylesheet prefetch" href="{% static 'chatbot/assets/css/app.min.css_v=20-06-04T19_34_55Z.css' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css?v=20-06-04T19:34:55Z" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .w3-allerta {
+        font-family: "Allerta Stencil", Sans-serif;
+        color: #e5474b;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+
+  <header id="header">
+         <div class="inner">
+            <a href="/" class="logo"><p class="w3-allerta">COVID-19 Interactive Visualizer</p></a>
+
+            <nav id="nav">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/indexie" style="color:black;">Ireland</a></li>
+                    <li><a href="/symptoms" style="color:black;">Symptoms</a></li>
+                    <li><a href="/prevention"  style="color:black;">Prevention</a></li>
+                    <li><a href="/faq"  style="color:black;">FAQ</a></li>
+                  </ul>
+                </li>
+              </ul>
+              </div>
+            </nav>
+
+         </div>
+       <script>
+           $('ul.nav li.dropdown').hover(function() {
+            $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
+            }, function() {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                });
+       </script>
+      </header>
+
+    </body>
+    </html>
