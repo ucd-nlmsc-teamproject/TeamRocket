@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+   {% load static %}
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %} " />
+      <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
+      <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+      <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
+      <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+      <title>COVID-19 Interactive Visualizer</title>
+      <style>
+         .banner-img{
+            background: url("{% static 'chatbot/images/home-banner.jpg' %}") repeat scroll;
+            width: 100%;
+         }
+         .banner-img2{
+            background: url("{% static 'chatbot/images/covid_banner2.jpg' %}") repeat scroll;
+            width: 100%;
+         }
+         .Tbox{
+            margin: 30px;
+            background-color: #000000;
+            /* border: 1px solid white; */
+            opacity: 0.6;
+            font-weight: 100;
+         }
+         .wiz{
+            /* box-shadow: 0.5vh 0.5vw 0.5% 0.5%; */
+            border: 1px solid rgba(red, green, blue, 0.2);
+            /* margin: 0.5%; */
+         }
+      </style>
+   </head>
+<body>
+    
+   {% include "chatbot/header.html" %}
+
+   <!-- Maps section -->
+
+   
+    <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
+      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 10%;'>
+         <object class='tableauViz w3-display-middle' width='100%' height='500' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+            <param name='embed_code_version' value='3' />
+            <param name='name' value='World_Map&#47;Sheet1' />
+            <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='no' />
+            <param name='showAppBanner' value='false' />
+         </object>
+      </div>
+      <p class="w3-container w3-margin w3-padding-16 w3-leftbar ">Why do we use it?
+         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+      </p>
+   </div>
+   
+   <!-- Description -->
+   <div class="w3-display-container  w3-center">       
+      <div class="w3-container  w3-center">
+         <div class="w3-container banner-img">
+            <div class="Tbox w3-container w3-padding-16">
+               <p style="color: white;">
+                  Why do we use it?
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+                  
+                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                  Where can I get some?
+                  
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+               </p>
+            </div>
+         </div>
+      </div>
+      
+      
+      <div class="w3-row">
+         <div class="w3-card-4 w3-center w3-third " >
+            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: left;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+                  <param name='embed_code_version' value='3' />
+                  <param name='name' value='Top10CountrieswithnmostConfirmedCases&#47;Sheet1' />
+                  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='no' />
+                  <param name='showAppBanner' value='false' />
+               </object>
+            </div>
+         </div>       
+         
+         <div class="w3-card-4 w3-center w3-third ">
+            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: left;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+                  <param name='embed_code_version' value='3' />
+                  <param name='name' value='Top10recoveredcases&#47;Sheet1' />
+                  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='no' />
+                  <param name='showAppBanner' value='false' />
+               </object>
+            </div>
+         </div>       
+         
+         <div class="w3-card-4 w3-center w3-third ">
+            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: right;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+                  <param name='embed_code_version' value='3' />
+                  <param name='name' value='Top10Deaths&#47;Sheet1' />
+                  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='no' />
+                  <param name='showAppBanner' value='false' />
+               </object>
+            </div>
+         </div>       
+      </div>
+      
+       <div class="w3-container w3-padding-16">
+         <p style="color: rgb(0, 0, 0);">
+            Why do we use it?
+           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+
+           The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+           Where can I get some?
+
+           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+         </p>
+         <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
+            <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 10%;'>
+               <object class='tableauViz w3-display-middle' width='100%' height='500' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+                  <param name='embed_code_version' value='3' />
+                  <param name='name' value='WorldMap_Country-wiseTrend&#47' />
+                  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='no' />
+                  <param name='showAppBanner' value='false' />
+               </object>
+       </div>
+      </div> 
+      <!-- Description 2 -->
+      <div class="w3-container  w3-center">
+         <div class="w3-container banner-img2">
+            <div class="Tbox w3-container w3-padding-16">
+               <p style="color: rgb(255, 255, 255);">
+                  Why do we use it?
+                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+   
+                 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                 Where can I get some?
+   
+                
+               </p>
+            </div>
+         </div>
+       </div>
+       <section id="footer">
+         <div class="inner">
+            <header>
+               <h2>Get in Touch</h2>
+            </header>
+            <form method="post" action="#">
+               <div class="field half first">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" />
+               </div>
+               <div class="field half">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" />
+               </div>
+               <div class="field">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="6"></textarea>
+               </div>
+               <ul class="actions">
+                  <li><input type="submit" value="Send Message" class="alt" /></li>
+               </ul>
+            </form>
+         </div>
+      </section>
+
+      <!-- Scripts -->
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/skel.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/util.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/main.js' %}"></script>
+   </body>
+</html>

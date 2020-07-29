@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+   {% load static %}
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %} " />
+      <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
+      <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+      <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
+      <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+      <title>COVID-19 Interactive Visualizer</title>
+      <style>
+         .banner-img{
+            background: url("{% static 'chatbot/images/covid19-hero-banner.jpg' %}") repeat scroll center;
+            width: 100%;
+         }
+         .banner-img2{
+            background: url("{% static 'chatbot/images/covid_banner2.jpg' %}") repeat scroll;
+            width: 100%;
+         }
+         .Tbox{
+            margin: 30px;
+            background-color: #000000;
+            /* border: 1px solid white; */
+            opacity: 0.6;
+            font-weight: 100;
+         }
+      </style>
+   </head>
+<body>
+    <script type="text/javascript">
+      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+      (function(d, m){
+        var kommunicateSettings = {"appId":"2e3beded0d05a4b64479e305f33f3f62e","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  </script>
+   {% include "chatbot/header.html" %}
+
+   <!-- Maps section -->
+    <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
+      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 10%;'>
+         <object class='tableauViz w3-display-middle' width='100%' height='500' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+            <param name='embed_code_version' value='3' />
+            <param name='name' value='Ireland_Map&#47;Sheet2&#47;apurva.deore@ucdconnect.ie&#47;ddb8f6eb-3cd5-4d9c-b4c8-fdfa5e6f6045' />
+            <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='no' />
+            <param name='showAppBanner' value='false' />
+         </object>
+      </div>
+      <p class="w3-container w3-margin w3-padding-16 w3-leftbar ">Why do we use it?
+         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+      </p>
+    </div>
+
+    <!-- Description -->
+    <div class="w3-display-container  w3-center">       
+       <div class="w3-container  w3-center">
+         <div class="w3-container banner-img" style="height: 35vh;">
+            <div class=" w3-container w3-padding-16">
+               <p style="color: white;">
+                 </p>
+            </div>
+         </div>
+       </div>
+       
+       <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
+        <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: left;'>
+            <object class='tableauViz' width='100%' height='400' style='display:none;'>
+               <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+               <param name='embed_code_version' value='3' />
+               <param name='name' value='Ireland_Total_ConfirmedDeaths&#47;Ireland_Total_ConfirmedDeaths' />
+               <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+               <param name='tabs' value='no' />
+               <param name='toolbar' value='no' />
+               <param name='showAppBanner' value='false' />
+            </object>
+         </div>
+       </div>       
+       
+       <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
+         <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
+            <object class='tableauViz' width='100%' height='400' style='display:none;'>
+               <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+               <param name='embed_code_version' value='3' />
+               <param name='name' value='Ireland_Daily_ConfirmedDeaths&#47;Ireland_Daily_ConfirmedDeaths' />
+               <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+               <param name='tabs' value='no' />
+               <param name='toolbar' value='no' />
+               <param name='showAppBanner' value='false' />
+            </object>
+         </div>
+       </div> 
+
+       <div class="w3-panel">
+           <p class="w3-sand w3-large w3-leftbar w3-border-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis libero metus, ac porta leo efficitur at. Donec tincidunt felis eu eleifend congue. Mauris vel odio ultrices, aliquet libero non, efficitur ipsum. Vivamus malesuada mi eget massa vulputate, sit amet condimentum magna. </p>
+       </div>
+
+       <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
+        <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: left;'>
+            <object class='tableauViz' width='100%' height='400' style='display:none;'>
+               <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+               <param name='embed_code_version' value='3' />
+               <param name='name' value='Ireland_DayWise_Trend&#47;Ireland_DayWise_' />
+               <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+               <param name='tabs' value='no' />
+               <param name='toolbar' value='no' />
+               <param name='showAppBanner' value='false' />
+            </object>
+         </div>
+       </div>       
+       
+       <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
+         <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
+            <object class='tableauViz' width='100%' height='400' style='display:none;'>
+               <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+               <param name='embed_code_version' value='3' />
+               <param name='name' value='Ireland_DayWise_Deaths&#47;Ireland_DayWise_Deaths' />
+               <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+               <param name='tabs' value='no' />
+               <param name='toolbar' value='no' />
+               <param name='showAppBanner' value='false' />
+            </object>
+         </div>
+       </div> 
+       
+       
+       <div class="w3-panel">
+           <p class="w3-sand w3-large w3-leftbar w3-border-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis libero metus, ac porta leo efficitur at. Donec tincidunt felis eu eleifend congue. Mauris vel odio ultrices, aliquet libero non, efficitur ipsum. Vivamus malesuada mi eget massa vulputate, sit amet condimentum magna. </p>
+         </div>
+         
+         <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
+            <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
+               <object class='tableauViz' width='100%' height='500' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+                  <param name='embed_code_version' value='3' />
+                  <param name='name' value='Bar_IrelandConfirmed_County&#47;Bar_IrelandConfirmed_County'  />
+                  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='no' />
+                  <param name='showAppBanner' value='false' />
+            </object>
+         </div>
+      </div>
+    <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
+        <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: right;'>
+		  <object class='tableauViz' width='100%' height='500'  style='display:none;'>
+		  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> 
+		  <param name='embed_code_version' value='3' />
+		  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+		  <param name='name' value='Hospitalized_AgeWiseCases_2&#47;Hospitalized_AgeWiseCases_2' />
+		  <param name='tabs' value='no' />
+		  <param name='toolbar' value='no' />
+		  <param name='showAppBanner' value='false' />
+		</object>
+	</div>
+        </div>
+        
+         <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
+               <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+                  <param name='embed_code_version' value='3' />
+                  <param name='name' value='HospitalizedCases_Trend&#47;HospitalizedCases_Trend' />
+                  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='no' />
+                  <param name='showAppBanner' value='false' />
+               </object>
+         </div>
+      </div>
+
+    
+
+    <div class="w3-panel">
+        <p class="w3-sand w3-large w3-leftbar w3-border-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis libero metus, ac porta leo efficitur at. Donec tincidunt felis eu eleifend congue. Mauris vel odio ultrices, aliquet libero non, efficitur ipsum. Vivamus malesuada mi eget massa vulputate, sit amet condimentum magna. </p>
+    </div>
+
+    <div class="w3-container w3-padding-16">
+         <p style="color: rgb(0, 0, 0);">
+            Why do we use it?
+           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+
+           The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+           Where can I get some?
+
+           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+         </p>
+    </div>
+    </div> 
+      <!-- Description 2 -->
+      <div class="w3-container  w3-center">
+         <div class="w3-container banner-img2">
+            <div class="Tbox w3-container w3-padding-16">
+               <p style="color: rgb(255, 255, 255);">
+                  Why do we use it?
+                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+   
+                 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                 Where can I get some?
+   
+                
+               </p>
+            </div>
+         </div>
+       </div>
+       {% include "chatbot/footer.html" %}
+       <!-- <section id="footer">
+        <div class="inner">
+           <header>
+              <h2>Get in Touch</h2>
+           </header>
+           <form method="post" action="#">
+              <div class="field half first">
+                 <label for="name">Name</label>
+                 <input type="text" name="name" id="name" />
+              </div>
+              <div class="field half">
+                 <label for="email">Email</label>
+                 <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                 <label for="message">Message</label>
+                 <textarea name="message" id="message" rows="6"></textarea>
+              </div>
+              <ul class="actions">
+                 <li><input type="submit" value="Send Message" class="alt" /></li>
+              </ul>
+           </form>
+        </div>
+     </section> -->
+
+      <!-- Scripts -->
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/skel.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/util.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/main.js' %}"></script>
+   </body>
+</html>
