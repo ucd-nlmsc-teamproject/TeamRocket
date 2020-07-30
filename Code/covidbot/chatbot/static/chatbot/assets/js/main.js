@@ -42,8 +42,27 @@
 		// Off-Canvas Navigation.
 
 			// Navigation Panel Toggle.
-				$('<a href="#navPanel" class="navPanelToggle"></a>')
-					.appendTo($body);
+				$('<a href="#navPanel" class="navPanelToggle"></a>'
+                 
+                 .appendTo($body);
+                    var coll = document.getElementsByClassName("nav-plus nav-expandcollapse");
+                    var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+            });
+                 
+                 
+                 )
+					
+        
 
 			// Navigation Panel.
 				$(
@@ -53,7 +72,7 @@
 					'</div>'
 				)
 					.appendTo($body)
-					.panel({
+					.panel({   
 						delay: 500,
 						hideOnClick: true,
 						hideOnSwipe: true,
