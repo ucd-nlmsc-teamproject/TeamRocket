@@ -23,5 +23,6 @@ urlpatterns = [
     path('symptoms/', views.symptoms),
     path('prevention/', views.prevention),
     path('faq/', views.faq),
-    path('footer/', views.footer),    
+    path('footer/', views.footer),
+    path('indexie/', views.indexie), 
 ]

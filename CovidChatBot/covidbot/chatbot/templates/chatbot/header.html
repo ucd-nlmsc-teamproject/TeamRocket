@@ -10,20 +10,29 @@
     <link rel="stylesheet prefetch" href="{% static 'chatbot/assets/css/app.min.css_v=20-06-04T19_34_55Z.css' %}"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet prefetch" href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css?v=20-06-04T19:34:55Z" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <meta charset="utf-8">
     <title></title>
+    <style>
+      .w3-allerta {
+        font-family: "Allerta Stencil", Sans-serif;
+        color: #e5474b;
+        font-size: x-large;
+      }
+    </style>
   </head>
   <body>
 
   <header id="header">
          <div class="inner">
-            <a href="/" class="logo">COVID-19 Interactive Visualizer</a>
+            <a href="/" class="logo"><p class="w3-allerta">COVID-19 Interactive Visualizer</p></a>
 
             <nav id="nav">
               <ul class="nav navbar-nav">
                 <li class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
                   <ul class="dropdown-menu">
+                    <li><a href="/indexie" style="color:black;">Ireland</a></li>
                     <li><a href="/symptoms" style="color:black;">Symptoms</a></li>
                     <li><a href="/prevention"  style="color:black;">Prevention</a></li>
                     <li><a href="/faq"  style="color:black;">FAQ</a></li>

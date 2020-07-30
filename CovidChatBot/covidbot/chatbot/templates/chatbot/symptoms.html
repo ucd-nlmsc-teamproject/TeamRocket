@@ -50,6 +50,16 @@
 
    </head>
    <body class="no-js">
+       <script type="text/javascript">
+      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+      (function(d, m){
+        var kommunicateSettings = {"appId":"2e3beded0d05a4b64479e305f33f3f62e","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  </script>
       {% include "chatbot/header.html" %}
       <!-- Page Content Wrap -->
       <div class="container d-flex flex-wrap body-wrapper bg-white">
