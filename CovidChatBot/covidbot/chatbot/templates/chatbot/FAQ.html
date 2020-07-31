@@ -8,8 +8,7 @@
       <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
-      <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
+      <link rel="icon" href="{% static 'chatbot/images/chatboticon.png' %}" type="image/png" sizes="16x16">
       <link rel="shortcut icon" href="favicon.ico">
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
       <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
@@ -70,11 +69,62 @@
                <!-- Page Title/Section Nav (mobile) -->
             </nav>
          </div>
-         <div class="row">
+          <div class="row"><a id="COVID19"> </a>
             <div  class="col content ">
+               <div class="w3-panel">                  
+                  <strong><h3>What is COVID-19?</h3></strong>
+                  COVID-19 is a disease caused by a new strain of coronavirus. ‘CO’ stands for corona, ‘VI’ for virus, and
+                  ‘D’ for disease. Formerly, this disease was referred to as ‘2019 novel coronavirus’ or ‘2019-nCoV.’
+                  The COVID-19 virus is a new virus linked to the same family of viruses as Severe Acute Respiratory
+                  Syndrome (SARS) and some types of common cold.
+                  What are the symptoms of COVID-19? 
+                  Symptoms can include fever, cough and shortness of breath. In more severe cases, infection can cause
+                  pneumonia or breathing difficulties. More rarely, the disease can be fatal. These symptoms are similar to
+                  the flu (influenza) or the common cold, which are a lot more common than COVID-19. This is why testing
+                  is required to confirm if someone has COVID-19.
+
+                   <strong><h3><a id="spread">How does COVID-19 spread?</a></h3></strong>
+                  The virus is transmitted through direct contact with respiratory droplets of an infected person (generated
+                  through coughing and sneezing). Individuals can also be infected from and touching surfaces
+                  contaminated with the virus and touching their face (e.g., eyes, nose, mouth). The COVID-19 virus may
+                  survive on surfaces for several hours, but simple disinfectants can kill it.
+
+                   <strong><h3><a id="risk">Who is most at risk?</a></h3></strong> 
+                  We are learning more about how COVID-19 affects people every day.  Older people, and people with
+                  chronic medical conditions, such as diabetes and heart disease, appear to be more at risk of developing
+                  severe symptoms.  As this is a new virus, we are still learning about how it affects children. We know it is
+                  possible for people of any age to be infected with the virus, but so far there are relatively few cases of
+                  COVID-19 reported among children. This is a new virus and we need to learn more about how it affects
+                  children. The virus can be fatal in rare cases, so far mainly among older people with pre-existing medical
+                  Conditions.
+
+                   <strong><h3><a id="treatment">What is the treatment for COVID-19?</a></h3></strong> 
+                  There is no currently available vaccine for COVID-19. However, many of the symptoms can be treated
+                  and getting early care from a healthcare provider can make the disease less dangerous. There are
+                  several clinical trials that are being conducted to evaluate potential therapeutics for COVID-19.
+
+                   <strong><h3><a id="slowdown">How can the spread of COVID-19 be slowed down or prevented?</a></h3></strong>
+                  As with other respiratory infections like the flu or the common cold, public health measures are critical to
+                  slow the spread of illnesses. Public health measures are everyday preventive actions that include:
+                  <ul>
+                     <li>staying home when sick;</li>
+                     <li>covering mouth and nose with flexed elbow or tissue when coughing or sneezing. Dispose of used tissue immediately;</li>
+                     <li>washing hands often with soap and water; and</li>
+                     <li>cleaning frequently touched surfaces and objects.</li>
+                  </ul>
+                     As we learn more about COVID-19 public health officials may recommend additional actions.
+                     
+
+                   <strong><h3><a id="tests">What are the different types of tests available for COVID-19?</a></h3></strong>
+                  Two kinds of tests are available for COVID-19: viral tests and antibody tests.
+
+                  A viral test tells you if you have a current infection.
+                  An antibody test might tell you if you had a past infection. An antibody test might not show if you have a current infection because it can take 1–3 weeks after infection for your body to make antibodies. Having antibodies to the virus that causes COVID-19 might provide protection from getting infected with the virus again. If it does, we do not know how much protection the antibodies might provide or how long this protection might last.
+
+               </div>
                <div class="syndicate">
-                   <h1 id="content"><a id="social">Social Distancing</a>
-                   </h1>
+                   <h3 id="content"><a id="social">Social Distancing</a>
+                   </h3>
                   <p class="lead">Keep Your Distance to Slow the Spread</p>
                </div>
                <div class="mb-3 card tp-related-pages fourth-level-nav d-none">
@@ -96,19 +146,19 @@
                <div class="syndicate">
                   <div class="row ">
                      <div class="col-md-12">
-                        <h2 class="mt-0">What is social distancing?</h2>
+                         <h2 class="mt-0"><a id="Distancing">What is social distancing?</a></h2>
                         <div class="w-md-col3 float-md-right cr ml-md-3 d-none d-lg-inline-block cdc-viewports pt-2"><img src="https://media.kare11.com/assets/KARE/images/d7bb992c-b4a0-4104-9a75-116b7dd046d7/d7bb992c-b4a0-4104-9a75-116b7dd046d7_1920x1080.jpg" class="img-fluid" alt="two people with masks on 6 feet apart" title=""></div>
                         <p>Limiting face-to-face contact with others is the best way to reduce the spread of coronavirus disease 2019 (COVID-19).</p>
                         <p>Social distancing, also called &ldquo;physical distancing,&rdquo; means keeping space between yourself and other people outside of your home.</p>
-                        <p><strong>To practice social or physical distancing stay at least 6 feet (about 2 arms&rsquo; length) from other people.</strong></p>
-                        <p>In addition to <a href="/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">everyday steps to prevent COVID-19</a>, keeping space between you and others is one of the best tools we have to avoid being exposed to this virus and slowing its spread locally and across the country and world.</p>
-                        <p>Limit close contact with others outside your household in indoor and outdoor spaces. Since people can spread the virus before they know they are sick, it is important to stay away from others when possible, even if you&mdash;or they&mdash;have no symptoms. Social distancing is especially important for <a href="/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html">people who are at higher risk</a><u>&nbsp;</u>for severe illness from COVID-19.</p>
+                        <p><strong>To practice social or physical distancing stay at least 2 meters from other people.</strong></p>
+                        <p>In addition to  everyday steps to prevent COVID-19</a>, keeping space between you and others is one of the best tools we have to avoid being exposed to this virus and slowing its spread locally and across the country and world.</p>
+                        <p>Limit close contact with others outside your household in indoor and outdoor spaces. Since people can spread the virus before they know they are sick, it is important to stay away from others when possible, even if you&mdash;or they&mdash;have no symptoms. Social distancing is especially important for  people who are at higher risk</a><u>&nbsp;</u>for severe illness from COVID-19.</p>
                         <p>Many people have personal circumstances or situations that present challenges with practicing social distancing&nbsp;to prevent the spread of COVID-19. &nbsp;Please see the following guidance for additional recommendations and considerations for:</p>
                         <ul>
-                           <li><a href="/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">Households Living in Close Quarters: How to Protect Those Who Are Most Vulnerable</a></li>
-                           <li><a href="/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">Living in Shared Housing</a></li>
-                           <li><a href="/coronavirus/2019-ncov/need-extra-precautions/people-with-disabilities.html">People with Disabilities</a></li>
-                           <li><a href="/coronavirus/2019-ncov/need-extra-precautions/homelessness.html">People Experiencing Homelessness</a></li>
+                           <li> Households Living in Close Quarters: How to Protect Those Who Are Most Vulnerable</a></li>
+                           <li> Living in Shared Housing</a></li>
+                           <li> People with Disabilities</a></li>
+                           <li> People Experiencing Homelessness</a></li>
                         </ul>
                      </div>
                   </div>
@@ -124,8 +174,8 @@
                                  <div class="col">
                                     <div class="card-title h5 mb-2 text-left">If you have been exposed or are sick</div>
                                     <ul class="false">
-                                       <li><a href="/coronavirus/2019-ncov/if-you-are-sick/quarantine-isolation.html">Separate from others to limit the spread of COVID-19</a></li>
-                                       <li><a href="/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html">Take care of yourself while you&rsquo;re sick</a></li>
+                                       <li> Separate from others to limit the spread of COVID-19</a></li>
+                                       <li> Take care of yourself while you&rsquo;re sick</a></li>
                                     </ul>
                                  </div>
                               </div>
@@ -135,11 +185,11 @@
                   </div>
                   <div class="row ">
                      <div class="col-md-12">
-                        <h2>Why practice social distancing?</h2>
+                         <h2><a id="WhyDistance">Why practice social distancing?</a></h2>
                         <p>COVID-19 spreads mainly among people who are in close contact (within about 6 feet) for a prolonged period. Spread happens when an infected person coughs, sneezes, or talks, and droplets from their mouth or nose are launched into the air and land in the mouths or noses of people nearby. The droplets can also be inhaled into the lungs. Recent studies indicate that people who are infected but do not have symptoms likely also play a role in the spread of COVID-19.</p>
                         <p>It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or eyes. However, this is not thought to be the main way the virus spreads. COVID-19 can live for hours or days on a surface, depending on factors such as sunlight, humidity, and the type of surface. Social distancing helps limit opportunities to come in contact with contaminated surfaces and infected people outside the home.</p>
                         <p>Although the risk of severe illness may be different for everyone, anyone can get and spread COVID-19. Everyone has a role to play in slowing the spread and protecting themselves, their family, and their community.</p>
-                        <p><strong>Stress and Coping.</strong> Everyone reacts differently to stressful situations and having to socially distance yourself from someone you love can be difficult. <a href="/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">Read tips for stress and coping</a>. Need help? Know someone who does? If you, or someone you care about, are feeling overwhelmed with emotions like sadness, depression, or anxiety, or feel like you want to harm yourself or others</p>
+                        <p><strong>Stress and Coping.</strong> Everyone reacts differently to stressful situations and having to socially distance yourself from someone you love can be difficult.  Read tips for stress and coping</a>. Need help? Know someone who does? If you, or someone you care about, are feeling overwhelmed with emotions like sadness, depression, or anxiety, or feel like you want to harm yourself or others</p>
                         <div>
                            <div class="card border-0 mb-3">
                               <!--    <div class="card-body bg-cyan-q"><div class="row"><div class="card-icon pt-2"></div></div> </div>-->
@@ -183,7 +233,7 @@
          <div class="row last-reviewed-row">
 
          </div>
-         {% include "chatbot/footer.html" %}
+         
       </main>
       <!-- Left / Bottom Nav -->
       <div class="col-lg-3 order-lg-1 leftnav-wrapper">
@@ -213,29 +263,24 @@
                       <span class="sr-only">plus icon</span>
                   <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
                   <ul id="nav-group-2" class="collapse">
-                     <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html">How It Spreads</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Protect Yourself</a></li>
-                     <!--
-                        <li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">Cloth Face Covers</a>
-                            <a href="index.html#nav-group-ad28e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-ad28e"><span class="sr-only">plus icon</span>
-                                <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
-                                    <ul id="nav-group-ad28e" class="collapse">
-                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">About Cloth Face Coverings</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wear-cloth-face-coverings.html">How to Wear Cloth Face Coverings</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-wash-cloth-face-coverings.html">Wash Cloth Face Coverings</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-to-make-cloth-face-covering.html">Make Cloth Face Coverings</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cloth-face-cover.html">Recommendations for Cloth Face Covers</a></li></ul></li>
+                     <li class="list-group-item nav-lvl2"><a href="#/preventionhow">How It Spreads</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#/preventionprotect">Protect Yourself</a>
+                            <a href="#nav-group-2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-2">
+                            <span class="sr-only">plus icon</span>
+                            <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
+                                <ul id="nav-group-2" class="collapse">
+                                        <li class="list-group-item nav-lvl3"><a href="/prevention#protect">Washing your hands</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="/prevention#wash">Contact with others</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="/prevention#closecontact">Face coverings</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="/prevention#facecover">Cover yourself</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="/prevention#clean">Clean and Disinfect</a></li>
+                                        <li class="list-group-item nav-lvl3"><a href="/prevention#disinfect">Monitor your health</a></li>
+                         </ul>
+                      </li>
 
-                        -->
                      <li class="list-group-item nav-lvl2">
                         <a href="/prevention#clean">Cleaning Your Home</a>
-<!--
-                         <a href="index.html#nav-group-70d2e" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-70d2e"><span class="sr-only">plus icon</span>
-                        <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
-                        <ul id="nav-group-70d2e" class="collapse">
-                           <li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/cleaning-disinfection.html">Detailed Disinfection Guidance</a></li>
-                        </ul>
--->
+
                      </li>
 
                   </ul>
@@ -246,10 +291,14 @@
                      <span class="sr-only">plus icon</span>
                      <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
                   <ul id="nav-group-d187d" class="collapse">
-                     <li class="list-group-item nav-lvl2"><a href="#social">Social Distancing</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="care-for-someone.html">Caring for Someone</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="end-home-isolation.html">When You Can be Around Others</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="quarantine-isolation.html">Quarantine &amp; Isolation</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#COVID19">What is COVID-19</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#COVID19">How does it spread</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#spread">Who are at risk</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#risk">Treatment</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#treatment">Preventive measures</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#slowdown">Tests</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#Distancing">What is Social Distancing</a></li>
+                     <li class="list-group-item nav-lvl2"><a href="#WhyDistance">Why Social Distancing</a></li>
                   </ul>
                </li>
                <!--
@@ -257,5 +306,35 @@
 
                -->
             </ul>			</nav>
+          </div>
+       </div>
+        <div  class="container">
+           <div class="row">
+               <div class="col-md-12">
+                    <!-- FOOTER HERE -->
+          {% include "chatbot/footer.html" %}
+               </div>
+           </div>
+       </div>
+       
+       
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
+      <script>
+            var coll = document.getElementsByClassName("nav-plus nav-expandcollapse");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+            });
+        }
+     </script>
    </body>
 </html>
