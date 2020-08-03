@@ -1,0 +1,75 @@
+Data Sources:
+1. Johns Hopkinns - The main API for the project and this will be used extesively in all the aspects of the project.
+2. Yatko - Secondary data source. This API gives the a more detailed data(tests done, critical cases, death/recovery ratio). This API will be merged with the Johns Hopkinss API to give more detailed data.
+3. Bing - Third source of the data. This source will be used as a backup data source and will be used when there are data discripencies or gaps in the main data source.
+4. Ireland (data.gov.ie) - This source is used to pull all the data related to Ireland. 
+
+John hopkins:
+Two different dataframes have been prepared from the main API, first is the Summary data which gives statistical data for 186 countires and the information provided by this link is mentioned below:
+https://api.covid19api.com/summary
+
+a. CountryCode
+b. Country
+c. Date
+d. NewConfirmed
+e. NewDeaths
+f. NewRecovered
+g. TotalConfirmed
+h. TotalDeaths
+i. TotalRecovered
+
+2. Second link used, gives us the data for all these 186 countries where the data is historical (time series data). In this dataset, the data is recorded from 22nd January 2020 to current data and the data provided is mentioned below:
+https://api.covid19api.com/total/country
+
+a. Country Name
+b. Country Code
+c. Confirmed Cases
+d. Recovered Cases
+e. Death Cases
+f. Active Cases
+
+Yatko:
+This API provides with data similar to the one provided by Johns Hopkinns but it provides aditional information like the tests done, death ratio, recovery ratio, critical cases. The Yatko API and Johns Hopkinns data was merged to provide an enhanced dataset to be used to fetch worldwide statistical information at one go.
+The merged dataframe consists of the following columns:
+
+a. CountryCode
+b. Country
+c. Date
+d. NewConfirmed
+e. NewDeaths
+f. NewRecovered
+g. TotalConfirmed
+h. TotalDeaths
+i. TotalRecovered
+j. Death_Ratio
+k. Recovery_Ratio
+l. Total_Cases_Tested
+m. Critical Cases
+
+Bing:
+This API gives us the data for different countries where the data is historical. In this dataset, the data is recorded the day the coubtry has seen its case to current data and the data provided is mentioned below:
+a. Country Name
+b. Coubtry Code
+c. Confirmed Cases
+d. Recovered Cases
+e. Death Cases
+f. Active Cases
+
+
+Ireland data:
+
+This data source provides us with the data focused on Ireland only. It provides the statistical data for Ireland’s 26 counties separately as well as for the country as a whole. 
+Dataframe1: It consists of the country’s population data (pertaining to each county) , confirmed cases of COVID-19 till date and Cases by population data.
+Dataframe2: This data frame consists of statistical data revolving around the main types of cases.
+Dataframe3: This data frame consists of information regarding Hospitalized Cases.
+Dataframe4: This data frame consists of Gender-wise COVID-19 cases differentiation.
+Dataframe5: This data frame consists of the reason of spread categories
+Dataframe6: This data frame consist of the County-wise Confirmed Case related statistics.
+
+
+Pre-Processing:
+1. The date formats were made same for all the data recieved from three different sources. 
+2. The data was converted in a different format before we can use it to convert it in the final form. Unnecessary columns and data was dropped and gaps were filled by integrating the data from different sources.
+3. Later once the data is in the correct format with proper data, converted it in the time series format so that this data can be used by the lex to answer the queries by the user.
+4. Some more formatting was done with the data in order to visualize the data.
+
