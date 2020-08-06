@@ -1,0 +1,327 @@
+Document the issues met with lex and the restrictions based on what we set out to achieve 
+How to tackle that or how it could be done differently next time:
+Cannot link lambda function between inten, cannot call one from  the other unlike in python where functions can be called from other files etc.
+
+Issue tackled for each section of the team and how the restriction affected the intended implementation 
+
+Document document document document document.
+
+Chatbot holds cache of previous chat that was logged. So no propmt when visitor visits again,
+
+PROMPT TO INITIATE CHAT WITH THE USER AT INITIAL VISIT TO THE PAGE - FRONT END
+Prompt for new users, Like a POP UP 
+
+Bot not responding with name when we entre full name including surname
+Detailed sprint plans over last three weeks. 
+
+Symptom checker for bot.
+
+
+PPT SLIDES:
+
+SLIDE 1: Hook for the listener regarding the theme of the project
+
+We wanted to provide a solution to the general public to help cope with the COVID-19 Pandemic. Hence we were inspired to base our Masters project on the topic of COVID-19.
+Covid 19 pandemic is a serious issue now
+We live in unprecedented times right now where people across the world have been affected due to the pandemic and the world has faced one of the worst economical and financial crisis known in decades. 
+HOOK POINT ON SLIDE(i.e, 20million been directly affected on the planet) 
+
+
+SLIDE 2: Problem Given the pandemic that we plan to address.
+
+Has led to mass hysteria and confusion regarding the graveness of the situation, people are not aware of how badly the situation has affected other parts of the world.
+
+Feeling of unrest and sense of loss where information is being circulated at a very high rate.
+Impossible for people to continually be up to date and retrieve the most important as well as reliable information regarding the pandemic
+Information is available in many outlets but are in very dense format and is difficult to traverse through leading to the most important info being lost  Which is incovenienty for users who are not able to do so (due to reasons, i.e old, not tech savvy etc)
+
+Scattered info, difficult to traverse through, which takes time
+
+Since info is scattered the important info is lost and overwhelms people to stay away and not be up to date
+
+SLIDE 3: Solution snapshots and user stories snapshots 
+
+World information provided.
+
+
+
+Important info regarding pandemic available in a easy to access space 
+Chatbot which is a centralised location for all info 
+
+
+
+
+
+User stories 
+World story:
+
+
+
+
+User story
+
+
+
+Ireland specific:
+
+
+
+
+
+
+
+
+
+User story
+
+
+
+
+
+
+
+
+
+
+
+Critical information : Important info regarding pandemic available in a easy to access space
+SYMPTOMS
+
+
+
+
+
+PREVENTION
+
+
+USER STORY
+
+
+
+
+
+
+
+
+
+Does zzoming out okay?
+
+FAQ 
+
+
+
+USER STORY
+
+
+
+
+
+
+COVID CHATBOT
+
+
+
+
+
+
+USER STORY
+
+
+
+
+
+
+
+
+SLIDE 4: Given our proposed solution how the product helps solve issues that we mentioned: VISION OF OUR PROJECT
+
+THINK ABOUT 4 VERTICALS AND WHAT GOES INTO THEM, how to structure user stories
+
+
+Chatbot and visualization, script for that slide
+The chatbot aims to provide a very user friendly, natural language, accessible platform for users of any type to interact with and get the most important information regarding the pandemic, with the visualization aiding with the impact of information received and improving the overall experience of the application. 
+Who are you doing this for? Why do they need it? What is the link to the corresponding challenge?
+User story for world map would look like:
+User scenario 1: user from the general public who wishes to learn about the overall situation of the pandemic across different parts of the world. the dashboards which will be integrated onto the platform are intended to serve as a frequently updated data visualization and data exploration resource for the general user. 
+User scenario 2: Irish user who wishes to get a more in depth and relevant information to their particular country regarding the situation surrounding the pandemic. Information provided is at a greater depth an granularity when compared  to the world wise data
+User scenario 3: ding the panProviding the general user with the most up to date and crucial advice on the most critical information surrounding the pandemic. The information is condensed and easily accessible making it very user friendly and easy to traverse.
+User scenario 4: The chatbot provides a centralised location where the user is able to interact with it in an easy to use natural language interface to interact with in a 
+Easy to use
+Inviting 
+Does Not push people away 
+Encourages people to explore the information which is provided in a condensed and easy to consume format
+A chatbot which would selectively answer user’s queries about covid-19, based on the underlying information we store. 
+
+ 
+
+
+
+
+Open website -> sees visualizations -> 
+Scattered info, difficult to traverse through, which takes time
+
+mass hysteria and confusion regarding the graveness of the situation, 
+Since info is scattered the important info is lost and overwhelms people to stay away and not be up to date
+
+
+
+
+
+
+Images for team members.
+
+Description for each team silo:
+
+Lex team: Amazon API gateway ahead of lambda functions, to query azure data factory or data lake
+Lambda function inspects the state of interaction , do some processing to check and validate states and direct lex to do whats next, by returning a dialogue action in the code hook response.
+Customise user interaction
+Validate user input and 
+Ensure the parameters are fulfilled for user intent. 
+Amazon Lex: Implemented voice as well as textual input and designed conversational flows to direct the users to retrieve important information, which was doe with the help of intents and slots.
+·         Bot: creating a bot which performs automated tasks to better help retrieve the information stored regarding covid-19. Automatic Speech Recognition (ASR) and Natural Language Understanding (NLU) capabilities is utilised to build the bot and uses, the same technology that powers Amazon Alexa.
+Use of the model building API to create custom tools to manage your Amazon Lex resources. 
+
+
+
+
+
+
+Front end team:
+
+
+
+
+.prepare front end minimal view, including main input input boxes
+Research icon and bot designs and finalise on designs for both
+Choose tools for development of the front end of the website
+decide on the titles of the webpage, as well as the name for the bot
+
+2: Prepare information section data
+Prepare the main colour themes and the colour palette for visualizations
+Clean the front end of the web application design and structure the layout of the pages accordingly.
+
+3: Implement containers for better representation of visualizations
+Test implement different visualization tools to identify which works better
+Documentation of functionality of the tool of choice for visualization on the web page.
+4: Integration of the bot with the front end of the application.
+Document the functionalities to be added, not added
+Having issues
+
+
+Visualization SS
+
+
+What we did in each versions of the application.
+Major points, bullet points + script
+
+
+
+
+REFLECTION: Looking back at what we did and learning from it.
+Here we are reflecting, back, what we did well, didnt do well, we wanted t o do dsomethig we didnt do, we could have done better, we would like to do if time allowed.
+
+BULLET POINTS ETC:
+
+Conclusion: Summarising what we talked about and coming back home to the main point which we tried to address. What we achieved given what we wanted to address and where we would like to see the application if we continue to work on it(I.E FUTURE WORK)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FINAL SCRIPT:
+Hello everyone my name is and I’m from Team Rocket. I’ll be taking you through this presentation.
+Our project name is Covid-19 interactive visualizer. 
+Based on our previous meeting we redefined our project with a clearer objective. We aim to create a system which provides an overview of the situation regarding the COVID-19 pandemic at a quick glance.
+
+Given the graveness and potency of the virus, we have noticed that existing platforms aimed at informing the public about the pandemic have been structured in a way which makes it very difficu, which only helps people who know how to traverse websites and access tabs by finding the relevant information, making it a minefield for those who lack the savviness to understand the layout of webpages and be able to open multiple pages and traverse between them.
+Hence the two main features of the application are as follows
+1st one is a chatbot and the other one is the interactive map which will contain visualizations of the data that is collected and curated.
+The chatbot aims to provide a very user friendly, accessible platform for user of any type to interact and get the most important information regarding the pandemic, with the visualization aiding with the impact of information received and improving the overall experience of the application.
+
+
+Plans for coming week: Based on the overly broad scope we had initially, we have decided to reimagine the application with the scope of information being provided by the chatbot to be initially restricted to ireland.
+We aim to achieve the Final version of our product by the end of the month in preparation of user based testing for the first week of july by further breaking down tasks and reach goals into sprints and release versions as seen.
+
+
+
+
+
+
+
+
+
+
+
+
+Roles: Each member has been assigned to a team and has a set of defined roles for until the final submission of the application. For each sprint we set a number of tasks that are relevant for each member in that role. The tasks are documented and monitored in detail via sprint plans in jira.
+
+(1:35s)Architecture: The architecture of the application is as described in the image below.
+
+Data plan: This is the outline of our data plan and you can view it by pausing this video.
+As seen in the presentation, there are four different data sources, in which one source is for data collection of Ireland and the rest are for the world. The type of data collected from each source are given in the image. Next, this data is pre-processed and data from two different sources are merged as shown in the image.
+Github: We are keeping track of the minimum project requirements and that we are adhering to the main requirements before the MVP, by ensuring each member is constantly push-committing the work as and when it is completed. Just to give a jist you can see in the image the different folders we have.
+Team management:  As mentioned in the last video, Sumit, aditya and ashwin keep track of members to ensure presence in git and the shared folders and initiate regular morning meetings. Each task is carefully assigned and monitored in jira, git and google drive.
+Progress achieved this week: After the review of the we have dedicated this week to refine and restructure our scope and research further into each section.
+Front-End team 
+Refining the overall structure of the web page with a clean flow and layout. Refine the Web page by researching improved functionality to help better the User experience using different css libraries as well as for making interactive visualizations and making the website responsive. 
+FOR the rest of our content we used bootstrap.css with bootstrap.js for additional functionalities
+DATA: Apurva,Vishal:
+We combined data from various APIs; We scoured the web for COVID-19 API’s or other implementations of centralized world data regarding the pandemic. The data compiled together are of two main types: DYNAMIC and STATIC data. The framework of the data is shown on the following two slides.
+Added further apis, to better gather and curate data, including ireland specific data.
+DYNAMIC / LIVE DATA
+John hopkins:
+Two different dataframes have been prepared from the main API, first is the Summary data which gives statistical data for 186 countires.
+The Yatko API provides us with extra statistical info for the main case categories of covid including confirmed and death rates.
+Further implementations made to retrieve both historical and cumulative information on COVID-19.
+Cloud framework:
+We gather data from the APIs that are publicly available and store them on the Azure data lake. The Azure Data Factory pipeline stores and triggers scripts at regular intervals to retrieve up to date information. The data from the lake is then transferred to an instance of MySQL DB whose server is hosted on Azure. The data from the MySQL database is connected to Tableau and an instance of Amazon Lex that hosts the chatbot. 
+For Django and lex Framework :
+Maintainence in Dev Server. 
+Deployment Maintainence of Website in AWS Server. chatbot Creation and Lambda Functions with Database Handling creation. worked with RDS and Database Handling on AWS which was later shifted to Azure.	
+Also ran basic tests on Amazon LEX to understand the limitations.
+Django :
+-Django is a open source web framework .
+-We used Django as part of team rocket as it easy to scale django framework.
+-Django suited to our project as we wanted to keep a single programming language which was python.
+Deployed the application from start to finish on an AWS EC2 instance.
+ We used kommuncate api wrapper for aws-lex bot for cleaner and easier integration.
+Evaluation For the Application.
+We monitored the metrics of the bot and were able to find that the bot is able to do speech for 15 sec, no scalability issues as scalability of the lex is handled by AWS. Amazon scales to your needs and does not impose bandwidth constraints. As for our scope the lex can only support US English languages. The Lex metrics also shows us if there are any requests which are missed or the bot cannot answer the user request, such requests are easily monitor those.
+
+Thank you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
