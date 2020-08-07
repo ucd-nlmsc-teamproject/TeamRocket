@@ -6,6 +6,8 @@
       <link rel="icon" href="{% static 'chatbot/images/chatboticon.png' %}" type="image/png" sizes="16x16">
       <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %} " />
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
+      <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
       <!-- <link rel="shortcut icon" href="favicon.ico"> -->
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
       <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
@@ -35,23 +37,27 @@
       </style>
    </head>
 <body>
-    <script type="text/javascript">
-      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-      (function(d, m){
-        var kommunicateSettings = {"appId":"2e3beded0d05a4b64479e305f33f3f62e","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
-        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-        window.kommunicate = m; m._globals = kommunicateSettings;
-      })(document, window.kommunicate || {});
+  <script type="text/javascript">
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    (function(d, m){
+      var kommunicateSettings = {"appId":"2e3beded0d05a4b64479e305f33f3f62e","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+
+    $(document).ready(function(){
+       $("div.tableauPlaceholder").slideDown(5000);
+    });
   </script>
   {% load static %}
   {% include "chatbot/header.html" %}
 
     <!-- Maps section -->
     <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
-      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
-         <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+    <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+    <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
       <!-- <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: left;'>
 		<object class='tableauViz' width='100%' height='600' style='display:none;'> -->
 		<param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
