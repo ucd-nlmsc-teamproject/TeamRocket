@@ -14,6 +14,9 @@
       <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
       <title>COVID-19 Interactive Visualizer</title>
       <style>
+         .tableauViz {
+         transition: width 5s ease-in-out;
+        }
          .banner-img{
             background: url("{% static 'chatbot/images/covid19-hero-banner.jpg' %}") repeat scroll center;
             width: 100%;
@@ -42,13 +45,18 @@
         window.kommunicate = m; m._globals = kommunicateSettings;
       })(document, window.kommunicate || {});
   </script>
-   {% include "chatbot/header.html" %}
+  {% load static %}
+  {% include "chatbot/header.html" %}
 
     <!-- Maps section -->
     <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
-      <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: left;'>
-		<object class='tableauViz' width='100%' height='600' style='display:none;'>
-		<param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> 
+      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+         <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+      <!-- <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: left;'>
+		<object class='tableauViz' width='100%' height='600' style='display:none;'> -->
+		<param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+    <param name='static_image' value="{% static 'chatbot/images/bannerIV1.png' %}" />
+    <param name='display_static_image' value='yes' />
 		<param name='embed_code_version' value='3' />
 		<param name='site_root' value='&#47;t&#47;apurvadeore95' />
 		<param name='name' value='Ireland_Map_2&#47;Ireland_Map' />
@@ -60,14 +68,14 @@
       <p class="w3-container w3-margin w3-padding-16 w3-leftbar ">
           <ul id="nav-group-1"  style="text-align:left">
              <li>The following visualization provides a geographic distribution of COVID-19 cases in Ireland which is provided through county level charts. </li>
-                           
-             <li>Data presented in the application are reported by the Health Surveillance Protection Centre. Each County is represented by a point feature. This service is updated daily at 5 am. The latest record will always date back to two days ago.</li> 
+
+             <li>Data presented in the application are reported by the Health Surveillance Protection Centre. Each County is represented by a point feature. This service is updated daily at 5 am. The latest record will always date back to two days ago.</li>
         </ul>
       </p>
     </div>
 
     <!-- Description -->
-    <div class="w3-display-container  w3-center">       
+    <div class="w3-display-container  w3-center">
        <div class="w3-container  w3-center">
          <div class="w3-container banner-img" style="height: 35vh;">
             <div class=" w3-container w3-padding-16">
@@ -76,12 +84,15 @@
             </div>
          </div>
        </div>
-       
+
        <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
-        <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: right;'>
-		  <object class='tableauViz' width='100%' height='400' style='display:none;'>
+        <!-- <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: right;'>
+		  <object class='tableauViz' width='100%' height='400' style='display:none;'> -->
+          <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+          <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+          <param name='static_image' value="{% static 'chatbot/images/bannerIV2.png' %}" />
 		      <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
-		      <param name='embed_code_version' value='3' /> 
+		      <param name='embed_code_version' value='3' />
 		      <param name='site_root' value='&#47;t&#47;apurvadeore95' />
 		      <param name='name' value='Ireland_Total_ConfirmedDeaths_15959605487770&#47;Ireland_Total_ConfirmedDeaths' />
 		      <param name='tabs' value='no' />
@@ -89,31 +100,37 @@
 		      <param name='showAppBanner' value='false' />
 		</object>
 	</div>
-       </div>       
-       
+       </div>
+
        <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
-         <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
-                <object class='tableauViz' width='100%' height='400' style='display:none;'>
+         <!-- <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
+                <object class='tableauViz' width='100%' height='400' style='display:none;'> -->
+              <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+              <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+              <param name='static_image' value="{% static 'chatbot/images/bannerIV3.png' %}" />
 		          <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
-		          <param name='embed_code_version' value='3' /> 
+		          <param name='embed_code_version' value='3' />
 		          <param name='site_root' value='&#47;t&#47;apurvadeore95' />
 		          <param name='name' value='Ireland_Daily_ConfirmedDeaths_2&#47;Ireland_Daily_ConfirmedDeaths' />
 		          <param name='tabs' value='no' />
 		          <param name='toolbar' value='no' />
 		          <param name='showAppBanner' value='false' />
 		      </object>
-	       </div>           
-       </div> 
+	       </div>
+       </div>
 
        <div class="w3-panel">
            <p class="w3-sand w3-large w3-leftbar w3-border-black">The graphics above provide a timeline of confirmed COVID-19 cases and deaths as published by the Health Protection Surveillance Centre. The first dashboard is for cumulative confirmed cases and deaths while the second is for the daily stats.  Graphics will be updated on a daily basis once latest figures are published by the HPSC. </p>
        </div>
 
        <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
-        <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: left;'>
-            <object class='tableauViz' width='100%' height='400' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
-		      <param name='embed_code_version' value='3' /> 
+        <!-- <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: left;'>
+            <object class='tableauViz' width='100%' height='400' style='display:none;'> -->
+          <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+          <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+          <param name='static_image' value="{% static 'chatbot/images/bannerIV4.png' %}" />
+          <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+		      <param name='embed_code_version' value='3' />
 		      <param name='site_root' value='&#47;t&#47;apurvadeore95' />
 		      <param name='name' value='Ireland_DayWise_CONFIRMED_2&#47;Ireland_DayWise_CONFIRMED' />
 		      <param name='tabs' value='no' />
@@ -121,13 +138,16 @@
 		      <param name='showAppBanner' value='false' />
 		</object>
 	   </div>
-       </div>       
-       
+       </div>
+
        <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
-         <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
-            <object class='tableauViz' width='100%' height='400' style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> 
-		      <param name='embed_code_version' value='3' /> 
+         <!-- <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
+            <object class='tableauViz' width='100%' height='400' style='display:none;'> -->
+          <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+          <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+          <param name='static_image' value="{% static 'chatbot/images/bannerIV5.png' %}" />
+          <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+		      <param name='embed_code_version' value='3' />
 		      <param name='site_root' value='&#47;t&#47;apurvadeore95' />
 		      <param name='name' value='Ireland_DayWise_Deaths_2&#47;Ireland_DayWise_Deaths' />
 		      <param name='tabs' value='no' />
@@ -135,16 +155,17 @@
 		      <param name='showAppBanner' value='false' />
 		</object>
 	   </div>
-    </div> 
-       
-       
+    </div>
+
+
        <div class="w3-panel">
            <p class="w3-sand w3-large w3-leftbar w3-border-black">The graphics above provides the same timeline of confirmed COVID-19 cases and deaths which have been rescaled for both the confirmed and the deaths case category, for users to identify easily the changes in the number of cases recorded on a day to day basis. </p>
          </div>
-         
+
          <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
-            <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
-               <object class='tableauViz' width='100%' height='500' style='display:none;'>
+                  <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+                  <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+                  <param name='static_image' value="{% static 'chatbot/images/bannerIV6.png' %}" />
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='Bar_IrelandConfirmed_County&#47;Bar_IrelandConfirmed_County'  />
@@ -156,9 +177,12 @@
          </div>
       </div>
     <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
-        <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: right;'>
-		  <object class='tableauViz' width='100%' height='500'  style='display:none;'>
-		  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' /> 
+        <!-- <div class='tableauPlaceholder' style='width: 100%; height: 10%; float: right;'>
+		  <object class='tableauViz' width='100%' height='500'  style='display:none;'> -->
+      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+      <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+      <param name='static_image' value="{% static 'chatbot/images/bannerIV7.png' %}" />
+		  <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
 		  <param name='embed_code_version' value='3' />
 		  <param name='site_root' value='&#47;t&#47;apurvadeore95' />
 		  <param name='name' value='Hospitalized_AgeWiseCases_2&#47;Hospitalized_AgeWiseCases_2' />
@@ -168,10 +192,13 @@
 		</object>
 	</div>
         </div>
-        
+
          <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
-               <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
-               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+               <!-- <div class='tableauPlaceholder w3-cards-4' style='width: 100%; height: 10%; float: right;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'> -->
+                  <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+                  <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+                  <param name='static_image' value="{% static 'chatbot/images/bannerIV8.png' %}" />
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='HospitalizedCases_Trend&#47;HospitalizedCases_Trend' />
@@ -183,7 +210,7 @@
          </div>
       </div>
 
-    
+
 <!--
 
     <div class="w3-panel">
@@ -194,14 +221,14 @@
     <div class="w3-container w3-padding-16">
          <p style="color: rgb(0, 0, 0);">
              <ul id="nav-group-1"  style="text-align:left">
-                           
-             <li>Data presented in the application are reported by the Health Surveillance Protection Centre. This service is updated daily at 5 am. The latest record will always date back to two days ago.</li> 
-                 
+
+             <li>Data presented in the application are reported by the Health Surveillance Protection Centre. This service is updated daily at 5 am. The latest record will always date back to two days ago.</li>
+
              <li>Note: use the slider at the top of the graphics focuses on the max number of cases by each county on recent time periods, and for the following two dashboards click on the legend to hide or show individual data series.</li>
         </ul>
          </p>
     </div>
-    </div> 
+    </div>
       <!-- Description 2 -->
       <div class="w3-container  w3-center">
          <div class="w3-container banner-img2">
