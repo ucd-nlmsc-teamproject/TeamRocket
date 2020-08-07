@@ -16,6 +16,29 @@
       <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
       <title>COVID-19 Interactive Visualizer</title>
       <style>
+         .tableauViz {
+            transition: width 5s ease-in-out;
+         }
+
+         body { 
+            animation: fadeInAnimation ease-in-out 5s;
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+         } 
+         
+         @keyframes fadeInAnimation { 
+            0% { 
+               opacity: 0; 
+            } 
+
+            50%{
+               opacity: 0.5;
+            }
+            
+            100% { 
+               opacity: 1; 
+            } 
+         } 
          .banner-img{
             background: url("{% static 'chatbot/images/home-banner.jpg' %}") repeat scroll;
             width: 100%;
@@ -25,7 +48,7 @@
             width: 100%;
          }
          .Tbox{
-            margin: 30px;
+            margin: 1em;
             background-color: #000000;
             /* border: 1px solid white; */
             opacity: 0.8;
@@ -48,6 +71,10 @@
         var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
         window.kommunicate = m; m._globals = kommunicateSettings;
       })(document, window.kommunicate || {});
+
+      $(document).ready(function(){
+         $("div.tableauPlaceholder").slideDown(5000);
+      });
   </script>
    {% load static %}
    {% include "chatbot/header.html" %}
@@ -56,9 +83,11 @@
 
    
     <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
-      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 10%;'>
-         <object class='tableauViz w3-display-middle' width='100%' height='620' style='display:none;'>
+      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
+         <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
             <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+            <param name='static_image' value="{% static 'chatbot/images/bannerMap.png' %}" />
+            <param name='display_static_image' value='yes' />
             <param name='embed_code_version' value='3' />
             <param name='name' value='World_Map&#47;Sheet1' />
             <param name='site_root' value='&#47;t&#47;apurvadeore95' />
@@ -67,6 +96,8 @@
             <param name='showAppBanner' value='false' />
          </object>
       </div>
+      <script>
+      </script>
         <p class="w3-container w3-margin w3-padding-16 w3-leftbar ">Team Rocket Coronavirus Disease (COVID-19) dashboard above displays the most up to date Global statistics of the Corona virus in relation to a multitude of different categories. If you wish to learn more expand the tab below. </p>
         <ul class="list-group tp-nav-main">
             <li class="list-group-item nav-lvl1"><strong>Case Category Defenitions</strong>
@@ -105,13 +136,13 @@
             </div>
          </div>
       </div>
-      
-      
-      <div class="w3-row">
-         <div class="w3-card-4 w3-center w3-third " >
-            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: left;'>
-               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+            
+      <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
+         <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
+             <object class='tableauViz' width='100%' height='400' style='display:none;'>
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
+                  <param name='static_image' value="{% static 'chatbot/images/bannerV1.png' %}" />
+                  <param name='display_static_image' value='yes' />
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='Top10CountrieswithnmostConfirmedCases&#47;Sheet1' />
                   <param name='site_root' value='&#47;t&#47;apurvadeore95' />
@@ -122,9 +153,9 @@
             </div>
          </div>       
          
-         <div class="w3-card-4 w3-center w3-third ">
-            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: left;'>
-               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+         <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
+            <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
+                <object class='tableauViz' width='100%' height='400' style='display:none;'>
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='Top10recoveredcases&#47;Sheet1' />
@@ -132,13 +163,15 @@
                   <param name='tabs' value='no' />
                   <param name='toolbar' value='no' />
                   <param name='showAppBanner' value='false' />
+                  <param name='static_image' value="{% static 'chatbot/images/bannerV2.png' %}" />
+                  <param name='display_static_image' value='yes' />
                </object>
             </div>
          </div>       
          
-         <div class="w3-card-4 w3-center w3-third ">
-            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: right;'>
-               <object class='tableauViz' width='100%' height='400' style='display:none;'>
+         <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
+            <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
+                <object class='tableauViz' width='100%' height='400' style='display:none;'>
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='Top10Deaths&#47;Sheet1' />
@@ -146,10 +179,11 @@
                   <param name='tabs' value='no' />
                   <param name='toolbar' value='no' />
                   <param name='showAppBanner' value='false' />
+                  <param name='static_image' value="{% static 'chatbot/images/bannerV3.png' %}" />
+                  <param name='display_static_image' value='yes' />
                </object>
             </div>
          </div>       
-      </div>
       
        <div class="w3-container w3-padding-16">
          <p style="color: rgb(0, 0, 0);">
@@ -159,11 +193,6 @@
                            
              <li>Data presented in the application are reported from the John Hopkins Resource centre at 5am each day (data as of midnight previous day). This data will be updated on a daily basis every day of the weeek.</li>
            </ul>
-            
-
-            
-
-         </p>
          <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
            <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
                <object class='tableauViz' width='100%' height='600' style='display:none;'>
@@ -174,19 +203,22 @@
                    <param name='tabs' value='no' />
                    <param name='toolbar' value='no' />
                    <param name='showAppBanner' value='false' />
+                   <param name='static_image' value="{% static 'chatbot/images/bannerV4.png' %}" />
+                  <param name='display_static_image' value='yes' />
                </object>
              </div>
       </div> 
       <!-- Description 2 -->
-      <div class="w3-container  w3-center">
-         <div class="w3-container banner-img2">
+      <div class="w3-cards  w3-center">
+         <div class="w3-cards banner-img2">
             <div class="Tbox w3-container">
-               <p style="color: rgb(255, 255, 255);" style="text-align:left">
-             The dashboard above provides a daily overview of the COVID-19 critical case categories for each of the 186 countries in the world by event date with recorded cases as reported by the John hopkins resource centre and YATKO resource centre. <br>
+               <p style="color: rgb(255, 255, 255);">
+                   The dashboard above provides a daily overview of the COVID-19 critical case categories for each of the 186 countries in the world by event date with recorded cases as reported by the John hopkins resource centre and YATKO resource centre. <br>
                       
-            Data is based on an aggregate of both public and private hospitals and includes all surge units<br>                       
-
-           </p>
+            Data is based on an aggregate of both public and private hospitals and includes all surge units<br>
+   
+                
+               </p>
             </div>
          </div>
        </div>
