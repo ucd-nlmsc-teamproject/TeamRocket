@@ -1,0 +1,76 @@
+REFLECTION:
+
+Capturing lessons learned should be an on-going effort throughout the life of the project. This mindset should be strongly encouraged by the project manager from day one. Whether we are using lessons learned to prepare for current projects or for identifying project management process improvements
+
+Lessons learned are the documented information that reflects both the positive and negative experiences of a project.
+Looking back at what we did and learning from it.
+
+Bot:
+
+Bot we wanted to initially explore Natural language processing techniques using 
+
+artificial intelligence — especially machine learning — to accomplish tasks, at scale
+We would have like to explore Natural Language Processing comes that could have paved the way for an easier-to-use interface to features and services
+Since a lot of our team members have experience in python, text analytics and machine learning, a lot more members could have contributed more efficiently to better improve the bots functionality. Using toolkits such as NLTK.
+
+Given the initial vision of the project to implement, the Bot is not flexible enough, as it requires creation of specific functions for each different type of user based intention that is to be fulfilled. 
+Given the resources available and the amount of time we had, the team was not able to achieve a high grade of language processing.
+Hence the language is restricted, requiring, specific set of instructions for the bot to respond accordingly.
+
+Underestimated the amount of manual labour required to develop the bot, would have focused more attention to it from the very beginning by assigning members strictly to explore and develop the bot. 
+Improve the functionality of the bot.
+
+How the chatbot works from a technical perspective, how it was intended to work, and what were the speed bumps along the way. 
+
+be practical Would have like to do a bot with standard pre built faq, 
+How can we best show the capability and the potential of the system given time.
+
+
+
+Data and visualizations:
+
+The data team were able to 
+
+As of now we have two API which give summary for different countries but both have some different columns, so we decided to integrate both the datasets of summary and create a single dataset which will contain all the data from both the API’s.
+Efficient collection of relevant data from all of the public dominas, for both world related and Ireland specific data.
+Efficiently integrated different sources of data and ct=reated a standardised framework to accommodate for different formats of data.
+Looking back the issues that were faced were due to data discrepancies in the public API data sources and they were dealt accordingly. Given the scope of the project To strictly restrict the types of queries that could be raised by the bot, the types of data collected was strictly in textual csv format.
+This would have had been done differently if we knew thoroughly initially the scope of the toolset being used for the development of the bot since the types of queries will affect the criteria of acceptance of data.
+
+Further inspection and utilization of other visualization tools which would be better suited for the general public to view and interact with. 
+We did not consider the existence of other technical challenges until we got to them including lack of admin rights on a student account for displaying dashboards to the general public 
+
+Visualizations need to be manually updated on tableau to reflect the updated database.
+Despite switching from tableau public to tableau online, it still does not update automatically.
+
+Django and Cloud:
+
+Exploration of different cloud platforms in depth was done thoroughly. 
+Analysed the utility of each platform under different circumstances and how integration would be handled with other toolkits being used for the project.
+
+We were able to learn from the new methodologies along the way to better prepare for any contingencies along the way. Including backing up files locally in each members laptops in case of any failure.
+
+
+Team management and Engagement:
+
+For the majority of the project, team communication was of top quality and everyone worked well with each other as part of the team.
+
+Throughout the project, each member of the project regularly kept in touch with the rest of the team via meeting and constantly discussed, and commented on valuable recommendations for the project.
+Thorough use of proper standardised tools and techniques including Jira, Git and Google drive to constantly encourage the project stakeholders to document and share their findings.
+
+Through each and every aspect of the development phase, Each member actively analysed the results and regularly stored findings and improvements made onto the centralised repository.
+
+routinely capturing Issues faced and documenting how issues were tackled as they were being found partly because there is no defined process in place. 
+
+In the future we would like to we capture lessons learned, review them prior to starting new projects to identify any major roadblocks that may hinder the overall vision of the project.
+
+The same members who were assigned to django were also assigned to Lex. Due to the amount of work associated with the other sections of the project members of the team until after the interim presentation were not assigned secondary roles to jump between different sections within the project.
+Looking at it in hindsight, It would have greatly improved the efficiency and improved morale of the team, if members regularly jumped between two aspects of the project to keep the mindset fresh and always to exchange and open up new ideas while in the development phase.
+
+
+Through this experience that was shared with the rest of the members, we were all able to learn critical skills and also learn something meaningful about being part of a project itself.
+Here we are reflecting, back, what we did well, didnt do well, we wanted t o do dsomethig we didnt do, we could have done better, we would like to do if time allowed.
+
+
+
+
