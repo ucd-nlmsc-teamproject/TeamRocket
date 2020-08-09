@@ -31,6 +31,8 @@ def Save_file(df,name,I):
         df.to_csv(output_file)
     elif I == 0:
         df.to_csv(output_file,index=False)
+    elif I == 2:
+        df.to_csv(output_file,sep='|')
 
 
 # In[3]:
@@ -79,25 +81,36 @@ Data = Data_collection(Countries)
 Save_file(Data,"Raw_data",0)
 
 
-# In[8]:
-
-
-# Data.to_csv("Raw_Data.csv",index=False)
-
-
 # In[9]:
 
 
 Data_read = pd.read_csv('C:/Users/visha/Final Semester Project/CSV Data/Raw_Data.csv')
 
 
-# In[20]:
+# In[10]:
 
 
-def Clean_data(df):
-    
+Data_raw_2 = pd.read_csv('C:/Users/visha/Final Semester Project/CSV Data/Country_wise_data_timeseries.csv')
+
+
+# In[11]:
+
+
+def Clean_data(df,df2):
+    df = df.reset_index()
+    df2 = df2.reset_index()
     df= df.drop(['City', 'CityCode', 'CountryCode','Lat','Lon','Province'],axis=1)
     df['Date'] = pd.to_datetime(df['Date']).dt.strftime('%Y-%m-%d')
+    df2['Date'] = pd.to_datetime(df2['Date']).dt.strftime('%Y-%m-%d')
+    
+    for i in range(0, len(df)):
+        if (df.loc[i,'Active'] == 0 ) & (df.loc[i, 'Confirmed'] < df.loc[i, 'Deaths'] + df.loc[i, 'Recovered']):
+            C = df.loc[i,'Country'] 
+            D = df.loc[i,'Date']
+            I = df2[(df2['Date'] == D) & (df2['Country'] == C)].index[0]
+            R = df2.loc[I,'Recovered']
+            I2 = df[(df['Date'] == D) & (df['Country'] == C)].index[0]
+            df.loc[I2,'Recovered'] = R
 
     for i in range(1, len(df)):
         if (df.loc[i, 'Confirmed'] == 0) and (df.loc[i, 'Country'] == df.loc[i-1,'Country']):
@@ -112,34 +125,23 @@ def Clean_data(df):
     for i in range(0, len(df)):
         if df.loc[i,'Active'] != df.loc[i, 'Confirmed'] - df.loc[i, 'Deaths'] - df.loc[i, 'Recovered']:
             df.loc[i,'Active'] = df.loc[i, 'Confirmed'] - df.loc[i, 'Deaths'] - df.loc[i, 'Recovered']
+    df= df.drop(['index'],axis=1)
     return df
 
 
-# In[21]:
+# In[12]:
 
 
-Data_1 = Clean_data(Data_read)
+Data_1 = Clean_data(Data_read,Data_raw_2)
 
 
-# In[22]:
-
-
-# Data_1
-
-
-# In[13]:
-
-
-# Data_1.to_csv("Cleaned_Raw_data.csv",index=False)
-
-
-# In[23]:
+# In[15]:
 
 
 Save_file(Data_1,"Cleaned_Raw_data",0)
 
 
-# In[24]:
+# In[16]:
 
 
 def Time_Series_Data(df):
@@ -177,25 +179,13 @@ def Time_Series_Data(df):
     return Confirmed_Data,Recovered_Data,Deaths_Data,Active_Data
 
 
-# In[25]:
+# In[17]:
 
 
 Confirmed_Data,Recovered_Data,Deaths_Data,Active_Data = Time_Series_Data(Data_1)
 
 
-# In[ ]:
-
-
-# Confirmed_Data.to_csv("Confirmed_Data.csv")#Saved the csv to inspect the data
-
-# Recovered_Data.to_csv("Recovered_Data.csv")#Saved the csv to inspect the data
-
-# Deaths_Data.to_csv("Deaths_Data.csv")#Saved the csv to inspect the data
-
-# Active_Data.to_csv("Active_Data.csv")#Saved the csv to inspect the data
-
-
-# In[26]:
+# In[19]:
 
 
 Save_file(Confirmed_Data,"Confirmed_Data",1)
@@ -204,7 +194,7 @@ Save_file(Deaths_Data,"Deaths_Data",1)
 Save_file(Active_Data,"Active_Data",1)
 
 
-# In[27]:
+# In[20]:
 
 
 def transpose(df):
@@ -213,7 +203,7 @@ def transpose(df):
     return df
 
 
-# In[28]:
+# In[21]:
 
 
 Confirmed_Data_T = transpose(Confirmed_Data)
@@ -222,36 +212,16 @@ Deaths_Data_T = transpose(Deaths_Data)
 Active_Data_T = transpose(Active_Data)
 
 
-# In[29]:
+# In[22]:
 
 
-Save_file(Confirmed_Data_T,"Confirmed_Data_T",1)
-Save_file(Recovered_Data_T,"Recovered_Data_T",1)
-Save_file(Deaths_Data_T,"Deaths_Data_T",1)
-Save_file(Active_Data_T,"Active_Data_T",1)
+Save_file(Confirmed_Data_T,"Confirmed_Data_T",2)
+Save_file(Recovered_Data_T,"Recovered_Data_T",2)
+Save_file(Deaths_Data_T,"Deaths_Data_T",2)
+Save_file(Active_Data_T,"Active_Data_T",2)
 
 
-# In[ ]:
-
-
-# Confirmed_Data_T.to_csv("Confirmed_Data_T.csv")#Saved the csv to inspect the data
-
-# Recovered_Data_T.to_csv("Recovered_Data_T.csv")#Saved the csv to inspect the data
-
-# Deaths_Data_T.to_csv("Deaths_Data_T.csv")#Saved the csv to inspect the data
-
-# Active_Data_T.to_csv("Active_Data_T.csv")#Saved the csv to inspect the data
-
-
-# In[ ]:
-
-
-# path =r"C:\Users\visha\Final Semester Project\Data CSV"
-# output_file1 = os.path.join(path,'Confirmed_Data_T.csv')
-# Confirmed_Data_T.to_csv(output_file1)
-
-
-# In[ ]:
+# In[25]:
 
 
 def Integrated_data(df,df1,df2,df3,df4):
@@ -280,47 +250,25 @@ def Integrated_data(df,df1,df2,df3,df4):
     return Data_final
 
 
-# In[ ]:
+# In[26]:
 
 
 Final_Data = Integrated_data(Data_1,Confirmed_Data,Recovered_Data,Deaths_Data,Active_Data)
 
 
-# In[ ]:
-
-
-# Final_Data
-
-
-# In[ ]:
-
-
-# Final_Data.to_csv("Final_Data_Combined.csv")#Saved the` csv to inspect the data
-
-
-# In[ ]:
+# In[29]:
 
 
 Save_file(Final_Data,"Final_Data_Combined",1)
 
 
-# In[ ]:
+# In[30]:
 
 
-Data_2 = Clean_data(Data_read)
+Data_2 = Clean_data(Data_read,Data_raw_2)
 
 
-# In[ ]:
-
-
-# from datetime import datetime
-# TT = Data_2['Date'][0]
-# # T_datee = datetime.datetime.strptime(TT,"%Y-%m-%d  %H:%M:%S")
-# d = datetime.strptime(TT, '%Y-%m-%d')
-# d.month
-
-
-# In[ ]:
+# In[32]:
 
 
 def Date_processing(df):
@@ -377,31 +325,19 @@ def Date_processing(df):
     return df
 
 
-# In[ ]:
+# In[33]:
 
 
 Data_date_2 = Date_processing(Data_2)
 
 
-# In[ ]:
-
-
-# Data_date_2
-
-
-# In[ ]:
-
-
-# Data_date_2.to_csv("Data_with_new_columns.csv",index=False)#Saved the csv to inspect the data
-
-
-# In[ ]:
+# In[36]:
 
 
 Save_file(Data_date_2,"Data_with_new_columns",0)
 
 
-# In[ ]:
+# In[37]:
 
 
 def World_Dataset(df,df1,df2,df3,df4):
@@ -428,122 +364,32 @@ def World_Dataset(df,df1,df2,df3,df4):
         
 
 
-# In[ ]:
+# In[38]:
 
 
 World_Data = World_Dataset(Data_1,Confirmed_Data,Deaths_Data,Active_Data,Recovered_Data)
 
 
-# In[ ]:
+# In[39]:
 
 
 World_Data_Summary = World_Data.T
 
 
-# In[ ]:
+# In[40]:
 
 
 World_Data_Summary['Dates'] = World_Data_Summary.index
 
 
-# In[ ]:
-
-
-# World_Data_Summary.to_csv("World_Data_Summary.csv",index=False)#Saved the csv to inspect the data
-
-
-# In[ ]:
+# In[42]:
 
 
 Save_file(World_Data_Summary,"World_Data_Summary",0)
 
 
-# In[ ]:
+# In[43]:
 
 
 print("Script Ran Successfully")
-
-
-# In[ ]:
-
-
-# Data_Sum_country = pd.read_csv('CLEANED_covid_summary_dump.csv')
-
-
-# In[ ]:
-
-
-# def top_five_Confirmed_cases(df):
-#     Final_df = df.sort_values(by=['TotalConfirmed'], ascending=False)
-#     Final_df = Final_df.drop(['NewConfirmed','NewDeaths', 'NewRecovered','TotalDeaths','TotalRecovered'],axis=1)
-#     Top_confirmed_con_details = Final_df.head()
-#     return Top_confirmed_con_details
-
-
-# In[ ]:
-
-
-# Top_confirmed_country_details = top_five_Confirmed_cases(Data_Sum_country)
-
-
-# In[ ]:
-
-
-# Top_confirmed_country_details.to_csv("Top_confirmed_country_details.csv",index=False)#Saved the csv to inspect the data
-
-
-# In[ ]:
-
-
-# def top_five_Recovered_cases(df):
-#     Final_df1 = df.sort_values(by=['TotalRecovered'], ascending=False)
-#     Final_df1 = Final_df1.drop(['NewConfirmed','NewDeaths', 'NewRecovered','TotalDeaths','TotalConfirmed'],axis=1)
-#     Top_recovered_con_details = Final_df1.head()
-#     return Top_recovered_con_details
-
-
-# In[ ]:
-
-
-# Top_recovered_country_details = top_five_Recovered_cases(Data_Sum_country)
-
-
-# In[ ]:
-
-
-# Top_recovered_country_details
-
-
-# In[ ]:
-
-
-# Top_recovered_country_details.to_csv("Top_recovered_country_details.csv",index=False)#Saved the csv to inspect the data
-
-
-# In[ ]:
-
-
-# def top_five_Deaths_cases(df):
-#     Final_df2 = df.sort_values(by=['TotalDeaths'], ascending=False)
-#     Final_df2 = Final_df2.drop(['NewConfirmed','NewDeaths', 'NewRecovered','TotalConfirmed','TotalRecovered'],axis=1)
-#     Top_deaths_con_details = Final_df2.head()
-#     return Top_deaths_con_details
-
-
-# In[ ]:
-
-
-# Top_deaths_country_details = top_five_Deaths_cases(Data_Sum_country)
-
-
-# In[ ]:
-
-
-# Top_deaths_country_details
-
-
-# In[ ]:
-
-
-# Top_deaths_country_details.to_csv("Top_deaths_country_details.csv",index=False)#Saved the csv to inspect the data
 
