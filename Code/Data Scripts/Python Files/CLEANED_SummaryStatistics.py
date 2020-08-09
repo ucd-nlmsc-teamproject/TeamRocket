@@ -11,8 +11,6 @@
 # In[1]:
 
 
-#Fetching data from covid-19 API by Johns Hopkinns
-
 import pandas as pd
 import numpy as np
 import urllib.request
@@ -37,12 +35,12 @@ def Save_file(df,name,I):
 # In[3]:
 
 
-def get_data(link):               #defining a function to get covid19 data
-    response = requests.get(link) #using the get method here
-    covid_data = response.json()  #extracting the data
-    df = pd.DataFrame(covid_data['Countries']) #creating a df from the data above and selecting the Key: Countries
-    df = df.reindex(sorted(df.columns), axis = 1) #re-arranging the columns for enhanced readability
-    df = df.drop(columns = ['Slug','Premium'])  #dropping the column SLUG
+def get_data(link):               
+    response = requests.get(link) 
+    covid_data = response.json()  
+    df = pd.DataFrame(covid_data['Countries']) 
+    df = df.reindex(sorted(df.columns), axis = 1) 
+    df = df.drop(columns = ['Slug','Premium'])  
     df['Date'] = pd.to_datetime(df['Date'])
     df['Date'] = df['Date'].dt.date
     return df
@@ -59,31 +57,6 @@ covid_summary_df = get_data(link)
 # In[5]:
 
 
-# covid_summary_df
-
-
-# In[6]:
-
-
-#covid_summary_df.info() #All the columns are clean without any missing values
-
-
-# In[7]:
-
-
-# #covid_summary_df.to_csv(r'C:\Users\apurv\Data Science in Python\8thJuly_CLEANED_covid_summary_dump.csv')
-# covid_summary_df.to_csv(r'C:\Users\apurv\Data Science in Python\Project\AllDumps\CLEANED_covid_summary_dump.csv')
-
-
-# In[8]:
-
-
 Save_file(covid_summary_df,"Covid_World_Summary",0)
 print("Script Ran Successfully!")
-
-
-# In[9]:
-
-
-# covid_summary_df.info()
 
