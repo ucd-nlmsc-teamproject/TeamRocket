@@ -1,0 +1,59 @@
+Minutes of meeting with Neil(4th august)
+
+Talking about the structure of evaluation 
+
+Lot of information to traverse through
+The bot is the main selling point
+
+Bot is not flexible enough,
+
+Improve the functionality of the bot.
+
+Make interface clean.
+
+Bot linking the user to 
+
+7 days to code freeze 
+
+15:42 : be practical Would have like to do a bot with standard pre built faq, 
+
+
+
+
+160:00 How can we best show the capability and the potential of the system given time.
+
+Things to watch out for for presentation:
+
+Need to able to show multiple user stories end to end. 4, faq questions Box.
+
+
+Tech stack
+
+How evaluation was undertaken
+
+How key elements were evaluated.
+
+How to use the evaluation to improve certain+ aspects.
+
+Technical challenges: bot issues
+
+Review: How could be improved 
+
+How did we work together as a team
+
+How the chatbot works from a technical perspective, how it was intended to work, and what was the speedbumps along the way. 
+Evene if it doesnt work as we had hoped.
+
+Tell the story of the time we put in,
+
+How it works well, 
+How it doesnt work well, Thats what we are interested in as well.
+
+What were the technical challenges, how to present them, be as positive as possible.
+Show you understand how to make it better,
+Learned from the experience
+
+Dont get stuck in a technical alley.
+
+Lot better in terms of presentation. The overall narrative. Stepping through the different stages.
+As polished as we can do.
