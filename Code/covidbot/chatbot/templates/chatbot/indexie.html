@@ -51,11 +51,20 @@
   </script>
   {% load static %}
   {% include "chatbot/header.html" %}
+    <div class="w3-display-container  w3-center">
+        <div class="w3-container  w3-center">
+         <div class="w3-container banner-img" style="height: 15vh;">
+         </div>
+       </div>
+    </div>
 
+    
     <!-- Maps section -->
     <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
+        
+        
     <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
-    <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
+    <object class='tableauViz w3-display-middle' height='800' style='display:none; width: 100%;'>
 		<param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
     <param name='static_image' value="{% static 'chatbot/images/bannerIV1.png' %}" />
     <param name='display_static_image' value='yes' />
@@ -69,7 +78,7 @@
 	</div>
       <p class="w3-container w3-margin w3-padding-16 w3-leftbar ">
           <ul id="nav-group-1"  style="text-align:left">
-             <li>The following visualization provides a geographic distribution of COVID-19 cases in Ireland which is provided through county level charts. </li>
+             <li>The following visualization above provides a geographic distribution of COVID-19 cases in Ireland which is provided through county level charts. </li>
 
              <li>Data presented in the application are reported by the Health Surveillance Protection Centre. Each County is represented by a point feature. This service is updated daily at 5 am. The latest record will always date back to two days ago.</li>
         </ul>
@@ -78,15 +87,7 @@
 
     <!-- Description -->
     <div class="w3-display-container  w3-center">
-       <div class="w3-container  w3-center">
-         <div class="w3-container banner-img" style="height: 35vh;">
-            <div class=" w3-container w3-padding-16">
-               <p style="color: white;">
-                 </p>
-            </div>
-         </div>
-       </div>
-
+       
        <div class="w3-cards-4 w3-center", style="margin: 0 10% 0 10%;">
           <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
           <object class='tableauViz w3-display-middle' height='620' style='display:none; width: 100%;'>
