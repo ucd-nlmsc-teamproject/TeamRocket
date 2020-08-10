@@ -20,14 +20,13 @@
          transition: width 5s ease-in-out;
       }
 
-
       .banner-img2 {
          background: url("{% static 'chatbot/images/covid_banner2.jpg' %}") repeat scroll;
          width: 100%;
       }
 
       .Tbox {
-         margin: 30px;
+         margin: 30hpx;
          background-color: #000000;
          /* border: 1px solid white; */
          opacity: 0.6;
@@ -56,7 +55,7 @@
   <div class="w3-container" >
       <p class='w3-large w3-serif'>
           {% for hl, hlink in headlines.items %}
-             <h2 class='w3-xlarge w3-serif'>Latest updates for COVID-19 Ireland: <a href="{{hlink}}">{{hl}}</a></h2>
+             <h2 class='w3-xlarge w3-serif'>Latest updates for COVID-19 Ireland: <marquee><a href="{{hlink}}">{{hl}}</a></marquee></h2>
             {% endfor %}    
 <!--                  <i class="fa fa-quote-right w3-large w3-opacity"></i>-->
 <!--             <p class="w3-sand w3-large w3-leftbar w3-border-black">-->                   
@@ -66,7 +65,7 @@
 <!--
       <ul>
          {% for hl, hlink in headlines.items %}
-             <li class="w3-bar" style="height: 3em;">
+             <li class="w3-bar" style="height: 3em;">     :D
                 <a href="{{hlink}}">
                   <i class="fa fa-quote-right w3-large w3-opacity"></i>
                    <p class='w3-large w3-serif'>{{hl}}</p>
