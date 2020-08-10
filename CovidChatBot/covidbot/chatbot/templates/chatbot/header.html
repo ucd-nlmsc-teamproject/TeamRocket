@@ -24,26 +24,30 @@
   <body>
 
   <header id="header">
-         <div class="inner">
-            <img src="{% static 'chatbot/images/Teamlogo.png' %}" style="width: 100%; max-width: 80px; float: left;">
-            <a href="/" class="logo" style="float: left; left: 100px;"><p class="w3-allerta">COVID-19 Interactive Visualizer</p></a>
-
-            <nav id="nav">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/indexie" style="color:black;">Ireland</a></li>
-                    <li><a href="/symptoms" style="color:black;">Symptoms</a></li>
-                    <li><a href="/prevention"  style="color:black;">Prevention</a></li>
-                    <li><a href="/faq"  style="color:black;">FAQ</a></li>
-                  </ul>
-                </li>
-              </ul>
-            
-            </nav>
-
-         </div>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img class="navbar-brand" src="{% static 'chatbot/images/Teamlogo.png' %}" style="width: 100%; max-width: 80px; float: left;">
+          
+          <p class="w3-allerta" style="float: left; left: ;" ><a href="/" style="color:crimson;" >COVID-19 Interactive Visualizer</a></p>
+       
+      </div>
+    <nav class="navbar" style="float: right;">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#">
+              Information<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/" style="color:black;">HomePage</a></li>
+              <li><a href="/indexie" style="color:black;">Ireland</a></li>
+              <li><a href="/symptoms" style="color:black;">Symptoms</a></li>
+              <li><a href="/prevention"  style="color:black;">Prevention</a></li>
+              <li><a href="/faq"  style="color:black;">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
        <script>
            $('ul.nav li.dropdown').hover(function() {
             $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
