@@ -8,6 +8,7 @@
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
       <script src="{% static 'chatbot/assets/js/jquery.min.js' %}"></script>
       <script src="{% static 'chatbot/assets/js/bootstrap.bundle.min.js' %}"></script>
+      <!-- <link rel="shortcut icon" href="favicon.ico"> -->
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
       <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -15,29 +16,6 @@
       <script type='text/javascript' src='https://eu-west-1a.online.tableau.com/javascripts/api/viz_v1.js'></script>
       <title>COVID-19 Interactive Visualizer</title>
       <style>
-         .tableauViz {
-            transition: width 5s ease-in-out;
-         }
-
-         body { 
-            animation: fadeInAnimation ease-in-out 5s;
-            animation-iteration-count: 1; 
-            animation-fill-mode: forwards; 
-         } 
-         
-         @keyframes fadeInAnimation { 
-            0% { 
-               opacity: 0; 
-            } 
-
-            50%{
-               opacity: 0.5;
-            }
-            
-            100% { 
-               opacity: 1; 
-            } 
-         } 
          .banner-img{
             background: url("{% static 'chatbot/images/home-banner.jpg' %}") repeat scroll;
             width: 100%;
@@ -47,26 +25,29 @@
             width: 100%;
          }
          .Tbox{
-            margin: 1em;
+            margin: 30px;
             background-color: #000000;
+            /* border: 1px solid white; */
             opacity: 0.8;
             font-weight: 100;
+         }
+         .wiz{
+            /* box-shadow: 0.5vh 0.5vw 0.5% 0.5%; */
+            border: 1px solid rgba(red, green, blue, 0.2);
+            /* margin: 0.5%; */
          }
       </style>
    </head>
 <body>
     <script type="text/javascript">
+      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
       (function(d, m){
-        var kommunicateSettings = {"appId":"24a0d08c6559417888e0cd9e7825f4be9","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
+        var kommunicateSettings = {"appId":"2e3beded0d05a4b64479e305f33f3f62e","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
         var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
         s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
         var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
         window.kommunicate = m; m._globals = kommunicateSettings;
       })(document, window.kommunicate || {});
-
-      $(document).ready(function(){
-         $("div.tableauPlaceholder").slideDown(5000);
-      });
   </script>
    {% load static %}
    {% include "chatbot/header.html" %}
@@ -75,11 +56,9 @@
 
    
     <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
-      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
-         <object class='tableauViz w3-display-middle' height='725' style='display:none; width: 100%;'>
+      <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 10%;'>
+         <object class='tableauViz w3-display-middle' width='100%' height='620' style='display:none;'>
             <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
-            <param name='static_image' value="{% static 'chatbot/images/bannerMap.png' %}" />
-            <param name='display_static_image' value='yes' />
             <param name='embed_code_version' value='3' />
             <param name='name' value='World_Map&#47;Sheet1' />
             <param name='site_root' value='&#47;t&#47;apurvadeore95' />
@@ -88,8 +67,6 @@
             <param name='showAppBanner' value='false' />
          </object>
       </div>
-      <script>
-      </script>
         <p class="w3-container w3-margin w3-padding-16 w3-leftbar ">Team Rocket Coronavirus Disease (COVID-19) dashboard above displays the most up to date Global statistics of the Corona virus in relation to a multitude of different categories. If you wish to learn more expand the tab below. </p>
         <ul class="list-group tp-nav-main">
             <li class="list-group-item nav-lvl1"><strong>Case Category Defenitions</strong>
@@ -128,13 +105,13 @@
             </div>
          </div>
       </div>
-            
-      <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
-         <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
-             <object class='tableauViz' width='100%' height='400' style='display:none;'>
+      
+      
+      <div class="w3-row">
+         <div class="w3-card-4 w3-center w3-third " >
+            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: left;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'>
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
-                  <param name='static_image' value="{% static 'chatbot/images/bannerV1.png' %}" />
-                  <param name='display_static_image' value='yes' />
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='Top10CountrieswithnmostConfirmedCases&#47;Sheet1' />
                   <param name='site_root' value='&#47;t&#47;apurvadeore95' />
@@ -145,9 +122,9 @@
             </div>
          </div>       
          
-         <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
-            <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
-                <object class='tableauViz' width='100%' height='400' style='display:none;'>
+         <div class="w3-card-4 w3-center w3-third ">
+            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: left;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'>
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='Top10recoveredcases&#47;Sheet1' />
@@ -155,15 +132,13 @@
                   <param name='tabs' value='no' />
                   <param name='toolbar' value='no' />
                   <param name='showAppBanner' value='false' />
-                  <param name='static_image' value="{% static 'chatbot/images/bannerV2.png' %}" />
-                  <param name='display_static_image' value='yes' />
                </object>
             </div>
          </div>       
          
-         <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
-            <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
-                <object class='tableauViz' width='100%' height='400' style='display:none;'>
+         <div class="w3-card-4 w3-center w3-third ">
+            <div class='tableauPlaceholder' style='width: 30%; height: 10%; float: right;'>
+               <object class='tableauViz' width='100%' height='400' style='display:none;'>
                   <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F'/>
                   <param name='embed_code_version' value='3' />
                   <param name='name' value='Top10Deaths&#47;Sheet1' />
@@ -171,20 +146,22 @@
                   <param name='tabs' value='no' />
                   <param name='toolbar' value='no' />
                   <param name='showAppBanner' value='false' />
-                  <param name='static_image' value="{% static 'chatbot/images/bannerV3.png' %}" />
-                  <param name='display_static_image' value='yes' />
                </object>
             </div>
          </div>       
+      </div>
       
        <div class="w3-container w3-padding-16">
          <p style="color: rgb(0, 0, 0);">
             <strong>CRITICAL GLOBAL CASE CATEGORIES AT A GLANCE.</strong><br>
-             <ul id="nav-group-1"  style="text-align:left">
-             <li>Users can view three separate series of dashboards above which provide visualizations on the top 10 countries with cumulative confirmed cases, recovered cases and deaths of COVID-19 confirmed cases in Acute Hospitals across the world. An initial comparative country-by-country overview of each major case category. </li>
-                           
-             <li>Data presented in the application are reported from the John Hopkins Resource centre at 5am each day (data as of midnight previous day). This data will be updated on a daily basis every day of the weeek.</li>
-           </ul>
+            Why do we use it?
+           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+
+           The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+           Where can I get some?
+
+           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+         </p>
          <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
            <div class='tableauPlaceholder' style='width: 100%; height: 10%;'>
                <object class='tableauViz' width='100%' height='600' style='display:none;'>
@@ -195,19 +172,19 @@
                    <param name='tabs' value='no' />
                    <param name='toolbar' value='no' />
                    <param name='showAppBanner' value='false' />
-                   <param name='static_image' value="{% static 'chatbot/images/bannerV4.png' %}" />
-                  <param name='display_static_image' value='yes' />
                </object>
              </div>
       </div> 
       <!-- Description 2 -->
-      <div class="w3-cards  w3-center">
-         <div class="w3-cards banner-img2">
+      <div class="w3-container  w3-center">
+         <div class="w3-container banner-img2">
             <div class="Tbox w3-container">
                <p style="color: rgb(255, 255, 255);">
-                   The dashboard above provides a daily overview of the COVID-19 critical case categories for each of the 186 countries in the world by event date with recorded cases as reported by the John hopkins resource centre and YATKO resource centre. <br>
-                      
-            Data is based on an aggregate of both public and private hospitals and includes all surge units<br>
+                  Why do we use it?
+                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+   
+                 The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                 Where can I get some?
    
                 
                </p>
