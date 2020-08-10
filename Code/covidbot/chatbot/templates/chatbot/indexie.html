@@ -53,14 +53,14 @@
     
     
   <div class="w3-container" >
-      <p class='w3-large w3-serif'>
+      <p class="w3-container w3-margin w3-padding-16 w3-leftbar " style="color:firebrick">
           {% for hl, hlink in headlines.items %}
-             <h2 class='w3-xlarge w3-serif'>Latest updates for COVID-19 Ireland: <marquee><a href="{{hlink}}">{{hl}}</a></marquee></h2>
-            {% endfor %}    
+             <strong>Latest updates for COVID-19 Ireland: </strong><marquee><a href="{{hlink}}" style="color:darkslategrey">{{hl}}</a></marquee>
+            {% endfor %}
 <!--                  <i class="fa fa-quote-right w3-large w3-opacity"></i>-->
 <!--             <p class="w3-sand w3-large w3-leftbar w3-border-black">-->                   
                 </p>
-             </div>
+             </div>     
     
 <!--
       <ul>
