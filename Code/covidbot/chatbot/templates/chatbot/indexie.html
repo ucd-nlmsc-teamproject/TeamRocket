@@ -20,10 +20,6 @@
          transition: width 5s ease-in-out;
       }
 
-      .banner-img {
-         background: url("{% static 'chatbot/images/covid19-hero-banner.jpg' %}") repeat scroll center;
-         width: 100%;
-      }
 
       .banner-img2 {
          background: url("{% static 'chatbot/images/covid_banner2.jpg' %}") repeat scroll;
@@ -43,7 +39,7 @@
 <body>
    <script type="text/javascript">
       (function (d, m) {
-         var kommunicateSettings = { "appId": "2e3beded0d05a4b64479e305f33f3f62e", "popupWidget": true, "automaticChatOpenOnNavigation": true, "voiceInput": true };
+         var kommunicateSettings = { "appId": "24a0d08c6559417888e0cd9e7825f4be9", "popupWidget": true, "automaticChatOpenOnNavigation": true, "voiceInput": true };
          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
          s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
@@ -55,13 +51,20 @@
       });
    </script>
    {% include "chatbot/header.html" %}
-   <div class="w3-container w3-margin w3-padding-16 w3-sand">
-      <span class="w3-cards-4">
-         <a href="https://www.irishtimes.com/news/health/coronavirus">
-            <h2 class='w3-xlarge w3-serif'>Latest updates for COVID-19 Ireland</h2>
-         </a>
-      </span>
-      <ul class="w3-cards-4">
+    
+    
+  <div class="w3-container" >
+      <p class='w3-large w3-serif'>
+          {% for hl, hlink in headlines.items %}
+             <h2 class='w3-xlarge w3-serif'>Latest updates for COVID-19 Ireland: <a href="{{hlink}}">{{hl}}</a></h2>
+            {% endfor %}    
+<!--                  <i class="fa fa-quote-right w3-large w3-opacity"></i>-->
+<!--             <p class="w3-sand w3-large w3-leftbar w3-border-black">-->                   
+                </p>
+             </div>
+    
+<!--
+      <ul>
          {% for hl, hlink in headlines.items %}
              <li class="w3-bar" style="height: 3em;">
                 <a href="{{hlink}}">
@@ -72,11 +75,12 @@
          {% endfor %}
       </ul>
    </div>
+-->
 
    <!-- Maps section -->
    <div class="w3-card-2 w3-center" style="margin: 0 10% 0 10%;">
       <div class='tableauPlaceholder w3-card-4' style='width: 100%; height: 100%;'>
-         <object class='tableauViz w3-display-middle' height='800' style='display:none; width: 100%;'>
+         <object class='tableauViz w3-display-middle' height='700' style='display:none; width: 100%;'>
             <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
             <param name='static_image' value="{% static 'chatbot/images/bannerIV1.png' %}" />
             <param name='display_static_image' value='yes' />
