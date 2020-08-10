@@ -13,7 +13,6 @@
       <link rel="stylesheet" media="print" href="{% static 'chatbot/assets/css/print.min.css' %}" />
       <link rel="stylesheet" href="{% static 'chatbot/assets/css/main.css' %}" />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <!--<link rel="stylesheet prefetch" href="assets/css/app.min.css_v=20-06-04T19_34_55Z.css"/>-->
       <link rel="stylesheet prefetch" href="https://www.cdc.gov/TemplatePackage/4.0/assets/css/app.min.css?v=20-06-04T19:34:55Z" />
       <title>If You Are Sick or Caring for Someone  | CDC</title>
       <meta name="description" content="Take steps to care for yourself and help protect others – COVID-19."/>
@@ -47,9 +46,8 @@
    </head>
    <body class="no-js">
        <script type="text/javascript">
-      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
       (function(d, m){
-        var kommunicateSettings = {"appId":"2e3beded0d05a4b64479e305f33f3f62e","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
+        var kommunicateSettings = {"appId":"24a0d08c6559417888e0cd9e7825f4be9","popupWidget":true,"automaticChatOpenOnNavigation":true,"voiceInput":true};
         var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
         s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
         var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
@@ -64,13 +62,6 @@
       <main class="col-lg-9 order-lg-2" role="main" aria-label="Main Content Area">
          <div class="row visual-element">
             <div class="col">
-               <!-- Visual Element, this is what was the site identity in TP3 -->
-               <!-- mp_trans_add
-                  <div class="syndicate">
-                  <div class="row "><div class="col-md-12"><div class="card mb-3"><div class="card-body bg-gray-l3"><p class="small"><i><strong>Disclaimer:</strong></i><i> This website is frequently updated. Some content may be in English until all the content is translated.</i></p>
-                  </div></div></div></div>
-                  </div>
-                  -->
             </div>
          </div>
          <div class="section-nav-area">
@@ -83,16 +74,6 @@
          <div class="syndicate">
              <h1 id="content"><a id="how">How to Protect Yourself & Others</a></h1>
          </div>
-<!--
-         <div class="dropdown p-none" style="margin-top:-5px; margin-bottom:33px;">
-            <button class="btn bg-white dropdown-toggle fs08 c-blue b-gray-l3" type="button" id="languageDropDownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Languages</button>
-            <div class="dropdown-menu ds-4" aria-labelledby="languageDropDownMenu">
-               <a class="dropdown-item fs08" onclick="return switchMPLanguage('es');" href="https://espanol.cdc.gov/enes/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">Español</a><a class="dropdown-item fs08" onclick="return switchMPLanguage('zh');" href="https://chinese.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">简体中文</a><a class="dropdown-item fs08" onclick="return switchMPLanguage('vi');" href="https://vietnamese.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">Tiếng Việt</a><a class="dropdown-item fs08" onclick="return switchMPLanguage('ko');" href="https://korean.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html" mporgnav="">한국어</a>
-               <div class="dropdown-divider"></div>
-               <a class="dropdown-item fs08" href="https://wwwn.cdc.gov/pubs/other-languages/">Other Languages</a>
-            </div>
-         </div>
--->
          <div class="mb-3 card tp-related-pages fourth-level-nav d-none">
             <div class="card-header collapse-icon">
                <a class="collapse-link float-right nav-minus fs0875" data-toggle="collapse"
@@ -346,79 +327,7 @@
 
       </main>
       <!-- Left / Bottom Nav -->
-      <div class="col-lg-3 order-lg-1 leftnav-wrapper">
-         <!-- include virtual="/TemplatePackage/4.0/includes/nav-main.html" -->
-         <nav role="navigation" aria-label="Left Navigation Menu">
-            <div class="nav-section-home d-sm-block"><span class="sr-only">home</span>
-               <span class="fi cdc-icon-home nav-home-icon x24" aria-hidden="true"></span>
-               <a href="">Coronavirus Disease (COVID-19) Important information</a>
-            </div>
-            <ul class="list-group tp-nav-main">
-               <li class="list-group-item nav-lvl1"><a href="/symptoms">Symptoms</a>
-                   <a href="#nav-group-1" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-1">
-                      <span class="sr-only">plus icon</span>
-                        <span class="fi cdc-icon-plus" aria-hidden="true"></span>
-                   </a>
-                   <ul id="nav-group-1" class="collapse">
-                     <li class="list-group-item nav-lvl2"><a href="/symptoms#title">Mild Symptoms</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/symptoms#mildsymptoms">Moderate Symptoms</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/symptoms#moderatesymptoms">Severe Symptoms</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/symptoms#severesymptoms">Self-Checker</a></li>
-                   </ul>
-
-                </li>
-               <li class="list-group-item nav-lvl1">
-                  <a href="/prevention">Prevention</a>
-                  <a href="#nav-group-2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-2">
-                      <span class="sr-only">plus icon</span>
-                  <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
-                  <ul id="nav-group-2" class="collapse">
-                     <li class="list-group-item nav-lvl2"><a href="#how">How It Spreads</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="#protect">Protect Yourself</a>
-                            <a href="#nav-group-2" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-2">
-                            <span class="sr-only">plus icon</span>
-                            <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
-                                <ul id="nav-group-2" class="collapse">
-                                        <li class="list-group-item nav-lvl3"><a href="#protect">Washing your hands</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="#wash">Contact with others</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="#closecontact">Face coverings</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="#facecover">Cover yourself</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="#clean">Clean and Disinfect</a></li>
-                                        <li class="list-group-item nav-lvl3"><a href="#disinfect">Monitor your health</a></li>
-                         </ul>
-                      </li>
-
-                     <li class="list-group-item nav-lvl2">
-                        <a href="#clean">Cleaning Your Home</a>
-
-                     </li>
-
-                  </ul>
-               </li>
-               <li class="list-group-item nav-lvl1">
-                  <a href="/faq">Frequently Asked Questions</a>
-                  <a href="#nav-group-d187d" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-d187d">
-                     <span class="sr-only">plus icon</span>
-                     <span class="fi cdc-icon-plus" aria-hidden="true"></span></a>
-                  <ul id="nav-group-d187d" class="collapse">
-                     <li class="list-group-item nav-lvl2"><a href="/faq#COVID19">What is COVID-19</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/faq#COVID19">How does it spread</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/faq#spread">Who are at risk</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/faq#risk">Treatment</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/faq#treatment">Preventive measures</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/faq#slowdown">Tests</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/faq#Distancing">What is Social Distancing</a></li>
-                     <li class="list-group-item nav-lvl2"><a href="/faq#WhyDistance">Why Social Distancing</a></li>
-                  </ul>
-               </li>
-               <!--
-                  <li class="list-group-item nav-lvl1"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/index.html">Daily Life &amp; Coping</a><a href="index.html#nav-group-1549b" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-1549b"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-1549b" class="collapse"><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/food-and-COVID-19.html">Food &amp; COVID-19</a></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/at-home.html">At Home</a><a href="index.html#nav-group-7c697" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-7c697"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-7c697" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/checklist-household-ready.html">Household Checklist</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/living-in-close-quarters.html">Living in Close Quarters</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/shared-housing/index.html">Living in Shared Housing</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html">Errands &amp; Going Out</a><a href="index.html#nav-group-fcdbb" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-fcdbb"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-fcdbb" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/deciding-to-go-out.html">Deciding to Go Out</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/essential-goods-services.html">Running Errands</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/personal-social-activities.html">Personal and Social Activities</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/using-transportation.html">Using Transportation</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/doctor-visits-medicine.html">Doctor Visits &amp; Getting Medicines</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/visitors.html">Visiting Parks &amp; Recreational Facilities</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/caring-for-children.html">Caring for Children</a><a href="index.html#nav-group-ef109" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-ef109"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-ef109" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/mis-c.html">For Parents: MIS-C</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children.html">Keep Children Healthy</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/protect-children.html">Stop the Spread in Children</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/children/learning.html">Help Children Learn</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/talking-with-children.html">Talking to Children</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/index.html">Stress &amp; Coping</a><a href="index.html#nav-group-29638" class="nav-plus nav-expandcollapse" data-toggle="collapse" aria-controls="nav-group-29638"><span class="sr-only">plus icon</span><span class="fi cdc-icon-plus" aria-hidden="true"></span></a><ul id="nav-group-29638" class="collapse"><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html">Coping with Stress</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/for-parents.html">Helping Children Cope</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/reducing-stigma.html"> Reducing Stigma </a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/share-facts.html">Stop the Spread of Rumors</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/grief-loss.html">Grief and Loss</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/alcohol-use.html">Alcohol and Substance Use</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/abuse.html">Support for People Experiencing Abuse</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/veterans.html">Support for Veterans</a></li><li class="list-group-item nav-lvl3"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/stress-coping/young-adults.html">Support For Teens and Young Adults</a></li></ul></li><li class="list-group-item nav-lvl2"><a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html">Funeral Guidance</a></li>
-
-               -->
-            </ul>
-          </nav>
-      </div>
-
+      {% include "chatbot/sidebar.html" %}
        </div>
         <div  class="container">
            <div class="row">
