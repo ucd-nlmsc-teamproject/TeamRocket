@@ -1,0 +1,138 @@
+
+SLIDE 1: Hook for the listener regarding the theme of the project
+
+My name is aditya krishnan, my team and I will go through the final PPT.
+We live in unprecedented times right now where people across the world have been affected due to the pandemic. 20million been directly affected by this pandemic on the planet.
+We wanted to provide a solution to the general public to help cope with the COVID-19 Pandemic. 1
+
+
+SLIDE 2: Problem Given the pandemic that we plan to address.
+Given the extent of the current situation, it has led to mass hysteria and confusion regarding the graveness of the situation, There is Feeling of unrest and sense of loss where information is being circulated at a very high rate making it impossible for people to traverse through the dense formatted information, leading to the most important information being lost.
+Highly inconvenient for older people, and those who are not as tech savvy.
+Therefore we decided to create an application which would provide a centralised location for critical covid-19 information, made available through an easy to use format
+Chatbot and visualization, script for that slideThe existing implementations only provide information based on the list of questions that are shown to the user,³which is not tailor driven based on the users interests
+Hence The chatbot aims to provide a very user friendly, natural language, accessible platform for users of any type to interact with and get the most important information regarding the pandemic, with the visualization aiding with the impact of information received and improving the overall experience of the application. 
+
+The application is directed for users of 4 kinds.
+User story for world map would look like:
+User scenario 1: user from the general public who wishes to learn about the overall situation of the pandemic across different parts of the world. 
+User scenario 2: Irish user who wishes to get a more in depth and relevant information to their particular country with greater level of county wise granularity
+User scenario 3: providing the general user with the most up to date and crucial advice on the most critical information condensed and easily accessible making it very user friendly and easy to traverse.
+User scenario 4: The chatbot provides a centralised location where the user is able to interact with it in an easy to use natural language interface to interact with in a 
+Easy to use
+Inviting manner
+Encourages people to explore the information which is provided in a condensed and easy to consume format
+
+
+Images for team members.
+
+Data Sources: What are the key data resources you are using and how are you accessing them and how will they support your application? 
+My name is Apurva Deore and I will be taking you through the data aspect of the project.
+The key data sources for our application are the John Hopkins, Bing and Yatko API’s and for Ireland specific data we have used data from HSPC. All these data sources are free API’s so accessing them was not a big issue.
+Two different data frames have been prepared from the main API which is John Hopkins, first is the Summary data which gives statistical data for 186 countries and this summary data is merged with Yatko API which provides us with extra statistical info for the main case categories of covid including confirmed and death rates. The same API provides the historical data regarding each country starting from 22nd january 2020..
+Ireland data is being fetched from data.gov.ie and has been segregated into different data frame like Case types in Ireland, county-wise time series data, hospitalised cases and County wise Confirmed Data.
+Further implementations made to retrieve both historical and cumulative information on COVID-19.
+All the data collected was used to help curate the questions that could be answered by the CHATBOT and power the visualizations run on the platform.
+
+There were some data discrepancies, where the data was not recorded or recorded as wrong, which was handled by replacing the statistics of the previous date wherever required and in some cases the active cases for each country were recorded falsely, So we calculated the active cases. Also when data was wrong in the main data source, we have used Bing data which provides the same kind of data to fill the missing gaps in the main data. Other discrepancies like this were tackled through the project.
+
+How are you organising and storing data?
+We have automated the scripts which collect data time to time by running cron jobs using windows task scheduler and stored the files in specific location. Once the cron job runs successfully, the azure data pipeline will run and store the collected data onto the cloud database.
+
+
+All of this data has been collected multiple times so as to maintain accurate data if some data related mishap were to happen in the near future. Updated versions are stored on our local systems as well as committed onto git frequently.  
+ 
+
+
+
+Backend and chatbot team:
+Now ill take you through the chatbot and django team, which was handled by sumit kumar and Nripendra Singh. 
+They were responsible for the development of the chatbot, which was created using amazon lex since Amazon API gateway can query azure data lake to retrieve data and due to the support of voice and text recognition.
+ 
+Since the Amazon Lex bot is powered by Automatic Speech Recognition (ASR), it can understand user input provided with text or speech and converse in natural language, by creating Lambda functions and add them as code hooks in your intent configuration to perform user data validation and fulfillment tasks. Where an intent represents an action, the user wants to perform
+ 
+ 
+The major challenges faced during the development of the bot, include how to configure the bot and make it customisable
+Another major challenge was how to Integrate the bot with the website. Since we are using kommunicate, they don't support rendering of images on the webpage. Same when done on FB or Messenger, we can see that those interfaces allow the HTML outputs from Lambda function to be rendered in the chatbot itself. Hence in the future we would like to integrate our bot using tools which allow for image integration.
+ 
+Django: For web development when choosing the web framework which we wanted to use we came across two python based frameworks as we wanted to use python based framework as our data was working on it
+The first challenge that we came across was to decide between Django and flask .We went for Django as gives you open resource management,URL resolutions and is structured. 
+Since the project requires the application to be supported on various devices and platforms, django enhances the accessibility of web applications by supporting major operating systems like Windows, Linux and MacOS.
+Second challenge was learning and understanding the django framework.
+Third challenge was deploying the local application to the AWS platform We used supervisor,gunicorn and nginx server to host our website.
+
+
+
+
+
+
+
+
+
+Ashwin was in charge of the cloud. The work on integrating our project with a cloud platform consisted of 3 tasks. In the first stage, we compared between AWS and Azure, the different resources they provide and pricing to deploy the required resources on Azure.
+Next data was transported to the data lake and an instance of MySQL server was hosted on Azure that was connected to train the chatbot. 
+Finally different datasets and pipelines were created on Azure Data Factory for the data in transit between different resources. These pipelines were triggered to completely automate this process.  
+
+Front end team which was handled by minaz and aditya, used atom and brackets as primary tool for front development as both text editors support smart auto-completion, and the Inline Editors allow easy opening and editing of HTML, Javascript and CSS files. 
+In charge of creating the refined front end of the application and embedding visualizations and the bot onto the platform.
+After facing the challenges of integrating the chatbot to the front end,  We decided to use a third party platform Kommunicate to integrate the bot seamlessly with the application, due to the ease of use given scope of the project.
+Finally team management was handled by Aditya sumit and Ashwin to ensure each team member maintained regular contact via WhatsApp for quick updates and close to daily meetings are conducted via Google Meet. Tools like jira, git and google drive were used extensively for version control and team management.
+
+
+
+
+Architecture script
+ 
+We gather data from the APIs such as John Hopkins and Yatko that are publicly available and store them on the Azure data lake. Pipelines are connected to different datasets that are stored on the lake. The Azure Data Factory pipeline stores and triggers scripts at regular intervals to retrieve up to date information. The data from the lake is then transferred using these pipelines to an instance of MySQL DB whose server is hosted on Azure. The data from the MySQL database is connected to Tableau and an instance of Amazon Lex where the chatbot is trained. The chatbot and the visualizations are hosted on webpage using an instance of EC2 of AWS  
+
+
+
+Slides
+
+Version Control from start to MVP to interim To final release
+What were the major achievements in each versions of the application.
+
+Version 1: preparation of the main aspects of the basic features of the application including the rough structure of the website and identifying the main tolsets to use for each aspect of the project. We were also able to identify, collect and curate the critical sources of data which would power the application. 
+Developed the chatbot with the aspects of being able to answer basic questions .
+
+Version 2(MVP): Aim to fine-tune the data samples, start finalizing the types of visualizations to be used, start integrating Django, test the cloud framework to begin implementation and have a clean front end to display.The visualizations were fine tuned to a higher degree with the website functional at a high level. 
+
+Version 3: A higher implementation of the chatbot with better text prompts and user interaction where the bot would interact with the user and answer a few customised user queries including Ireland specific queries.  As part of the main non-trivial extension we refined the scope of the chatbot to being strictly restricted to information regarding Ireland. Detailed world based as well as ireland specific visualizations would contain information regarding the statistics of COVID-19.
+
+Created a feedback and evaluation framework. Review of Use Cases, Identify high end user test cases, and performing user based testing of the sites functionalities 
+
+
+
+
+
+
+Reflection Script
+
+
+Capturing lessons learned should be an on-going effort throughout the lifecycle of the project. This project gave us a lot of learnings to take away and we would like to reflect on a few positive and negative experiences of the project.
+
+The positives that we take away from the project:
+
+The data team were able to efficiently collect relevant data from all of the public dominas, for both world related and Ireland specific data and also integrated different sources of data to create a standardised framework to accommodate for different formats of data.
+Exploration of different cloud platforms in depth was done thoroughly. 
+We analysed the utility of each platform under different circumstances and how integration would be handled with other toolkits being used for the project.
+For the majority of the project, team communication was of top quality and everyone worked well with each other as part of the team.
+We made thorough use of proper standardised tools and techniques including Jira, Git and Google drive to constantly encourage the project stakeholders to document and share their findings.
+Evaluated the platform thoroughly to learn from the mistakes.
+
+We also had a few setbacks and things we would like to improve on from these learnings
+
+Given the initial vision of the project to implement, the Bot is not flexible enough. Given the resources available and the amount of time we had, the team was not able to achieve a high grade of language processing. We underestimated the amount of manual labour required to develop the bot.
+Further inspection and utilization of other visualization tools which would be better suited for the general public to view and interact with. 
+We did not consider the existence of other technical challenges until we got to them including lack of admin rights on a student account for displaying dashboards to the general public 
+Looking at it in hindsight, It would have greatly improved the efficiency and improved morale of the team, if members regularly jumped between two aspects of the project 
+
+Given the scope of the project and what we set out to achieve which was a user friendly platform which provides condensed COVID-19 data for the general user we were happy with the progress achieved. In the future we would like to capture the lessons we learnt here, review them prior to starting new projects to identify any major roadblocks that may hinder the overall vision of the project.
+
+
+
+
+
+
+
+
