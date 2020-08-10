@@ -81,19 +81,19 @@ Data = Data_collection(Countries)
 Save_file(Data,"Raw_data",0)
 
 
-# In[9]:
+# In[8]:
 
 
 Data_read = pd.read_csv('C:/Users/visha/Final Semester Project/CSV Data/Raw_Data.csv')
 
 
-# In[10]:
+# In[9]:
 
 
 Data_raw_2 = pd.read_csv('C:/Users/visha/Final Semester Project/CSV Data/Country_wise_data_timeseries.csv')
 
 
-# In[11]:
+# In[10]:
 
 
 def Clean_data(df,df2):
@@ -129,16 +129,40 @@ def Clean_data(df,df2):
     return df
 
 
-# In[12]:
+# In[11]:
 
 
 Data_1 = Clean_data(Data_read,Data_raw_2)
 
 
+# In[12]:
+
+
+Data_2_Sum = pd.read_csv('C:/Users/visha/Final Semester Project/CSV Data/Covid_World_Summary.csv')
+
+
+# In[13]:
+
+
+def Data_merger(df,df2):
+    df = df.drop(['CountryCode', 'NewConfirmed', 'NewDeaths','NewRecovered'],axis=1)
+    df = df.rename(columns={'TotalConfirmed': 'Confirmed', 'TotalDeaths': 'Deaths', 'TotalRecovered': 'Recovered'})
+    df['Active'] = df['Confirmed'] - (df['Recovered'] + df['Deaths'])
+    df_s = df[['Active','Confirmed','Country','Date','Deaths','Recovered']]
+    df2 = df2.append(df_s)
+    return df2
+
+
+# In[14]:
+
+
+Data_1a = Data_merger(Data_2_Sum,Data_1)
+
+
 # In[15]:
 
 
-Save_file(Data_1,"Cleaned_Raw_data",0)
+Save_file(Data_1a,"Cleaned_Raw_data",0)
 
 
 # In[16]:
@@ -182,10 +206,10 @@ def Time_Series_Data(df):
 # In[17]:
 
 
-Confirmed_Data,Recovered_Data,Deaths_Data,Active_Data = Time_Series_Data(Data_1)
+Confirmed_Data,Recovered_Data,Deaths_Data,Active_Data = Time_Series_Data(Data_1a)
 
 
-# In[19]:
+# In[18]:
 
 
 Save_file(Confirmed_Data,"Confirmed_Data",1)
@@ -194,7 +218,7 @@ Save_file(Deaths_Data,"Deaths_Data",1)
 Save_file(Active_Data,"Active_Data",1)
 
 
-# In[20]:
+# In[19]:
 
 
 def transpose(df):
@@ -203,7 +227,7 @@ def transpose(df):
     return df
 
 
-# In[21]:
+# In[20]:
 
 
 Confirmed_Data_T = transpose(Confirmed_Data)
@@ -212,7 +236,7 @@ Deaths_Data_T = transpose(Deaths_Data)
 Active_Data_T = transpose(Active_Data)
 
 
-# In[22]:
+# In[21]:
 
 
 Save_file(Confirmed_Data_T,"Confirmed_Data_T",2)
@@ -221,7 +245,7 @@ Save_file(Deaths_Data_T,"Deaths_Data_T",2)
 Save_file(Active_Data_T,"Active_Data_T",2)
 
 
-# In[25]:
+# In[22]:
 
 
 def Integrated_data(df,df1,df2,df3,df4):
@@ -250,25 +274,25 @@ def Integrated_data(df,df1,df2,df3,df4):
     return Data_final
 
 
-# In[26]:
+# In[24]:
 
 
-Final_Data = Integrated_data(Data_1,Confirmed_Data,Recovered_Data,Deaths_Data,Active_Data)
+Final_Data = Integrated_data(Data_1a,Confirmed_Data,Recovered_Data,Deaths_Data,Active_Data)
 
 
-# In[29]:
+# In[25]:
 
 
 Save_file(Final_Data,"Final_Data_Combined",1)
 
 
-# In[30]:
+# In[26]:
 
 
 Data_2 = Clean_data(Data_read,Data_raw_2)
 
 
-# In[32]:
+# In[27]:
 
 
 def Date_processing(df):
@@ -325,19 +349,19 @@ def Date_processing(df):
     return df
 
 
-# In[33]:
+# In[28]:
 
 
 Data_date_2 = Date_processing(Data_2)
 
 
-# In[36]:
+# In[29]:
 
 
 Save_file(Data_date_2,"Data_with_new_columns",0)
 
 
-# In[37]:
+# In[30]:
 
 
 def World_Dataset(df,df1,df2,df3,df4):
@@ -364,31 +388,31 @@ def World_Dataset(df,df1,df2,df3,df4):
         
 
 
-# In[38]:
+# In[31]:
 
 
 World_Data = World_Dataset(Data_1,Confirmed_Data,Deaths_Data,Active_Data,Recovered_Data)
 
 
-# In[39]:
+# In[32]:
 
 
 World_Data_Summary = World_Data.T
 
 
-# In[40]:
+# In[33]:
 
 
 World_Data_Summary['Dates'] = World_Data_Summary.index
 
 
-# In[42]:
+# In[34]:
 
 
 Save_file(World_Data_Summary,"World_Data_Summary",0)
 
 
-# In[43]:
+# In[35]:
 
 
 print("Script Ran Successfully")
