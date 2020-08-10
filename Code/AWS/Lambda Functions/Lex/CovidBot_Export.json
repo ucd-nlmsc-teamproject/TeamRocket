@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "CovidBot",
+    "version": "2",
+    "intents": [
+      {
+        "name": "GreetinTest",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What is your name",
+          "What are you called",
+          "Can you tell me your name"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "My name is CovidBot, I am here to help you with your queries regarding COVID-19"
+            }
+          ]
+        }
+      },
+      {
+        "name": "AdminBot",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Admin"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.AlphaNumeric",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Please Enter Password"
+                }
+              ],
+              "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\"}",
+              "maxAttempts": 2
+            },
+            "priority": 2,
+            "name": "Password"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.US_FIRST_NAME",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Please Enter Username"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "UserID"
+          }
+        ]
+      },
+      {
+        "name": "HelloBot",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Hi",
+          "Hello",
+          "Hola"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [
+              "I am {Name}",
+              "My Name is {Name}",
+              "I am called {Name}",
+              "I'm good. My name is {Name}",
+              "{Name} is my Name",
+              "You can call me {Name}",
+              "I go by {Name}",
+              "People call me {Name}",
+              "I'm fine. My name is {Name}"
+            ],
+            "slotType": "AMAZON.GB_FIRST_NAME",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Hi! How are you? What is your name?"
+                }
+              ],
+              "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\"}",
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "Name"
+          }
+        ],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Hi {Name}, You can say \"Statistics\" to know about global statistics or you can ask me about County wise confirmed data for Republic of Ireland"
+            }
+          ]
+        }
+      },
+      {
+        "name": "GetCountryData",
+        "version": "5",
+        "fulfillmentActivity": {
+          "codeHook": {
+            "uri": "arn:aws:lambda:us-east-1:945779889983:function:getCountryData",
+            "messageVersion": "1.0"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "I would like to know the Statistics",
+          "Can you show me statistics",
+          "Stats",
+          "Statistics",
+          "What are the statistics",
+          "get stats",
+          "Can I get statistics",
+          "Show me stats for {Country}",
+          "What is the situation in {Country}",
+          "What is the number of {TypeOfCases} in {Country}",
+          "{TypeOfCases} in {Country}",
+          "{TypeOfCases} cases in {Country}"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [
+              "I would like to know about {Country}"
+            ],
+            "slotType": "AMAZON.Country",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Which country would you like to know about?"
+                }
+              ],
+              "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\"}",
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "Country"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.DATE",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Which Date"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 3,
+            "name": "Date"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "TypeOfCases",
+            "slotTypeVersion": "2",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What type of Covid Records would you like to know about? (Active, Death, Recovered, Confirmed)"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 2,
+            "name": "TypeOfCases"
+          }
+        ]
+      },
+      {
+        "name": "IrelandCountyData",
+        "version": "2",
+        "fulfillmentActivity": {
+          "codeHook": {
+            "uri": "arn:aws:lambda:us-east-1:945779889983:function:getCountyDataIRE",
+            "messageVersion": "1.0"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "Show me confirmed cases for {county}",
+          "Confirmed cases for {county} in Ireland",
+          "Could you provide me with confirmed cases on {Date} for {county} in ireland",
+          "{county} confirmed cases statistics in Ireland",
+          "{county} confirmed cases statistics in Ireland on {Date}",
+          "{county} confirmed Cases",
+          "What are the confirmed cases in {county}",
+          "What are the covid cases in {county}",
+          "What are the confirmed cases in {county} on {Date}",
+          "What are the covid cases in {county} on {Date}"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.EUROPE_CITY",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Which County of ROI would you like to know about?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "county"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.DATE",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "For which date would you like to know about?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 2,
+            "name": "Date"
+          }
+        ]
+      }
+    ],
+    "slotTypes": [
+      {
+        "description": "Type of Covid Records",
+        "name": "TypeOfCases",
+        "version": "2",
+        "enumerationValues": [
+          {
+            "value": "Recovered"
+          },
+          {
+            "value": "Active"
+          },
+          {
+            "value": "Death",
+            "synonyms": [
+              "Deaths"
+            ]
+          },
+          {
+            "value": "Confirmed"
+          }
+        ],
+        "valueSelectionStrategy": "TOP_RESOLUTION"
+      }
+    ],
+    "voiceId": "Justin",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 300,
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, can you please repeat that?"
+        }
+      ],
+      "maxAttempts": 5
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, I could not understand. Goodbye."
+        }
+      ]
+    },
+    "detectSentiment": true,
+    "enableModelImprovements": false
+  }
+}
