@@ -36,3 +36,74 @@ Lex team:
 Connection of bot with the 
 
 develop core intent with lambda functionality which will be deployed from start to end
+
+Based on the overly broad scope we had initially, we have decided to reimagine the application with the scope of information being provided by the chatbot to be initially restricted to ireland.
+We aim to achieve the Final version of our product by the end of the month in preparation of user based testing for the first week of july by further breaking down tasks and reach goals into sprints and release versions as seen.
+
+After having achieved partial V1.2, lacking the integration of the chatbot with the front end pf the application, we aim to further breakdown tasks and reach goals into sprints and release versions. As part of the main non-trivial extension we would like to first refine the scope of the chatbot to being strictly restricted to information regarding Ireland. 
+
+Version 2.0  (7th July – 13th July’20)
+Reviewing the Lex API and identifying the constraints to develop two-three core intents which will be deployed from start to end. Integration of second API with the existing data.
+
+Tasks: 
+Research and cloud support:
+Create dummy scripts and trigger them using data factory pipeline and assess their effectiveness in data retrieval and storage
+Research about ways to connect the instance of PostgreSQL DB to the front-end web application and test it
+Data team:
+Automate data retrieval jobs from API’s using time-based job scheduler to improve system functionality
+Research and inclusion of 1-2 more API’s to ensure minimum project requirement
+Integration of all data into summary and historical time-series data 
+Front end:
+Implement containers for better representation of visualizations
+Test implement different visualization tools to identify which works better
+Documentation of functionality of the tool of choice for visualization on the web page.
+Lex team:
+ Review of the Lex API and identifying the constraints 
+Connection of bot with the 
+develop core intent with lambda functionality which will be deployed from start to end
+
+
+
+
+
+
+
+
+
+Version 2.1  (14th July – 20th July’20)
+Refining the functionality of the application to better improve User Experience and integration of the chatbot to the existing web application, With finer implantation of previous work done. 
+
+Cloud:
+Finalise the platform to base the system on.
+Integrate and test automated scripts to make sure data is being updated of its own accord 
+Connect Bot to DB instance to ensure SQL query requests being supported and retrieving the correct responses.
+
+
+Data team:
+Fine tune the scope of the project and prepare data of ireland in greater detail to demonstrate scope of project
+Prepare series of visualizations to display on application based on relevance, to be continually updated on the web page.
+Front end: 
+Integration of the bot with the front end of the application.
+Document the functionalities to be added, not added
+Having issues
+
+
+Lex: Further addition of core intents with integration of graphics and images.
+define entities and/or types and fill in user utterances.
+
+Worki on scalability of the application with focus on irish based information with the visin to enable the 
+
+
+
+
+Version 2.2  (21st July – 28th July’20) 🡪 Milestone 2/Final Product
+Final core implementations and refinement of the paramount tasks (House the Chat-Bot and prepare the map visualizations) before the deployment of the application for user testing and evaluation and subsequent preparation of the final report.
+
+
+Tasks: Testing and Evaluation of the product: 
+
+Review of Use Cases by Vishal, Identify high end user test cases. 
+Review other potential ways to test the web page
+Reviewing the Use Cases with the team.
+Performing Evaluation and Sharing Results with the team.
+Backend  Framework Setup ,Development and Integration
