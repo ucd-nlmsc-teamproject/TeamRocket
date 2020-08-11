@@ -1,7 +1,8 @@
+Below are the links that we take into consideration while researching on Johns Hopkins API
 1. Country details
 https://api.covid19api.com/countries
 
-2. Coutnry status details
+2. Country status details
 https://api.covid19api.com/country/south-africa?from=2020-03-01T00:00:00Z&to=2020-04-01T00:00:00Z
 
 3. Country total details
@@ -15,3 +16,14 @@ https://api.covid19api.com/summary
 
 6. Global Data (Tallied records: Total cases, Recovered, Deaths) Time Series Data
 https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
+
+YATKO API
+7. https://api.quarantine.country/api/v1/summary/latest
+
+BING COVID19 Data
+8. https://raw.githubusercontent.com/microsoft/Bing-COVID-19-Data/master/data/Bing-COVID19-Data.csv
+
+Ireland Specific Data (provided by HPSC Ireland)
+9. https://data.gov.ie/
+
+
