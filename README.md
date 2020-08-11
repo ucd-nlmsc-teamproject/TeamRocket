@@ -19,7 +19,6 @@ Cloud platform for the site: AWS Ec2: Credentials: vishal.padma@ucdconnect.ie
                                        Account active until the 21st of july 2021
                                        
 Chatbot : AWS LEX: Credentials: dragonatsr@gmail.com
-                    Password: AdminPassword9999
           For integration with the front end, Kommunicate: Credentials: ashwin.manikandan@ucdconnect.ie
                                                              Account active until the 9th of september 2020
                                        
