@@ -1,5 +1,7 @@
 # TeamRocket
 
+This is the link to our live website: http://ec2-52-3-251-240.compute-1.amazonaws.com/, and use the credentials for tableau online to view the dashbords.
+
 Tools and credentials required for the project.
 
 Project management: Google drive link used for intermediate sharing of files and resources. : https://drive.google.com/drive/folders/0ABS1rJ1MBkEyUk9PVA
