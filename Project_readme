@@ -25,4 +25,13 @@ Chatbot : AWS LEX: Credentials: dragonatsr@gmail.com
                                                             Password: ashwin777@K
                                                              Account active until the 9th of september 2020
                                        
+                                       
+                                       
+Contents of the folders in the repository                                       
+The Code folder         
+
+https://github.com/ucd-nlmsc-teamproject/TeamRocket/tree/master/Code/covidbot: Contains the main implementation files for the final version of the front end of the application.
+
+https://github.com/ucd-nlmsc-teamproject/TeamRocket/tree/master/CovidChatBot: This folder contains the Final implementation of the website and bot with full django integration 
+
 
