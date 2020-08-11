@@ -1,0 +1,39 @@
+•	Sprint 1:
+prepare front end minimal view, including main input input boxes 
+Research icon and bot designs and finalise on designs for both
+Choose tools for development of the front end of the website
+decide on the titles of the webpage, as well as the name for the bot
+
+•	Sprint 2: 
+Prepare information section data
+Prepare the main colour themes and the colour palette for visualizations
+Clean the front end of the web application design and structure the layout of the pages accordingly.
+After having achieved partial V1.2, lacking the integration of the chatbot with the front-end pf the application, we aim to further breakdown tasks and reach goals into sprints and release versions. As part of the main non-trivial extension we would like to first refine the scope of the chatbot to being strictly restricted to information regarding Ireland.
+
+•	Sprint 4+5
+Refining the overall structure of the web page with a clean flow and layout. Refine the Web page by researching improved functionality to help better the User experience. Development of the integration between the front end and the chatbot.
+
+•	Sprint 6+ After evaluation
+Clean the front-end of the web application design and structuring the layout of the pages accordingly.
+Researching potential features for better UX
+Added niche feature such as better drop-down controls better layout to represent visualizations and the associated information.
+Integration of the chatbot using the communicate platform for seamless representation due to the challenges faced otherwise
+Improvements made in the functionality and usability of the website, with use of animations, (Issue of visualizations being slow to load identified through user evaluation) tackled by implementing  predeveloped image templates to hide visualizations being loaded in the background which would then be replaced once the visualizations were loaded
+
+front end- 
+•	Responsiveness – We implement responsiveness in our website with the help of these following libraries
+o	Bootstrap with extra plugins
+o	Bootsrap bundle: A js web design library which is used in addition with the standard css for additional responsive features; the library requires jquery.js poppers.js and the actual compiled boostrap js, all this are included in the bundle.
+o	Additionally, w3schools provides us with responsive containers and panels 
+•	Integrations –
+o	Tableau: the viz on the website are developed on tableasu online and said tableasu provides us with an easy to emebed js widget; we need to import the tableau librabry 
+o	Bot integration: the lex chatbot integration is handled with kommunicate, it provides us with easily customizable widget which is integrated with a piece of javascript – ( The native AWS integration for the lex bot required various insights/ knowledge in to the library and with excessive complications. The requirement for the lex bot integration was to use node.js and as our website framework was in Django, it limited us to make use of two python instances and versions which lead us to find a simpler and neat approach the same and so our solution was to use a third party wrapper which encodes the lex-bot and into a easy embed javascript code.
+•	UI:
+o	Text content – the text information on the website is wrapped inside the w3scholls containers which are pretty good responsive containers with good styling options.
+o	Visualizations – The viz tableau blocks are wrapped inside the w3c cards blocks inside fully responsive display containers.
+o	Chatbot ui – The chatbot Ui is bundled with the Kommunicate API
+o	News Header- Since we decided to restrict the scope of the project to dealing with Ireland specific information to a greater degree, we decided to scrape the web to grab the most recent news update regarding the pandemic from the reputed news sources. 
+•	UX:
+The website has cleaned linear flow from top down, with all the navigation easily accessible with the user. The content on the website are concise and spacious with little to no clutter. The colour selections on the website is done by considering the aesthetics and appealing display of UI, we also considered the cases of possible colour-blind users while selecting the colour theme. 
+We included transition animation for all our webpages for a smoother rendering experience. 
+The header and footer for all the files are consistent so instead of separately implementing them into individual files; we, with the help of Django include, were able to include centralised header and footers which are implemented into a single file. 
