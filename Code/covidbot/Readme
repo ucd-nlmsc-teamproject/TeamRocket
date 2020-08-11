@@ -1,0 +1,41 @@
+Main folder which contains the Final implementation code of the application
+
+├───chatbot------------------- #django app folder
+│   ├───migrations------------ #django database folder
+│   ├───static ----------------#static folder where django looks for websites resources
+│   │   └───chatbot     
+│   │       ├───assets 
+│   │       │   ├───css     
+│   │       │   ├───fonts       
+│   │       │   └───js      
+│   │       ├───images      
+│   │       │   └───pics        
+│   │       ├───modules
+│   │       │   └───css-js-patches
+│   │       └───wcms-inc
+│   ├───staticfiles----------------------- # a single folder where django looks for assets from all the apps
+│   │   ├───admin--------------------------# this folder consists of external files that django admin app requires
+│   │   │   ├───css------------------------# this folder consists of css files for admin app
+│   │   │   │   └───vendor
+│   │   │   │       └───select2
+│   │   │   ├───fonts----------------------# fonts for admin app
+│   │   │   ├───img------------------------# this folder contains images for admin app
+│   │   │   │   └───gis
+│   │   │   └───js-------------------------# this folder consists of JS files for admin app
+│   │   │       ├───admin
+│   │   │       └───vendor
+│   │   │           ├───jquery
+│   │   │           ├───select2
+│   │   │           │   └───i18n
+│   │   │           └───xregexp
+│   │   └───chatbot------------------------# this foler contains staticsfiles such as assests and other resources
+│   │       ├───assets---------------------# this folder contains css/js files for django chatbot app
+│   │       │   ├───css--------------------# this folder consists of css files for chatbot app
+│   │       │   ├───fonts------------------# this folder consists of fonts files for chatbot app
+│   │       │   └───js---------------------# this folder consists of JS files for chatbot app
+│   │       ├───images---------------------# this folder contains images for django chatbot app
+│   │       ├───modules
+│   │       │   └───css-js-patches
+│   │       └───wcms-inc
+│   ├───templates -------------------------#this folder contains HTML files for django chatbot app
+│   │   └───chatbot
