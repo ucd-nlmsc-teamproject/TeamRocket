@@ -1,6 +1,7 @@
 This folder contains the final version of the code used for the front end of the application, 
+
 migrations- This folder contains django migrations which are django version of database
 static- This folder contains external resources for the chatbot app
 staticfiles- This folder contains external resources for all the apps in the current project 
 templates- This folder contains the HTML templates for the chatbot app
-views.py- This file is responsible for mapping all the webroutes with their respected python implementations  
+views.py- This file is responsible for implementing website routing functions
