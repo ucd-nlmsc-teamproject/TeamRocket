@@ -1,0 +1,4 @@
+This folder contains configuration files for the covidbot django project
+
+url.py- This file is responsible for mapping implemented views from all the apps to their respected URLs
+settings.py- this file is responsible for the configuration of the whole covidbot django project.
