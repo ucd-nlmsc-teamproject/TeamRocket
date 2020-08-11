@@ -1,3 +1,5 @@
+REDUNDANT CODE which is not part of the final application
+
 Update "chatbot/settings.py", line 57, update your own path to the folder, relative path to be added later on
 
 open terminal here:
