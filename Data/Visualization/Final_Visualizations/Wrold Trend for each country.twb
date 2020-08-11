@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0716.1026                               -->
+<workbook source-build='2020.2.0 (20202.20.0716.1026)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/WroldTrendforeachcountry?rev=1.7' id='WroldTrendforeachcountry' path='/t/apurvadeore95/workbooks' revision='1.8' site='apurvadeore95' />
+  <preferences />
+  <datasources>
+    <datasource caption='datawithnewcolumns (lextest)' inline='true' name='federated.12nymet0kyl5gz13mehqp072b6na' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aws-connect.mysql.database.azure.com' name='mysql.0obrirl1wlhjqm10ivqh70quy53c'>
+            <connection authentication='' class='mysql' dbname='lextest' odbc-native-protocol='' one-time-sql='' port='3306' server='aws-connect.mysql.database.azure.com' source-charset='' username='rocket@aws-connect' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0obrirl1wlhjqm10ivqh70quy53c' name='datawithnewcolumns' table='[datawithnewcolumns]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0obrirl1wlhjqm10ivqh70quy53c' name='datawithnewcolumns' table='[datawithnewcolumns]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[confirmed]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>confirmed</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[deaths]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>deaths</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovered</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[recovered]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>recovered</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[active]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>active</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dates</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dates]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>dates</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>months</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[months]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>months</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>daynumber</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[daynumber]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>daynumber</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[days]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>days</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weeks</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[weeks]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>weeks</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month_name]</local-name>
+            <parent-name>[datawithnewcolumns]</parent-name>
+            <remote-alias>month_name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='datawithnewcolumns' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[datawithnewcolumns_97774F727352444C8C73B3385B2580D8]' role='measure' type='quantitative' />
+      <column caption='Active' datatype='integer' name='[active]' role='measure' type='quantitative' />
+      <column caption='Confirmed' datatype='integer' name='[confirmed]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+      <column caption='Daynumber' datatype='integer' hidden='true' name='[daynumber]' role='measure' type='quantitative' />
+      <column caption='Days' datatype='string' hidden='true' name='[days]' role='dimension' type='nominal' />
+      <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+      <column caption='Month Name' datatype='string' hidden='true' name='[month_name]' role='dimension' type='nominal' />
+      <column caption='Months' datatype='integer' hidden='true' name='[months]' role='measure' type='quantitative' />
+      <column caption='Recovered' datatype='integer' name='[recovered]' role='measure' type='quantitative' />
+      <column caption='Weeks' datatype='integer' hidden='true' name='[weeks]' role='measure' type='quantitative' />
+      <column-instance column='[active]' derivation='Sum' name='[sum:active:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[confirmed]' derivation='Sum' name='[sum:confirmed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[deaths]' derivation='Sum' name='[sum:deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[recovered]' derivation='Sum' name='[sum:recovered:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.12nymet0kyl5gz13mehqp072b6na].[sum:active:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.12nymet0kyl5gz13mehqp072b6na].[sum:recovered:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.12nymet0kyl5gz13mehqp072b6na].[sum:deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.12nymet0kyl5gz13mehqp072b6na].[sum:confirmed:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='datawithnewcolumns' id='datawithnewcolumns_97774F727352444C8C73B3385B2580D8'>
+            <properties context=''>
+              <relation connection='mysql.0obrirl1wlhjqm10ivqh70quy53c' name='datawithnewcolumns' table='[datawithnewcolumns]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Semibold' fontsize='16'>A Country-wise timeline observed in each COVID case category.</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#4e79a7' fontname='Tableau Regular' fontsize='12' italic='true'>From the filter on the right hand side, select the country for which you&apos;d like to see the trend for.</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/WroldTrendforeachcountry/Sheet1?rev=' id='Sheet1' path='/t/apurvadeore95/workbooks/WroldTrendforeachcountry' revision='' site='apurvadeore95' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='datawithnewcolumns (lextest)' name='federated.12nymet0kyl5gz13mehqp072b6na' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12nymet0kyl5gz13mehqp072b6na'>
+            <column caption='Active' datatype='integer' name='[active]' role='measure' type='quantitative' />
+            <column caption='Confirmed' datatype='integer' name='[confirmed]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+            <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column caption='Recovered' datatype='integer' name='[recovered]' role='measure' type='quantitative' />
+            <column-instance column='[active]' derivation='Sum' name='[sum:active:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[confirmed]' derivation='Sum' name='[sum:confirmed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deaths]' derivation='Sum' name='[sum:deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[recovered]' derivation='Sum' name='[sum:recovered:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dates]' derivation='Day-Trunc' name='[tdy:dates:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12nymet0kyl5gz13mehqp072b6na].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <filter class='categorical' column='[federated.12nymet0kyl5gz13mehqp072b6na].[none:country:nk]'>
+            <groupfilter function='member' level='[none:country:nk]' member='&quot;India&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.12nymet0kyl5gz13mehqp072b6na].[none:country:nk]</column>
+            <column>[federated.12nymet0kyl5gz13mehqp072b6na].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.12nymet0kyl5gz13mehqp072b6na].[Multiple Values]' field-type='quantitative' major-origin='1.0' major-spacing='10.0' min='0.0' range-type='fixedmin' scale='log' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.12nymet0kyl5gz13mehqp072b6na].[Multiple Values]' scope='rows' value='Number of cases [Logarithmic Scale]  (in multiples of 100)' />
+            <format attr='width' field='[federated.12nymet0kyl5gz13mehqp072b6na].[Multiple Values]' value='297' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12nymet0kyl5gz13mehqp072b6na].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.12nymet0kyl5gz13mehqp072b6na].[none:country:nk] * [federated.12nymet0kyl5gz13mehqp072b6na].[Multiple Values])</rows>
+        <cols>[federated.12nymet0kyl5gz13mehqp072b6na].[tdy:dates:qk]</cols>
+      </table>
+      <simple-id uuid='{54E206EA-1D6A-47CB-ADEA-528FDF422403}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checklist' param='[federated.12nymet0kyl5gz13mehqp072b6na].[none:country:nk]' type='filter' values='database' />
+            <card param='[federated.12nymet0kyl5gz13mehqp072b6na].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.12nymet0kyl5gz13mehqp072b6na].[:Measure Names]</field>
+            <field>[federated.12nymet0kyl5gz13mehqp072b6na].[none:country:nk]</field>
+            <field>[federated.12nymet0kyl5gz13mehqp072b6na].[yr:dates:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{070AD2A5-6AE9-4CA5-95C3-539543E4C5A0}' />
+    </window>
+  </windows>
+</workbook>

@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0729.1918                               -->
+<workbook original-version='18.1' source-build='2020.3.0 (20203.20.0729.1918)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/Top10Deaths?rev=1.4' id='Top10Deaths' path='/t/apurvadeore95/workbooks' revision='1.5' site='apurvadeore95' />
+  <preferences />
+  <datasources>
+    <datasource caption='covidsummary (lextest)' inline='true' name='federated.0vxgbjz14uccf812wzzic0wekvq0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aws-connect.mysql.database.azure.com' name='mysql.0ig7hkp0bza69i18md1c50xwo9g8'>
+            <connection authentication='' class='mysql' dbname='lextest' odbc-native-protocol='' one-time-sql='' port='3306' server='aws-connect.mysql.database.azure.com' source-charset='' username='rocket@aws-connect' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0ig7hkp0bza69i18md1c50xwo9g8' name='covidsummary' table='[covidsummary]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0ig7hkp0bza69i18md1c50xwo9g8' name='covidsummary' table='[covidsummary]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_code]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>country_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dates</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dates]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>dates</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[confirmed]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>confirmed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[deaths]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>deaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovered</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[recovered]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>recovered</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_confirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[total_confirmed]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>total_confirmed</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[total_deaths]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>total_deaths</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_recovered</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[total_recovered]</local-name>
+            <parent-name>[covidsummary]</parent-name>
+            <remote-alias>total_recovered</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covidsummary_469B3EC1789942E98DB089C90EEBF34F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Top_10' datatype='integer' name='[Calculation_1876452940556382211]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='index()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='covidsummary' datatype='table' name='[__tableau_internal_object_id__].[covidsummary_469B3EC1789942E98DB089C90EEBF34F]' role='measure' type='quantitative' />
+      <column caption='Confirmed' datatype='integer' name='[confirmed]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Code' datatype='string' name='[country_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Dates' datatype='string' name='[dates]' role='dimension' type='nominal' />
+      <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+      <column caption='Recovered' datatype='integer' name='[recovered]' role='measure' type='quantitative' />
+      <column caption='Total Confirmed' datatype='integer' name='[total_confirmed]' role='measure' type='quantitative' />
+      <column caption='Total Deaths' datatype='integer' name='[total_deaths]' role='measure' type='quantitative' />
+      <column caption='Total Recovered' datatype='integer' name='[total_recovered]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='covidsummary' id='covidsummary_469B3EC1789942E98DB089C90EEBF34F'>
+            <properties context=''>
+              <relation connection='mysql.0ig7hkp0bza69i18md1c50xwo9g8' name='covidsummary' table='[covidsummary]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold, Tableau, Arial, sans-serif' fontsize='16'>10 countries with the most number of recorded COVID-19 </run>
+            <run bold='true' fontcolor='#e15759' fontname='Tableau Bold, Tableau, Arial, sans-serif' fontsize='16'>DEATHS</run>
+            <run bold='true' fontname='Tableau Bold, Tableau, Arial, sans-serif' fontsize='16'>.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/Top10Deaths/Sheet1?rev=' id='Sheet1' path='/t/apurvadeore95/workbooks/Top10Deaths' revision='' site='apurvadeore95' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covidsummary (lextest)' name='federated.0vxgbjz14uccf812wzzic0wekvq0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vxgbjz14uccf812wzzic0wekvq0'>
+            <column caption='Top_10' datatype='integer' name='[Calculation_1876452940556382211]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='index()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_deaths]' derivation='Sum' name='[sum:total_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Deaths' datatype='integer' name='[total_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1876452940556382211]' derivation='User' name='[usr:Calculation_1876452940556382211:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Field'>
+                <order field='[federated.0vxgbjz14uccf812wzzic0wekvq0].[none:country:nk]' />
+                <sort direction='DESC' using='[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]' />
+              </table-calc>
+            </column-instance>
+          </datasource-dependencies>
+          <computed-sort column='[federated.0vxgbjz14uccf812wzzic0wekvq0].[none:country:nk]' direction='DESC' using='[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]' />
+          <filter class='quantitative' column='[federated.0vxgbjz14uccf812wzzic0wekvq0].[usr:Calculation_1876452940556382211:qk:1]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.0vxgbjz14uccf812wzzic0wekvq0].[usr:Calculation_1876452940556382211:qk:1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]' field-type='quantitative' major-origin='0' major-spacing='10000' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]' scope='cols' value='Total Deaths Cases (in Thousands)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vxgbjz14uccf812wzzic0wekvq0].[none:country:nk]</rows>
+        <cols>[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]</cols>
+      </table>
+      <simple-id uuid='{8D85C6EF-672A-478F-96D8-669308A44258}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0vxgbjz14uccf812wzzic0wekvq0].[sum:total_deaths:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vxgbjz14uccf812wzzic0wekvq0].[none:country:nk]</field>
+            <field>[federated.0vxgbjz14uccf812wzzic0wekvq0].[usr:Calculation_1876452940556382211:ok:5]</field>
+            <field>[federated.0vxgbjz14uccf812wzzic0wekvq0].[usr:Calculation_1876452940556382211:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{95FF7E47-59B0-4031-B59C-9AA0CD21BED6}' />
+    </window>
+  </windows>
+</workbook>

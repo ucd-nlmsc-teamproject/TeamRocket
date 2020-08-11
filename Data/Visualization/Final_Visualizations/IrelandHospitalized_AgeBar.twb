@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0716.1026                               -->
+<workbook original-version='18.1' source-build='2020.2.0 (20202.20.0716.1026)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/IrelandHospitalized_AgeBar_15959618958630?rev=1.0' id='IrelandHospitalized_AgeBar_15959618958630' path='/t/apurvadeore95/workbooks' revision='1.1' site='apurvadeore95' />
+  <preferences />
+  <datasources>
+    <datasource caption='irelandhospitaldata (lextest)' inline='true' name='federated.1q85ux91upy3qa186g7z90qsaj5b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aws-connect.mysql.database.azure.com' name='mysql.0j6nkd20w92xv316zxvyf18w20qr'>
+            <connection authentication='' class='mysql' dbname='lextest' odbc-native-protocol='' one-time-sql='' port='3306' server='aws-connect.mysql.database.azure.com' source-charset='' username='rocket@aws-connect' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0j6nkd20w92xv316zxvyf18w20qr' name='irelandhospitaldata' table='[irelandhospitaldata]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0j6nkd20w92xv316zxvyf18w20qr' name='irelandhospitaldata' table='[irelandhospitaldata]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>dates</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dates]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>dates</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospitalcases</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[hospitalcases]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>hospitalcases</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>criticalicucases</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[criticalicucases]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>criticalicucases</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged5</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged5]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged5to14</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged5to14]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged5to14</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged15to24</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged15to24]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged15to24</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged25to34</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged25to34]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged25to34</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged35to44</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged35to44]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged35to44</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged45to54</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged45to54]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged45to54</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged55to64</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged55to64]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged55to64</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged65up</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[aged65up]</local-name>
+            <parent-name>[irelandhospitaldata]</parent-name>
+            <remote-alias>aged65up</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged15to24:qk]&quot;' value='Aged 15To24' />
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged25to34:qk]&quot;' value='Aged 25To34' />
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged35to44:qk]&quot;' value='Aged 35To44' />
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged45to54:qk]&quot;' value='Aged 45To54' />
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged5:qk]&quot;' value='Aged 5' />
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged55to64:qk]&quot;' value='Aged 55To64' />
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged5to14:qk]&quot;' value='Aged 5To14' />
+          <alias key='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged65up:qk]&quot;' value='Aged 65Up' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='irelandhospitaldata' datatype='table' name='[__tableau_internal_object_id__].[irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E]' role='measure' type='quantitative' />
+      <column caption='Aged15To24' datatype='integer' name='[aged15to24]' role='measure' type='quantitative' />
+      <column caption='Aged25To34' datatype='integer' name='[aged25to34]' role='measure' type='quantitative' />
+      <column caption='Aged35To44' datatype='integer' name='[aged35to44]' role='measure' type='quantitative' />
+      <column caption='Aged45To54' datatype='integer' name='[aged45to54]' role='measure' type='quantitative' />
+      <column caption='Aged55To64' datatype='integer' name='[aged55to64]' role='measure' type='quantitative' />
+      <column caption='Aged5' datatype='integer' name='[aged5]' role='measure' type='quantitative' />
+      <column caption='Aged5To14' datatype='integer' name='[aged5to14]' role='measure' type='quantitative' />
+      <column caption='Aged65Up' datatype='integer' name='[aged65up]' role='measure' type='quantitative' />
+      <column caption='Criticalicucases' datatype='integer' name='[criticalicucases]' role='measure' type='quantitative' />
+      <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+      <column caption='Hospitalcases' datatype='integer' name='[hospitalcases]' role='measure' type='quantitative' />
+      <column-instance column='[aged15to24]' derivation='Max' name='[max:aged15to24:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aged25to34]' derivation='Max' name='[max:aged25to34:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aged35to44]' derivation='Max' name='[max:aged35to44:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aged45to54]' derivation='Max' name='[max:aged45to54:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aged55to64]' derivation='Max' name='[max:aged55to64:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aged5]' derivation='Max' name='[max:aged5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aged5to14]' derivation='Max' name='[max:aged5to14:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[aged65up]' derivation='Max' name='[max:aged65up:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='irelandhospitaldata' id='irelandhospitaldata_7E4EABE1CDE24856BC07076FB9995E8E'>
+            <properties context=''>
+              <relation connection='mysql.0j6nkd20w92xv316zxvyf18w20qr' name='irelandhospitaldata' table='[irelandhospitaldata]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='IrelandHospitalized_AgeBar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold, Tableau, Arial, sans-serif' fontsize='16'>Hospitalized cases (Age Group wise)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/IrelandHospitalized_AgeBar_15959618958630/IrelandHospitalized_AgeBar?rev=' id='IrelandHospitalized_AgeBar' path='/t/apurvadeore95/workbooks/IrelandHospitalized_AgeBar_15959618958630' revision='' site='apurvadeore95' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='irelandhospitaldata (lextest)' name='federated.1q85ux91upy3qa186g7z90qsaj5b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q85ux91upy3qa186g7z90qsaj5b'>
+            <column caption='Aged15To24' datatype='integer' name='[aged15to24]' role='measure' type='quantitative' />
+            <column caption='Aged25To34' datatype='integer' name='[aged25to34]' role='measure' type='quantitative' />
+            <column caption='Aged35To44' datatype='integer' name='[aged35to44]' role='measure' type='quantitative' />
+            <column caption='Aged45To54' datatype='integer' name='[aged45to54]' role='measure' type='quantitative' />
+            <column caption='Aged55To64' datatype='integer' name='[aged55to64]' role='measure' type='quantitative' />
+            <column caption='Aged5' datatype='integer' name='[aged5]' role='measure' type='quantitative' />
+            <column caption='Aged5To14' datatype='integer' name='[aged5to14]' role='measure' type='quantitative' />
+            <column caption='Aged65Up' datatype='integer' name='[aged65up]' role='measure' type='quantitative' />
+            <column-instance column='[aged15to24]' derivation='Max' name='[max:aged15to24:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged25to34]' derivation='Max' name='[max:aged25to34:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged35to44]' derivation='Max' name='[max:aged35to44:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged45to54]' derivation='Max' name='[max:aged45to54:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged55to64]' derivation='Max' name='[max:aged55to64:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged5]' derivation='Max' name='[max:aged5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged5to14]' derivation='Max' name='[max:aged5to14:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged65up]' derivation='Max' name='[max:aged65up:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q85ux91upy3qa186g7z90qsaj5b].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged15to24:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged25to34:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged35to44:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged45to54:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged5:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged55to64:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged5to14:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1q85ux91upy3qa186g7z90qsaj5b].[max:aged65up:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <natural-sort column='[federated.1q85ux91upy3qa186g7z90qsaj5b].[:Measure Names]' direction='ASC' />
+          <slices>
+            <column>[federated.1q85ux91upy3qa186g7z90qsaj5b].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1q85ux91upy3qa186g7z90qsaj5b].[Multiple Values]' scope='rows' value='Cases Hospitalized' />
+            <encoding attr='space' class='0' field='[federated.1q85ux91upy3qa186g7z90qsaj5b].[Multiple Values]' field-type='quantitative' major-origin='0.0' major-spacing='200.0' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#555555' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q85ux91upy3qa186g7z90qsaj5b].[Multiple Values]</rows>
+        <cols>[federated.1q85ux91upy3qa186g7z90qsaj5b].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{D77B9BB9-8885-41D9-A861-87399CEE0682}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='IrelandHospitalized_AgeBar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1q85ux91upy3qa186g7z90qsaj5b].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{666C97A4-8C59-480D-A694-8056B3E37B5B}' />
+    </window>
+  </windows>
+</workbook>

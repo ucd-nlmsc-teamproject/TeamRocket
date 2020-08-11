@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0716.1026                               -->
+<workbook original-version='18.1' source-build='2020.2.0 (20202.20.0716.1026)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Ireland_Male-Female_2' path='/t/apurvadeore95/workbooks' revision='1.0' site='apurvadeore95' />
+  <preferences />
+  <datasources>
+    <datasource caption='irelandgenderwise (lextest)' inline='true' name='federated.0g4zavo15ebjht18walux0v6oj4f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aws-connect.mysql.database.azure.com' name='mysql.075ybsq03i1gq616o64861mipjs2'>
+            <connection authentication='' class='mysql' dbname='lextest' odbc-native-protocol='' one-time-sql='' port='3306' server='aws-connect.mysql.database.azure.com' source-charset='' username='rocket@aws-connect' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.075ybsq03i1gq616o64861mipjs2' name='irelandgenderwise' table='[irelandgenderwise]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.075ybsq03i1gq616o64861mipjs2' name='irelandgenderwise' table='[irelandgenderwise]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>dates</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dates]</local-name>
+            <parent-name>[irelandgenderwise]</parent-name>
+            <remote-alias>dates</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandgenderwise_95D929623B7246EB83259DAA547D6A5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>male</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[male]</local-name>
+            <parent-name>[irelandgenderwise]</parent-name>
+            <remote-alias>male</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandgenderwise_95D929623B7246EB83259DAA547D6A5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>female</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[female]</local-name>
+            <parent-name>[irelandgenderwise]</parent-name>
+            <remote-alias>female</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandgenderwise_95D929623B7246EB83259DAA547D6A5D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='irelandgenderwise' datatype='table' name='[__tableau_internal_object_id__].[irelandgenderwise_95D929623B7246EB83259DAA547D6A5D]' role='measure' type='quantitative' />
+      <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+      <column caption='Female' datatype='integer' name='[female]' role='measure' type='quantitative' />
+      <column caption='Male' datatype='integer' name='[male]' role='measure' type='quantitative' />
+      <column-instance column='[female]' derivation='Max' name='[max:female:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[male]' derivation='Max' name='[max:male:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[female]' derivation='Sum' name='[sum:female:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[male]' derivation='Sum' name='[sum:male:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[max:male:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[sum:female:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[sum:male:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[max:female:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='irelandgenderwise' id='irelandgenderwise_95D929623B7246EB83259DAA547D6A5D'>
+            <properties context=''>
+              <relation connection='mysql.075ybsq03i1gq616o64861mipjs2' name='irelandgenderwise' table='[irelandgenderwise]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Ireland_Male-Female'>
+      <repository-location id='Ireland_Male-Female' path='/t/apurvadeore95/workbooks/Ireland_Male-Female_2' revision='' site='apurvadeore95' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Bold'>Male vs Female [Confirmed Cases]</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='irelandgenderwise (lextest)' name='federated.0g4zavo15ebjht18walux0v6oj4f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g4zavo15ebjht18walux0v6oj4f'>
+            <column caption='Female' datatype='integer' name='[female]' role='measure' type='quantitative' />
+            <column caption='Male' datatype='integer' name='[male]' role='measure' type='quantitative' />
+            <column-instance column='[female]' derivation='Max' name='[max:female:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[male]' derivation='Max' name='[max:male:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[male]' derivation='Sum' name='[sum:male:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0g4zavo15ebjht18walux0v6oj4f].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[max:female:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[max:male:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0g4zavo15ebjht18walux0v6oj4f].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[max:female:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0g4zavo15ebjht18walux0v6oj4f].[sum:male:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0g4zavo15ebjht18walux0v6oj4f].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0g4zavo15ebjht18walux0v6oj4f].[Multiple Values]' scope='rows' value='Number of Cases' />
+            <encoding attr='space' class='0' field='[federated.0g4zavo15ebjht18walux0v6oj4f].[Multiple Values]' field-type='quantitative' major-origin='0.0' major-spacing='5000.0' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0g4zavo15ebjht18walux0v6oj4f].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7412999868392944' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0g4zavo15ebjht18walux0v6oj4f].[Multiple Values]</rows>
+        <cols>[federated.0g4zavo15ebjht18walux0v6oj4f].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{4C81DB00-3DD8-45FD-A4D8-0D89831DA8B0}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='Ireland_Male-Female'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0g4zavo15ebjht18walux0v6oj4f].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0g4zavo15ebjht18walux0v6oj4f].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{059126FF-7FEC-4BBC-A0F2-C03BA94F802E}' />
+    </window>
+  </windows>
+</workbook>

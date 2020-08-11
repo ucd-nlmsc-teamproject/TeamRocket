@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0716.1026                               -->
+<workbook source-build='2020.2.0 (20202.20.0716.1026)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/Case-Population_Ireland_Ratio_2?rev=1.3' id='Case-Population_Ireland_Ratio_2' path='/t/apurvadeore95/workbooks' revision='1.4' site='apurvadeore95' />
+  <preferences />
+  <datasources>
+    <datasource caption='irelandconfirmedcases (lextest)' inline='true' name='federated.0maoo6k0hjg26d1ekialv0s3sy8v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aws-connect.mysql.database.azure.com' name='mysql.0kvqtz60nsw7ib1cci9tw0f4g1db'>
+            <connection authentication='' class='mysql' dbname='lextest' odbc-native-protocol='' one-time-sql='' port='3306' server='aws-connect.mysql.database.azure.com' source-charset='' username='rocket@aws-connect' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0kvqtz60nsw7ib1cci9tw0f4g1db' name='irelandconfirmedcases' table='[irelandconfirmedcases]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0kvqtz60nsw7ib1cci9tw0f4g1db' name='irelandconfirmedcases' table='[irelandconfirmedcases]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>countyname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[countyname]</local-name>
+            <parent-name>[irelandconfirmedcases]</parent-name>
+            <remote-alias>countyname</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[irelandconfirmedcases]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[irelandconfirmedcases]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[irelandconfirmedcases]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[confirmed]</local-name>
+            <parent-name>[irelandconfirmedcases]</parent-name>
+            <remote-alias>confirmed</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_by_pop</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[case_by_pop]</local-name>
+            <parent-name>[irelandconfirmedcases]</parent-name>
+            <remote-alias>case_by_pop</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dates</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dates]</local-name>
+            <parent-name>[irelandconfirmedcases]</parent-name>
+            <remote-alias>dates</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='irelandconfirmedcases' datatype='table' name='[__tableau_internal_object_id__].[irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957]' role='measure' type='quantitative' />
+      <column caption='Case By Pop' datatype='real' name='[case_by_pop]' role='measure' type='quantitative' />
+      <column caption='Confirmed' datatype='integer' name='[confirmed]' role='measure' type='quantitative' />
+      <column caption='Countyname' datatype='string' name='[countyname]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='irelandconfirmedcases' id='irelandconfirmedcases_4FDF2B8CAD494D3BAB565102B3E33957'>
+            <properties context=''>
+              <relation connection='mysql.0kvqtz60nsw7ib1cci9tw0f4g1db' name='irelandconfirmedcases' table='[irelandconfirmedcases]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Case-Population Ratio_IrelandCounties'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Semibold'>Ratio for all confirmed cases by population(100,000) for all counties in Ireland.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/Case-Population_Ireland_Ratio_2/Sheet1?rev=' id='Sheet1' path='/t/apurvadeore95/workbooks/Case-Population_Ireland_Ratio_2' revision='' site='apurvadeore95' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='irelandconfirmedcases (lextest)' name='federated.0maoo6k0hjg26d1ekialv0s3sy8v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0maoo6k0hjg26d1ekialv0s3sy8v'>
+            <column caption='Case By Pop' datatype='real' name='[case_by_pop]' role='measure' type='quantitative' />
+            <column caption='Countyname' datatype='string' name='[countyname]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[countyname]' derivation='None' name='[none:countyname:nk]' pivot='key' type='nominal' />
+            <column-instance column='[case_by_pop]' derivation='Sum' name='[sum:case_by_pop:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[none:countyname:nk]' direction='DESC' using='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]' scope='cols' value='Cases by Population (per 100,000)' />
+            <encoding attr='space' class='0' field='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]' field-type='quantitative' major-origin='0.0' major-spacing='100.0' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[none:countyname:nk]' value='114' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]' value='Case By Population Ratio '>
+              <formatted-text>
+                <run fontname='Tableau Bold'>Case By Population Ratio</run>
+                <run>Æ </run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[none:countyname:nk]</rows>
+        <cols>[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]</cols>
+      </table>
+      <simple-id uuid='{6352667E-D073-407A-9838-E7CF02B8FCE1}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='Case-Population Ratio_IrelandCounties'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[sum:case_by_pop:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0maoo6k0hjg26d1ekialv0s3sy8v].[none:countyname:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{089C2088-5D12-49E6-857F-C62B2A725946}' />
+    </window>
+  </windows>
+</workbook>

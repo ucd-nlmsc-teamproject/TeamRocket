@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0716.1026                               -->
+<workbook original-version='18.1' source-build='2020.2.0 (20202.20.0716.1026)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Ireland_Daily_ConfirmedDeaths_2' path='/t/apurvadeore95/workbooks' revision='1.0' site='apurvadeore95' />
+  <preferences />
+  <datasources>
+    <datasource caption='irelandcasetypes (lextest)' inline='true' name='federated.0ouq9q61yvtf3v1a26cxb07h5ye2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aws-connect.mysql.database.azure.com' name='mysql.0e8yxoo1ew4fdo16e7g2p14aifte'>
+            <connection authentication='' class='mysql' dbname='lextest' odbc-native-protocol='' one-time-sql='' port='3306' server='aws-connect.mysql.database.azure.com' source-charset='' username='rocket@aws-connect' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0e8yxoo1ew4fdo16e7g2p14aifte' name='irelandcasetypes' table='[irelandcasetypes]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0e8yxoo1ew4fdo16e7g2p14aifte' name='irelandcasetypes' table='[irelandcasetypes]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>dates</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dates]</local-name>
+            <parent-name>[irelandcasetypes]</parent-name>
+            <remote-alias>dates</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>confirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[confirmed]</local-name>
+            <parent-name>[irelandcasetypes]</parent-name>
+            <remote-alias>confirmed</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalconfirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[totalconfirmed]</local-name>
+            <parent-name>[irelandcasetypes]</parent-name>
+            <remote-alias>totalconfirmed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deaths</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[deaths]</local-name>
+            <parent-name>[irelandcasetypes]</parent-name>
+            <remote-alias>deaths</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totaldeaths</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[totaldeaths]</local-name>
+            <parent-name>[irelandcasetypes]</parent-name>
+            <remote-alias>totaldeaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='irelandcasetypes' datatype='table' name='[__tableau_internal_object_id__].[irelandcasetypes_0EB1BDE5544F459080E90104FC30A474]' role='measure' type='quantitative' />
+      <column caption='Confirmed' datatype='integer' name='[confirmed]' role='measure' type='quantitative' />
+      <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+      <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+      <column caption='Totalconfirmed' datatype='integer' name='[totalconfirmed]' role='measure' type='quantitative' />
+      <column caption='Totaldeaths' datatype='integer' name='[totaldeaths]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[irelandcasetypes_0EB1BDE5544F459080E90104FC30A474]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:irelandcasetypes_0EB1BDE5544F459080E90104FC30A474:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[confirmed]' derivation='Attribute' name='[attr:confirmed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[deaths]' derivation='Attribute' name='[attr:deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[confirmed]' derivation='Sum' name='[sum:confirmed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[deaths]' derivation='Sum' name='[sum:deaths:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[totalconfirmed]' derivation='Sum' name='[sum:totalconfirmed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[totaldeaths]' derivation='Sum' name='[sum:totaldeaths:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[attr:confirmed:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[sum:confirmed:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[sum:totaldeaths:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[sum:totalconfirmed:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[attr:deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[sum:deaths:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[__tableau_internal_object_id__].[cnt:irelandcasetypes_0EB1BDE5544F459080E90104FC30A474:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='irelandcasetypes' id='irelandcasetypes_0EB1BDE5544F459080E90104FC30A474'>
+            <properties context=''>
+              <relation connection='mysql.0e8yxoo1ew4fdo16e7g2p14aifte' name='irelandcasetypes' table='[irelandcasetypes]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Ireland_Daily_Confirmed&amp;Deaths'>
+      <repository-location id='Ireland_Daily_ConfirmedDeaths' path='/t/apurvadeore95/workbooks/Ireland_Daily_ConfirmedDeaths_2' revision='' site='apurvadeore95' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Semibold,   Tableau,   Arial,   sans-serif,  Arial,  sans-serif, Arial, sans-serif' fontsize='16'>Trend observed in the number of Confirmed Cases and Deaths recorded over the period.</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#4e79a7' fontname='Tableau Regular,   Tableau,   Arial,   sans-serif,  Arial,  sans-serif, Arial, sans-serif' fontsize='12' italic='true'>Hover over the trend line to see how many </run>
+            <run bold='true' fontcolor='#4e79a7' fontname='Tableau Bold' fontsize='12' italic='true'>confirmed, deaths</run>
+            <run bold='true' fontcolor='#4e79a7' fontname='Tableau Regular,   Tableau,   Arial,   sans-serif,  Arial,  sans-serif, Arial, sans-serif' fontsize='12' italic='true'> have been recorded per-day.</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='irelandcasetypes (lextest)' name='federated.0ouq9q61yvtf3v1a26cxb07h5ye2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ouq9q61yvtf3v1a26cxb07h5ye2'>
+            <column-instance column='[confirmed]' derivation='Attribute' name='[attr:confirmed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deaths]' derivation='Attribute' name='[attr:deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Confirmed' datatype='integer' name='[confirmed]' role='measure' type='quantitative' />
+            <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+            <column caption='Deaths' datatype='integer' name='[deaths]' role='measure' type='quantitative' />
+            <column-instance column='[dates]' derivation='Day-Trunc' name='[tdy:dates:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[attr:confirmed:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[attr:deaths:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[Multiple Values]' scope='rows' value='Number of Cases' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[Multiple Values]</rows>
+        <cols>[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[tdy:dates:qk]</cols>
+      </table>
+      <simple-id uuid='{4B2F894F-1C4F-4E9B-B39C-052CC097E7CF}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='Ireland_Daily_Confirmed&amp;Deaths'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[:Measure Names]</field>
+            <field>[federated.0ouq9q61yvtf3v1a26cxb07h5ye2].[yr:dates:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{31102409-8D11-4BAF-84E4-9FAC572BB4E1}' />
+    </window>
+  </windows>
+</workbook>

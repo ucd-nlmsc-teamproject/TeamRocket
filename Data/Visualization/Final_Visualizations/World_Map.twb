@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0729.1918                               -->
+<workbook original-version='18.1' source-build='2020.3.0 (20203.20.0729.1918)' version='18.1' xml:base='http://localhost:9100' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/World_Map?rev=1.4' id='World_Map' path='/t/apurvadeore95/workbooks' revision='1.6' site='apurvadeore95' />
+  <preferences />
+  <datasources>
+    <datasource caption='mergedyatkojohnhopkins (lextest)' inline='true' name='federated.0ea1zy40kmj6ra17vrtje0ta9qka' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='aws-connect.mysql.database.azure.com' name='mysql.0bco5e51gjmijz1dizy1b1fvcqd1'>
+            <connection authentication='' class='mysql' dbname='lextest' odbc-native-protocol='' one-time-sql='' port='3306' server='aws-connect.mysql.database.azure.com' source-charset='' username='rocket@aws-connect' workgroup-auth-mode='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0bco5e51gjmijz1dizy1b1fvcqd1' name='mergedyatkojohnhopkins' table='[mergedyatkojohnhopkins]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0bco5e51gjmijz1dizy1b1fvcqd1' name='mergedyatkojohnhopkins' table='[mergedyatkojohnhopkins]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>countrycode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[countrycode]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>countrycode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dates</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[dates]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>dates</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>newconfirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[newconfirmed]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>newconfirmed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>newdeaths</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[newdeaths]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>newdeaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>newrecovered</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[newrecovered]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>newrecovered</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalconfirmed</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[totalconfirmed]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>totalconfirmed</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toaldeaths</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[toaldeaths]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>toaldeaths</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totalrecovered</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[totalrecovered]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>totalrecovered</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>criticalcases</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[criticalcases]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>criticalcases</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>totaltests</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[totaltests]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>totaltests</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deathratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[deathratio]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>deathratio</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recoveryratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[recoveryratio]</local-name>
+            <parent-name>[mergedyatkojohnhopkins]</parent-name>
+            <remote-alias>recoveryratio</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='mergedyatkojohnhopkins' datatype='table' name='[__tableau_internal_object_id__].[mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Countrycode' datatype='string' name='[countrycode]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Criticalcases' datatype='integer' name='[criticalcases]' role='measure' type='quantitative' />
+      <column caption='Dates' datatype='date' name='[dates]' role='dimension' type='ordinal' />
+      <column caption='Deathratio' datatype='real' name='[deathratio]' role='measure' type='quantitative' />
+      <column caption='Newconfirmed' datatype='integer' name='[newconfirmed]' role='measure' type='quantitative' />
+      <column caption='Newdeaths' datatype='integer' name='[newdeaths]' role='measure' type='quantitative' />
+      <column caption='Newrecovered' datatype='integer' name='[newrecovered]' role='measure' type='quantitative' />
+      <column caption='Recoveryratio' datatype='real' name='[recoveryratio]' role='measure' type='quantitative' />
+      <column caption='Toaldeaths' datatype='integer' name='[toaldeaths]' role='measure' type='quantitative' />
+      <column caption='Totalconfirmed' datatype='integer' name='[totalconfirmed]' role='measure' type='quantitative' />
+      <column caption='Totalrecovered' datatype='integer' name='[totalrecovered]' role='measure' type='quantitative' />
+      <column caption='Totaltests' datatype='integer' name='[totaltests]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='mergedyatkojohnhopkins' id='mergedyatkojohnhopkins_B36264107E7C421A9FAE6E9CA6AC1607'>
+            <properties context=''>
+              <relation connection='mysql.0bco5e51gjmijz1dizy1b1fvcqd1' name='mergedyatkojohnhopkins' table='[mergedyatkojohnhopkins]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Semibold, Tableau, Arial, sans-serif' fontsize='16'>World Map with all the main COVID-19 statistics pertaining to the Confirmed/Recovered/Deaths/Critical cases along with the Total Tests done, Death ratio and Recovery ratio.</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#4e79a7' fontname='Tableau Semibold, Tableau, Arial, sans-serif' fontsize='12' italic='true'>Hover over a particular country to get the details for that country.</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='http://localhost:9100/t/apurvadeore95/workbooks/World_Map/Sheet1?rev=' id='Sheet1' path='/t/apurvadeore95/workbooks/World_Map' revision='' site='apurvadeore95' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mergedyatkojohnhopkins (lextest)' name='federated.0ea1zy40kmj6ra17vrtje0ta9qka' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ea1zy40kmj6ra17vrtje0ta9qka'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Countrycode' datatype='string' name='[countrycode]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Criticalcases' datatype='integer' name='[criticalcases]' role='measure' type='quantitative' />
+            <column caption='Deathratio' datatype='real' name='[deathratio]' role='measure' type='quantitative' />
+            <column caption='Newconfirmed' datatype='integer' name='[newconfirmed]' role='measure' type='quantitative' />
+            <column caption='Newdeaths' datatype='integer' name='[newdeaths]' role='measure' type='quantitative' />
+            <column caption='Newrecovered' datatype='integer' name='[newrecovered]' role='measure' type='quantitative' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[countrycode]' derivation='None' name='[none:countrycode:nk]' pivot='key' type='nominal' />
+            <column caption='Recoveryratio' datatype='real' name='[recoveryratio]' role='measure' type='quantitative' />
+            <column-instance column='[criticalcases]' derivation='Sum' name='[sum:criticalcases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[deathratio]' derivation='Sum' name='[sum:deathratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[newconfirmed]' derivation='Sum' name='[sum:newconfirmed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[newdeaths]' derivation='Sum' name='[sum:newdeaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[newrecovered]' derivation='Sum' name='[sum:newrecovered:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[recoveryratio]' derivation='Sum' name='[sum:recoveryratio:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[toaldeaths]' derivation='Sum' name='[sum:toaldeaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[totalconfirmed]' derivation='Sum' name='[sum:totalconfirmed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[totalrecovered]' derivation='Sum' name='[sum:totalrecovered:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[totaltests]' derivation='Sum' name='[sum:totaltests:qk]' pivot='key' type='quantitative' />
+            <column caption='Toaldeaths' datatype='integer' name='[toaldeaths]' role='measure' type='quantitative' />
+            <column caption='Totalconfirmed' datatype='integer' name='[totalconfirmed]' role='measure' type='quantitative' />
+            <column caption='Totalrecovered' datatype='integer' name='[totalrecovered]' role='measure' type='quantitative' />
+            <column caption='Totaltests' datatype='integer' name='[totaltests]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[Longitude (generated)]' field-type='quantitative' max='22684015.770935446' min='-20466345.795067877' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[Latitude (generated)]' field-type='quantitative' max='13263170.623923492' min='-7975648.9722399013' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:totalconfirmed:qk]' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:totalconfirmed:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[none:country:nk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[none:countrycode:nk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:toaldeaths:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:totalrecovered:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:newconfirmed:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:totaltests:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:newdeaths:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:newrecovered:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:criticalcases:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:deathratio:qk]' />
+              <lod column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:recoveryratio:qk]' />
+              <geometry column='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[Latitude (generated)]</rows>
+        <cols>[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{417812E1-3A6F-4D1C-9E18-78232524F3D5}' />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[sum:totalconfirmed:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[none:country:nk]</field>
+            <field>[federated.0ea1zy40kmj6ra17vrtje0ta9qka].[none:countrycode:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{8EF0D264-320C-4AE3-B46C-6B123B6B5359}' />
+    </window>
+  </windows>
+</workbook>
