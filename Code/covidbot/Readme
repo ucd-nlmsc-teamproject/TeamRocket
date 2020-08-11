@@ -1,4 +1,4 @@
-Main folder which contains the Final implementation code of the application
+Main folder which contains the Final implementation code for the front end of the application
 
 ├───chatbot------------------- #django app folder
 │   ├───migrations------------ #django database folder
